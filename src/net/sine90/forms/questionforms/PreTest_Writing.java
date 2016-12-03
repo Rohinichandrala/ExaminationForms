@@ -29,15 +29,15 @@ public class PreTest_Writing extends javax.swing.JFrame {
      */
     public PreTest_Writing() {
         initComponents();
-        Component[] components=jPanel2.getComponents();
-      for(int i=0;i<components.length;i++)
-      {
-          //System.out.println(components[i].getName());
-          if(components[i] instanceof JLabel && WritingTestParameters.pre_test_params.containsKey(components[i].getName()))
-          {
-            ((JLabel)components[i]).setText(WritingTestParameters.pre_test_params.get(components[i].getName()));
-          }
-      }
+//        Component[] components=jPanel2.getComponents();
+//      for(int i=0;i<components.length;i++)
+//      {
+//          //System.out.println(components[i].getName());
+//          if(components[i] instanceof JLabel && WritingTestParameters.pre_test_params.containsKey(components[i].getName()))
+//          {
+//            ((JLabel)components[i]).setText(WritingTestParameters.pre_test_params.get(components[i].getName()));
+//          }
+//      }
     }
 
     /**
@@ -85,27 +85,27 @@ public class PreTest_Writing extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Put the words in order to make a meaningful sentence.");
 
-        quest1.setText("jLabel5");
+        quest1.setText("Which / stolen / is / was/ the / mine / bag/./");
 
         org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest1, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest1, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
-        quest2.setText("jLabel5");
+        quest2.setText("Go / do / to / you / school / when /?/");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest2, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest2, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
-        quest3.setText("jLabel5");
+        quest3.setText("Despite /walked / old woman / . / very / the / her / age / quickly");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest3, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest3, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
-        quest4.setText("jLabel5");
+        quest4.setText("Completed / . / social / studies/ I/ project/ haven’t / my/");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest4, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest4, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
-        quest5.setText("jLabel5");
+        quest5.setText("Lunch / pack / ? / box / the / dad /he / didn’t / did/");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest5, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest5, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
@@ -137,7 +137,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
             }
         });
 
-        quest6.setText("jLabel5");
+        quest6.setText("Advancements/ Fascinated / . / children/ by/ are / technology/ in");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest6, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest6, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
@@ -197,7 +197,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(138, 138, 138)
                         .addComponent(jButton1)))
-                .addContainerGap(239, Short.MAX_VALUE))
+                .addContainerGap(253, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -262,7 +262,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 791, Short.MAX_VALUE)
+            .addGap(0, 805, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -292,29 +292,29 @@ public class PreTest_Writing extends javax.swing.JFrame {
                  fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
         if("The bag which was stolen is mine.".equalsIgnoreCase(answer1.getText().trim()))
-                    pretest_answer.append("1."+correctAnswer+answer1.getText().trim()+"\n");
+                    pretest_answer.append("1."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
         else
-            pretest_answer.append("1."+correctAnswer+"The bag which was stolen is mine.\n"+wrongAnswer+answer1.getText().trim()+"\n");
+            pretest_answer.append("1."+correctAnswer+"The bag which was stolen is mine."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
         if("When do you go to school?".equalsIgnoreCase(answer2.getText().trim()))
-                    pretest_answer.append("2."+correctAnswer+answer2.getText().trim()+"\n");
+                    pretest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
         else
-            pretest_answer.append("2."+correctAnswer+"When do you go to school?.\n"+wrongAnswer+answer2.getText().trim()+"\n");
+            pretest_answer.append("2."+correctAnswer+"When do you go to school?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
         if("The old woman despite her age walked very quickly.".equalsIgnoreCase(answer3.getText().trim()))
-                    pretest_answer.append("3."+correctAnswer+answer3.getText().trim()+"\n");
+                    pretest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
         else
-            pretest_answer.append("3."+correctAnswer+"The old woman despite her age walked very quickly.\n"+wrongAnswer+answer3.getText().trim()+"\n");
+            pretest_answer.append("3."+correctAnswer+"The old woman despite her age walked very quickly."+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
         if("I haven’t completed my Social Studies Project.".equalsIgnoreCase(answer4.getText().trim()))
-                    pretest_answer.append("4."+correctAnswer+answer4.getText().trim()+"\n");
+                    pretest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
         else
-            pretest_answer.append("4."+correctAnswer+"I haven’t completed my Social Studies Project.\n"+wrongAnswer+answer4.getText().trim()+"\n");
+            pretest_answer.append("4."+correctAnswer+"I haven’t completed my Social Studies Project."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
         if("Dad didn’t pack the lunch box did he?".equalsIgnoreCase(answer5.getText().trim()))
-                    pretest_answer.append("5."+correctAnswer+answer5.getText().trim()+"\n");
+                    pretest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
         else
-            pretest_answer.append("5."+correctAnswer+"Dad didn’t pack the lunch box did he?\n"+wrongAnswer+answer5.getText().trim()+"\n");
+            pretest_answer.append("5."+correctAnswer+"Dad didn’t pack the lunch box did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
         if("Children are fascinated by advancements in technology.".equalsIgnoreCase(answer6.getText().trim()))
-                    pretest_answer.append("6."+correctAnswer+answer6.getText().trim()+"\n");
+                    pretest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
         else
-            pretest_answer.append("6."+correctAnswer+"Children are fascinated by advancements in technology.\n"+wrongAnswer+answer6.getText().trim()+"\n");
+            pretest_answer.append("6."+correctAnswer+"Children are fascinated by advancements in technology."+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
               
         bw.write(pretest_answer.toString());
         bw.flush(); 

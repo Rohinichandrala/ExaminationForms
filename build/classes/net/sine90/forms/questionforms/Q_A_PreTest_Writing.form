@@ -23,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="818" max="32767" attributes="0"/>
+          <EmptySpace min="0" pref="938" max="32767" attributes="0"/>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -118,7 +118,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Write about the festival that you enjoy most."/>
             <Property name="name" type="java.lang.String" value="topic1" noResource="true"/>
           </Properties>
           <Events>
@@ -127,7 +127,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Write about yourself."/>
             <Property name="name" type="java.lang.String" value="topic2" noResource="true"/>
           </Properties>
           <Events>
@@ -136,7 +136,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="What are your aims and goals in life and how do you achieve them?"/>
             <Property name="name" type="java.lang.String" value="topic3" noResource="true"/>
           </Properties>
           <Events>
@@ -145,7 +145,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="What is the movie that you liked most and why?"/>
             <Property name="name" type="java.lang.String" value="topic4" noResource="true"/>
           </Properties>
           <Events>
@@ -154,7 +154,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="What is the one motivating/inspiring experience in your life and why?"/>
             <Property name="name" type="java.lang.String" value="topic5" noResource="true"/>
           </Properties>
           <Events>

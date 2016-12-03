@@ -58,7 +58,7 @@ public class Q_A_PostTest_Writing extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
         jLabel2.setText("Please choose one topic from below list");
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Explain the features of any electronic device that you prefer most.");
         jButton1.setName("topic1"); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +66,7 @@ public class Q_A_PostTest_Writing extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("jButton1");
+        jButton2.setText("Do you like the idea of Swachh Bharat Abhiyan and what is your contribution towards it?");
         jButton2.setName("topic2"); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,7 +74,7 @@ public class Q_A_PostTest_Writing extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("jButton1");
+        jButton3.setText("Which role model / personality has influenced you most and how?");
         jButton3.setName("topic3"); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,7 +82,7 @@ public class Q_A_PostTest_Writing extends javax.swing.JFrame {
             }
         });
 
-        jButton4.setText("jButton1");
+        jButton4.setText("Explain the role of the teacher in your life?");
         jButton4.setName("topic4"); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +90,7 @@ public class Q_A_PostTest_Writing extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setText("jButton1");
+        jButton5.setText("Give your suggestions to develop the state with regard to education and go green program");
         jButton5.setName("topic5"); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +118,7 @@ public class Q_A_PostTest_Writing extends javax.swing.JFrame {
                             .addComponent(jButton4)
                             .addComponent(jButton5)
                             .addComponent(jButton1))))
-                .addContainerGap(301, Short.MAX_VALUE))
+                .addContainerGap(48, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

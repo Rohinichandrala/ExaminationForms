@@ -295,45 +295,45 @@ public class PostTest_Reading extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         
         if("about".equalsIgnoreCase(jTextField1.getText().trim()))
-            posttest_answer.append("1."+correctAnswer+jTextField1.getText().trim()+"\n");
+            posttest_answer.append("1."+correctAnswer+jTextField1.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("1."+correctAnswer+"about\n"+wrongAnswer+jTextField1.getText().trim()+"\n");
+            posttest_answer.append("1."+correctAnswer+"about"+System.getProperty("line.separator")+wrongAnswer+jTextField1.getText().trim()+System.getProperty("line.separator"));
         if("was".equalsIgnoreCase(jTextField2.getText().trim()))
-            posttest_answer.append("2."+correctAnswer+jTextField2.getText().trim()+"\n");
+            posttest_answer.append("2."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("2."+correctAnswer+"was\n"+wrongAnswer+jTextField2.getText().trim()+"\n");
+            posttest_answer.append("2."+correctAnswer+"was"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
         if(jTextField3.getText().trim().toLowerCase().contains("as")||jTextField3.getText().trim().toLowerCase().contains("when"))
-            posttest_answer.append("3."+correctAnswer+jTextField3.getText().trim()+"\n");
+            posttest_answer.append("3."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("3."+correctAnswer+"As/when \n"+wrongAnswer+jTextField3.getText().trim()+"\n");
+            posttest_answer.append("3."+correctAnswer+"As/when "+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
         if("tell".equalsIgnoreCase(jTextField4.getText().trim()))
-            posttest_answer.append("4."+correctAnswer+jTextField4.getText().trim()+"\n");
+            posttest_answer.append("4."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("4."+correctAnswer+"tell\n"+wrongAnswer+jTextField4.getText().trim()+"\n");
+            posttest_answer.append("4."+correctAnswer+"tell"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
         if("well".equalsIgnoreCase(jTextField5.getText().trim()))
-            posttest_answer.append("5."+correctAnswer+jTextField5.getText().trim()+"\n");
+            posttest_answer.append("5."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("5."+correctAnswer+"well\n"+wrongAnswer+jTextField5.getText().trim()+"\n");
+            posttest_answer.append("5."+correctAnswer+"well"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
         if("dishonest".equalsIgnoreCase(jTextField6.getText().trim()))
-            posttest_answer.append("6."+correctAnswer+jTextField6.getText().trim()+"\n");
+            posttest_answer.append("6."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("6."+correctAnswer+"dishonest\n"+wrongAnswer+jTextField6.getText().trim()+"\n");
+            posttest_answer.append("6."+correctAnswer+"dishonest"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
         if("I".equalsIgnoreCase(jTextField7.getText().trim()))
-            posttest_answer.append("7."+correctAnswer+jTextField7.getText().trim()+"\n");
+            posttest_answer.append("7."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("7."+correctAnswer+"I \n"+wrongAnswer+jTextField7.getText().trim()+"\n");
+            posttest_answer.append("7."+correctAnswer+"I "+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
         if("heart".equalsIgnoreCase(jTextField8.getText().trim()))
-            posttest_answer.append("8."+correctAnswer+jTextField8.getText().trim()+"\n");
+            posttest_answer.append("8."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("8."+correctAnswer+"heart\n"+wrongAnswer+jTextField8.getText().trim()+"\n");
+            posttest_answer.append("8."+correctAnswer+"heart"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
         if("would".equalsIgnoreCase(jTextField9.getText().trim()))
-            posttest_answer.append("9."+correctAnswer+jTextField9.getText().trim()+"\n");
+            posttest_answer.append("9."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("9."+correctAnswer+"would\n"+wrongAnswer+jTextField9.getText().trim()+"\n");
+            posttest_answer.append("9."+correctAnswer+"would"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
         if("A".equalsIgnoreCase(jTextField10.getText().trim()))
-            posttest_answer.append("10."+correctAnswer+jTextField10.getText().trim()+"\n");
+            posttest_answer.append("10."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         else
-            posttest_answer.append("10."+correctAnswer+"A\n"+wrongAnswer+jTextField10.getText().trim()+"\n");
+            posttest_answer.append("10."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         bw.write(posttest_answer.toString());
         bw.flush();
             } catch (IOException ex) {

@@ -62,7 +62,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace pref="301" max="32767" attributes="0"/>
+                  <EmptySpace pref="48" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -107,7 +107,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Explain the features of any electronic device that you prefer most."/>
             <Property name="name" type="java.lang.String" value="topic1" noResource="true"/>
           </Properties>
           <Events>
@@ -116,7 +116,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Do you like the idea of Swachh Bharat Abhiyan and what is your contribution towards it?"/>
             <Property name="name" type="java.lang.String" value="topic2" noResource="true"/>
           </Properties>
           <Events>
@@ -125,7 +125,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Which role model / personality has influenced you most and how?"/>
             <Property name="name" type="java.lang.String" value="topic3" noResource="true"/>
           </Properties>
           <Events>
@@ -134,7 +134,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Explain the role of the teacher in your life?"/>
             <Property name="name" type="java.lang.String" value="topic4" noResource="true"/>
           </Properties>
           <Events>
@@ -143,7 +143,7 @@
         </Component>
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jButton1"/>
+            <Property name="text" type="java.lang.String" value="Give your suggestions to develop the state with regard to education and go green program"/>
             <Property name="name" type="java.lang.String" value="topic5" noResource="true"/>
           </Properties>
           <Events>

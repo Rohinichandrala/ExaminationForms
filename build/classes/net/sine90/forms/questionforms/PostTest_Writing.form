@@ -195,7 +195,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="text" type="java.lang.String" value="Understand/ I / weird/ don&#x2019;t / . /behavior / his/"/>
             <Property name="name" type="java.lang.String" value="quest1" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -205,7 +205,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="text" type="java.lang.String" value="Isn&#x2019;t / he / brilliant / he / is /? /"/>
             <Property name="name" type="java.lang.String" value="quest2" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -214,7 +214,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="text" type="java.lang.String" value="Hates/ ? / doesn&#x2019;t / she / apples / she/"/>
             <Property name="name" type="java.lang.String" value="quest3" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -223,7 +223,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="text" type="java.lang.String" value="Diversity / India / known/ for / is / . /unity/ in/"/>
             <Property name="name" type="java.lang.String" value="quest4" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -232,7 +232,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="text" type="java.lang.String" value="/ ./ Malaysian Airlines/ blasted/ the / belonged / mid-air/ to / which / jet /"/>
             <Property name="name" type="java.lang.String" value="quest5" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -314,7 +314,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel15">
           <Properties>
-            <Property name="text" type="java.lang.String" value="jLabel5"/>
+            <Property name="text" type="java.lang.String" value="Place / ? / you / would / vacation / this / which / visiting / be /"/>
             <Property name="name" type="java.lang.String" value="quest6" noResource="true"/>
           </Properties>
         </Component>

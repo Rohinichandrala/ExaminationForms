@@ -6,7 +6,9 @@
 
 package net.sine90.forms.questionforms;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -103,9 +105,15 @@ public class Q_A_Writing_Generic extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String fileName = "Q_A"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());        
         File file=new File("C:\\Results\\Writing\\"+fileName);
+        
         if(!file.exists())
             try {
                 file.createNewFile();
+            FileWriter fw = new FileWriter(file);
+            BufferedWriter bw = new BufferedWriter(fw);
+            String answer=jTextArea3.getText();
+            bw.write(answer);
+            bw.flush();
         } catch (IOException ex) {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
