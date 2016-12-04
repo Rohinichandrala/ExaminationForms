@@ -5,12 +5,23 @@
  */
 package net.sine90.forms.questionforms;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import net.sine90.forms.ListeningTestParameters;
+
 /**
  *
  * @author rohini
  */
 public class PreTest_Listening extends javax.swing.JFrame {
 
+    public static int pretest_listening_marks_obtained=0;
     /**
      * Creates new form PreTest_Listening
      */
@@ -350,11 +361,12 @@ public class PreTest_Listening extends javax.swing.JFrame {
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel13)
-                        .addComponent(jLabel10)
-                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel10)))
                     .addComponent(jLabel12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -420,6 +432,88 @@ public class PreTest_Listening extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+        String fileName = ListeningTestParameters.student_name+"PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String correctAnswer="Correct Answer :";
+        String wrongAnswer="Wrong Answer :";
+        StringBuilder pretest_answe=new StringBuilder();
+        BufferedWriter bw;
+        FileWriter fw;
+        File file=new File("C:\\Results\\Listening\\"+fileName);
+        if(!file.exists())
+            try {
+                file.createNewFile();
+                fw = new FileWriter(file);
+                bw = new BufferedWriter(fw);
+        if("Peacefully".equalsIgnoreCase(jTextField2.getText().trim()))
+        {
+            pretest_answe.append("1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("1."+correctAnswer+"Peacefully"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+        if("Inseparable".equalsIgnoreCase(jTextField3.getText().trim()))
+        {
+            pretest_answe.append("2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("2."+correctAnswer+"Inseparable"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+        if("Frightened".equalsIgnoreCase(jTextField4.getText().trim()))
+        {
+            pretest_answe.append("3."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("3."+correctAnswer+"Frightened"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+        if("well".equalsIgnoreCase(jTextField5.getText().trim()))
+        {
+            pretest_answe.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("4."+correctAnswer+"well"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+        if("Amazing".equalsIgnoreCase(jTextField6.getText().trim()))
+        {
+            pretest_answe.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("5."+correctAnswer+"Amazing"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+       if(jTextField7.getText().trim().toLowerCase().contains("in")||jTextField7.getText().trim().toLowerCase().contains("up"))
+        {
+            pretest_answe.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("6."+correctAnswer+"in / up"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+        if("Had".equalsIgnoreCase(jTextField8.getText().trim()))
+        {
+            pretest_answe.append("7."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("7."+correctAnswer+"Had"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
+        if("A".equalsIgnoreCase(jTextField9.getText().trim()))
+        {
+            pretest_answe.append("8."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("8."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+        if("Fear".equalsIgnoreCase(jTextField10.getText().trim()))
+        {
+            pretest_answe.append("9."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+             pretest_listening_marks_obtained++;
+        }
+        else
+            pretest_answe.append("9."+correctAnswer+"Fear"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+        
+        bw.write(pretest_answe.toString());
+        bw.flush();
+        } catch (IOException ex) {
+            Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
+        }    
         super.dispose();
         PreTest2_Listening.main(null);
     }//GEN-LAST:event_jButton1ActionPerformed

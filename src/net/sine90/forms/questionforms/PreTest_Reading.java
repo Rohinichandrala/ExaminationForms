@@ -272,6 +272,8 @@ public class PreTest_Reading extends javax.swing.JFrame {
         String fileName = "PreTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
+        int marks_obtained=0;
+        int total=10;
         StringBuilder pretest_answer=new StringBuilder();
         FileWriter fw;
         BufferedWriter bw;
@@ -283,46 +285,77 @@ public class PreTest_Reading extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         
         if("Have".equalsIgnoreCase(jTextField1.getText().trim()))
+        {
             pretest_answer.append("1."+correctAnswer+jTextField1.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("1."+correctAnswer+"Have"+System.getProperty("line.separator")+wrongAnswer+jTextField1.getText().trim()+System.getProperty("line.separator"));
         if("they".equalsIgnoreCase(jTextField2.getText().trim()))
+        {
             pretest_answer.append("2."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("2."+correctAnswer+"they"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
         if("Patiently".equalsIgnoreCase(jTextField3.getText().trim()))
+        {
             pretest_answer.append("3."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("3."+correctAnswer+"Patiently"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
         if("Order".equalsIgnoreCase(jTextField4.getText().trim()))
+        {
             pretest_answer.append("4."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("4."+correctAnswer+"Order"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
         if("Of".equalsIgnoreCase(jTextField5.getText().trim()))
+        {
             pretest_answer.append("5."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+         marks_obtained++;
+        }
         else
             pretest_answer.append("5."+correctAnswer+"Of"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
         if("Took".equalsIgnoreCase(jTextField6.getText().trim()))
+        {
             pretest_answer.append("6."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("6."+correctAnswer+"Took"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
         if("When".equalsIgnoreCase(jTextField7.getText().trim()))
+        {
             pretest_answer.append("7."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("7."+correctAnswer+"When"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
         if("The".equalsIgnoreCase(jTextField8.getText().trim()))
+        {
             pretest_answer.append("8."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("8."+correctAnswer+"The"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
         if("Could".equalsIgnoreCase(jTextField9.getText().trim()))
+        {
             pretest_answer.append("9."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("9."+correctAnswer+"Could"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
         if(jTextField10.getText().trim().toLowerCase().contains("bandaged")||jTextField10.getText().trim().toLowerCase().contains("broken"))
+        {
             pretest_answer.append("10."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             pretest_answer.append("10."+correctAnswer+"Bandaged/broken"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
-                    
+        
+        pretest_answer.append("Score for this test : "+marks_obtained+" / "+total);
         bw.write(pretest_answer.toString());
         bw.flush();
         } catch (IOException ex) {

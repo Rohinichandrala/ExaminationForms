@@ -272,6 +272,8 @@ public class PostTest_Writing extends javax.swing.JFrame {
         String fileName = "PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
+        int marks_obtained=0;
+        int total=6;
         StringBuilder posttest_answer=new StringBuilder();
         FileWriter fw;
         BufferedWriter bw;
@@ -282,30 +284,48 @@ public class PostTest_Writing extends javax.swing.JFrame {
                  fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
         if("I don’t understand his weird behavior.".equalsIgnoreCase(answer1.getText().trim()))
+        {
                     posttest_answer.append("1."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             posttest_answer.append("1."+correctAnswer+"I don’t understand his weird behavior."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
         if("He is brilliant isn’t he?".equalsIgnoreCase(answer2.getText().trim()))
+        {
                     posttest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             posttest_answer.append("2."+correctAnswer+"He is brilliant isn’t he?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
         if("She hates apples doesn’t she?".equalsIgnoreCase(answer3.getText().trim()))
+        {
                     posttest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             posttest_answer.append("3."+correctAnswer+"She hates apples doesn’t she?"+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
         if("India is known for unity in diversity.".equalsIgnoreCase(answer4.getText().trim()))
+        {
                     posttest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             posttest_answer.append("4."+correctAnswer+"India is known for unity in diversity."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
         if("The jet which blasted mid-air belonged to Malaysian Airlines.".equalsIgnoreCase(answer5.getText().trim()))
+        {
                     posttest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             posttest_answer.append("5."+correctAnswer+"The jet which blasted mid-air belonged to Malaysian Airlines."+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
         if("Which place would you be visiting this vacation?".equalsIgnoreCase(answer6.getText().trim()))
+        {
                     posttest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             posttest_answer.append("6."+correctAnswer+"Which place would you be visiting this vacation?"+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
-              
+        posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         bw.write(posttest_answer.toString());
         bw.flush(); 
         } catch (IOException ex) {

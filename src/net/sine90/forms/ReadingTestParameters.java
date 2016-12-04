@@ -21,4 +21,6 @@ public class ReadingTestParameters {
     public static String training="The honey bee is a very unusual kind of insect. ___1___ other insects which live alone,\n"+"the honey bee lives as a ___2___ of a community.\n"+"These bees live ___3___ in what is known as a bee colony.\n" +
 "The head of the colony is called the queen bee. She is ___4___ than the rest of the bees.\n"+"Her main task in the colony is ___5___ lay eggs.\n"+"Most of the other bees are the worker bees. These bees ___6___ nectar and pollen from flowers.\n"+"The nectar ___7___ is carried by the worker bees is deposited on the hive and then converted into honey.\n"+"The worker bees also help look after the young bees.\n"+"As soon as the eggs ___8___ hatched, the worker bees feed the young bees with pollen and nectar.\n"+"The third type of bee found in the colony is the drone or male bee. ___9___ main task of a bee is to mate with a new queen.\n" +
 "The queen bee has a life span of about three years.\n"+"During this period, she ___10___ have laid more than half a million eggs.\n"+"When the queen bee is dying, a new queen would be groomed.\n"+"This new queen would eventually take over the 'duties' of the old queen when the latter dies.";
+public static int timer=7;
 }
+

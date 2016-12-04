@@ -284,6 +284,8 @@ public class PreTest_Writing extends javax.swing.JFrame {
         String wrongAnswer="Wrong Answer :";
         StringBuilder pretest_answer=new StringBuilder();
         FileWriter fw;
+        int marks_obtained=0;
+        int total=6;
         BufferedWriter bw;
         File file=new File("C:\\Results\\Writing\\"+fileName);
         if(!file.exists())
@@ -292,30 +294,48 @@ public class PreTest_Writing extends javax.swing.JFrame {
                  fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
         if("The bag which was stolen is mine.".equalsIgnoreCase(answer1.getText().trim()))
+        {
                     pretest_answer.append("1."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             pretest_answer.append("1."+correctAnswer+"The bag which was stolen is mine."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
         if("When do you go to school?".equalsIgnoreCase(answer2.getText().trim()))
+        {
                     pretest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             pretest_answer.append("2."+correctAnswer+"When do you go to school?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
         if("The old woman despite her age walked very quickly.".equalsIgnoreCase(answer3.getText().trim()))
+        {
                     pretest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             pretest_answer.append("3."+correctAnswer+"The old woman despite her age walked very quickly."+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
         if("I haven’t completed my Social Studies Project.".equalsIgnoreCase(answer4.getText().trim()))
+        {
                     pretest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             pretest_answer.append("4."+correctAnswer+"I haven’t completed my Social Studies Project."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
         if("Dad didn’t pack the lunch box did he?".equalsIgnoreCase(answer5.getText().trim()))
+        {
                     pretest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             pretest_answer.append("5."+correctAnswer+"Dad didn’t pack the lunch box did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
         if("Children are fascinated by advancements in technology.".equalsIgnoreCase(answer6.getText().trim()))
+        {
                     pretest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
         else
             pretest_answer.append("6."+correctAnswer+"Children are fascinated by advancements in technology."+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
-              
+         pretest_answer.append("Score for this test : "+marks_obtained+" / "+total);
         bw.write(pretest_answer.toString());
         bw.flush(); 
         } catch (IOException ex) {

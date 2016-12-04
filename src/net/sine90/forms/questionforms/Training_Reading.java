@@ -296,6 +296,8 @@ public class Training_Reading extends javax.swing.JFrame {
         String fileName = "TrainingTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
+        int marks_obtained=0;
+        int total=10;
         StringBuilder training_answer=new StringBuilder();
         FileWriter fw;
         BufferedWriter bw;
@@ -307,46 +309,78 @@ public class Training_Reading extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         
         if("Unlike".equalsIgnoreCase(jTextField1.getText().trim()))
+        {
             training_answer.append("1."+correctAnswer+jTextField1.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("1."+correctAnswer+"Unlike"+System.getProperty("line.separator")+wrongAnswer+jTextField1.getText().trim()+System.getProperty("line.separator"));
         if("Member".equalsIgnoreCase(jTextField2.getText().trim()))
+        {
             training_answer.append("2."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("2."+correctAnswer+"Member"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
         if("Together".equalsIgnoreCase(jTextField3.getText().trim()))
+        {
             training_answer.append("3."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("3."+correctAnswer+"Together"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
         if("Larger".equalsIgnoreCase(jTextField4.getText().trim()))
+        {
             training_answer.append("4."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("4."+correctAnswer+"Larger"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
         if("To".equalsIgnoreCase(jTextField5.getText().trim()))
+        {
             training_answer.append("5."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("5."+correctAnswer+"To"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
         if("Collect".equalsIgnoreCase(jTextField6.getText().trim()))
+        {
             training_answer.append("6."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("6."+correctAnswer+"Collect"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
         if("That".equalsIgnoreCase(jTextField7.getText().trim()))
+        {
             training_answer.append("7."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("7."+correctAnswer+"That"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
         if("Are".equalsIgnoreCase(jTextField8.getText().trim()))
+        {
             training_answer.append("8."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("8."+correctAnswer+"Are"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
         if("The".equalsIgnoreCase(jTextField9.getText().trim()))
+        {
             training_answer.append("9."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("9."+correctAnswer+"The"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
         if("Would".equalsIgnoreCase(jTextField10.getText().trim()))
+        {
             training_answer.append("10."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
         else
             training_answer.append("10."+correctAnswer+"Would"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
-             bw.write(training_answer.toString());
+        
+        training_answer.append("Score for this test : "+marks_obtained+" / "+total);
+        bw.write(training_answer.toString());
         bw.flush(); 
         } catch (IOException ex) {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
