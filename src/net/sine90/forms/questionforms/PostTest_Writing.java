@@ -6,6 +6,8 @@
 package net.sine90.forms.questionforms;
 
 import java.awt.Component;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -15,6 +17,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JLabel;
+import javax.swing.Timer;
 import net.sine90.forms.WritingTestParameters;
 
 /**
@@ -26,17 +29,85 @@ public class PostTest_Writing extends javax.swing.JFrame {
     /**
      * Creates new form PostTest_Writing
      */
+    Timer timer;
     public PostTest_Writing() {
         initComponents();
-//          Component[] components=jPanel2.getComponents();
-//      for(int i=0;i<components.length;i++)
-//      {
-//          System.out.println(components[i].getName());
-//          if(components[i] instanceof JLabel && WritingTestParameters.post_test_params.containsKey(components[i].getName()))
-//          {
-//            ((JLabel)components[i]).setText(WritingTestParameters.post_test_params.get(components[i].getName()));
-//          }
-//      }
+        ActionListener taskPerformer = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                submitForm();
+            }
+        }; 
+        timer = new Timer(360000,taskPerformer);
+        timer.start();
+    }
+    private void submitForm()
+    {
+        timer.stop();
+         String fileName = "PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String correctAnswer="Correct Answer :";
+        String wrongAnswer="Wrong Answer :";
+        int marks_obtained=0;
+        int total=6;
+        StringBuilder posttest_answer=new StringBuilder();
+        FileWriter fw;
+        BufferedWriter bw;
+        File file=new File("C:\\Results\\Writing\\"+fileName);
+        if(!file.exists())
+        try {
+                file.createNewFile();
+                 fw = new FileWriter(file);
+                bw = new BufferedWriter(fw);
+        if("I don’t understand his weird behavior.".equalsIgnoreCase(answer1.getText().trim()))
+        {
+                    posttest_answer.append("1."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            posttest_answer.append("1."+correctAnswer+"I don’t understand his weird behavior."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+        if("He is brilliant isn’t he?".equalsIgnoreCase(answer2.getText().trim()))
+        {
+                    posttest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            posttest_answer.append("2."+correctAnswer+"He is brilliant isn’t he?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+        if("She hates apples doesn’t she?".equalsIgnoreCase(answer3.getText().trim()))
+        {
+                    posttest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            posttest_answer.append("3."+correctAnswer+"She hates apples doesn’t she?"+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+        if("India is known for unity in diversity.".equalsIgnoreCase(answer4.getText().trim()))
+        {
+                    posttest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            posttest_answer.append("4."+correctAnswer+"India is known for unity in diversity."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+        if("The jet which blasted mid-air belonged to Malaysian Airlines.".equalsIgnoreCase(answer5.getText().trim()))
+        {
+                    posttest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            posttest_answer.append("5."+correctAnswer+"The jet which blasted mid-air belonged to Malaysian Airlines."+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+        if("Which place would you be visiting this vacation?".equalsIgnoreCase(answer6.getText().trim()))
+        {
+                    posttest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            posttest_answer.append("6."+correctAnswer+"Which place would you be visiting this vacation?"+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+        posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+        bw.write(posttest_answer.toString());
+        bw.flush(); 
+        } catch (IOException ex) {
+            Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        super.dispose();
+        WritingTestMain.main(null);
         
     }
 
@@ -72,6 +143,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         answer6 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -133,6 +205,9 @@ public class PostTest_Writing extends javax.swing.JFrame {
 
         answer6.setName("answer6"); // NOI18N
 
+        jLabel4.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
+        jLabel4.setText("06 : 00");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -176,21 +251,26 @@ public class PostTest_Writing extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(answer6, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(314, 314, 314)
                         .addComponent(jLabel2))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(138, 138, 138)
                         .addComponent(jButton1)))
                 .addContainerGap(309, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(233, 233, 233)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(49, 49, 49))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -269,70 +349,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        String fileName = "PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
-        String correctAnswer="Correct Answer :";
-        String wrongAnswer="Wrong Answer :";
-        int marks_obtained=0;
-        int total=6;
-        StringBuilder posttest_answer=new StringBuilder();
-        FileWriter fw;
-        BufferedWriter bw;
-        File file=new File("C:\\Results\\Writing\\"+fileName);
-        if(!file.exists())
-        try {
-                file.createNewFile();
-                 fw = new FileWriter(file);
-                bw = new BufferedWriter(fw);
-        if("I don’t understand his weird behavior.".equalsIgnoreCase(answer1.getText().trim()))
-        {
-                    posttest_answer.append("1."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            posttest_answer.append("1."+correctAnswer+"I don’t understand his weird behavior."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
-        if("He is brilliant isn’t he?".equalsIgnoreCase(answer2.getText().trim()))
-        {
-                    posttest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            posttest_answer.append("2."+correctAnswer+"He is brilliant isn’t he?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
-        if("She hates apples doesn’t she?".equalsIgnoreCase(answer3.getText().trim()))
-        {
-                    posttest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            posttest_answer.append("3."+correctAnswer+"She hates apples doesn’t she?"+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
-        if("India is known for unity in diversity.".equalsIgnoreCase(answer4.getText().trim()))
-        {
-                    posttest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            posttest_answer.append("4."+correctAnswer+"India is known for unity in diversity."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
-        if("The jet which blasted mid-air belonged to Malaysian Airlines.".equalsIgnoreCase(answer5.getText().trim()))
-        {
-                    posttest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            posttest_answer.append("5."+correctAnswer+"The jet which blasted mid-air belonged to Malaysian Airlines."+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
-        if("Which place would you be visiting this vacation?".equalsIgnoreCase(answer6.getText().trim()))
-        {
-                    posttest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            posttest_answer.append("6."+correctAnswer+"Which place would you be visiting this vacation?"+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
-        posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
-        bw.write(posttest_answer.toString());
-        bw.flush(); 
-        } catch (IOException ex) {
-            Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        super.dispose();
-        WritingTestMain.main(null);
+       submitForm();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -388,6 +405,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;

@@ -7,6 +7,8 @@ package net.sine90.forms.questionforms;
 
 import com.sun.java.swing.plaf.windows.resources.windows;
 import java.awt.Component;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -17,6 +19,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JLabel;
+import javax.swing.Timer;
 import net.sine90.forms.WritingTestParameters;
 /**
  *
@@ -27,17 +30,86 @@ public class PreTest_Writing extends javax.swing.JFrame {
     /**
      * Creates new form PreTest_Writing
      */
+    Timer timer;
     public PreTest_Writing() {
         initComponents();
-//        Component[] components=jPanel2.getComponents();
-//      for(int i=0;i<components.length;i++)
-//      {
-//          //System.out.println(components[i].getName());
-//          if(components[i] instanceof JLabel && WritingTestParameters.pre_test_params.containsKey(components[i].getName()))
-//          {
-//            ((JLabel)components[i]).setText(WritingTestParameters.pre_test_params.get(components[i].getName()));
-//          }
-//      }
+        ActionListener taskPerformer = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                submitForm();
+            }
+        }; 
+        timer = new Timer(360000,taskPerformer);
+        timer.start();
+    }
+    private void submitForm()
+    {
+        timer.stop();
+        String fileName = "PreTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String correctAnswer="Correct Answer :";
+        String wrongAnswer="Wrong Answer :";
+        StringBuilder pretest_answer=new StringBuilder();
+        FileWriter fw;
+        int marks_obtained=0;
+        int total=6;
+        BufferedWriter bw;
+        File file=new File("C:\\Results\\Writing\\"+fileName);
+        if(!file.exists())
+        try {
+                file.createNewFile();
+                 fw = new FileWriter(file);
+                bw = new BufferedWriter(fw);
+        if("The bag which was stolen is mine.".equalsIgnoreCase(answer1.getText().trim()))
+        {
+                    pretest_answer.append("1."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            pretest_answer.append("1."+correctAnswer+"The bag which was stolen is mine."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+        if("When do you go to school?".equalsIgnoreCase(answer2.getText().trim()))
+        {
+                    pretest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            pretest_answer.append("2."+correctAnswer+"When do you go to school?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+        if("The old woman despite her age walked very quickly.".equalsIgnoreCase(answer3.getText().trim()))
+        {
+                    pretest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            pretest_answer.append("3."+correctAnswer+"The old woman despite her age walked very quickly."+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+        if("I haven’t completed my Social Studies Project.".equalsIgnoreCase(answer4.getText().trim()))
+        {
+                    pretest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            pretest_answer.append("4."+correctAnswer+"I haven’t completed my Social Studies Project."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+        if("Dad didn’t pack the lunch box did he?".equalsIgnoreCase(answer5.getText().trim()))
+        {
+                    pretest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            pretest_answer.append("5."+correctAnswer+"Dad didn’t pack the lunch box did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+        if("Children are fascinated by advancements in technology.".equalsIgnoreCase(answer6.getText().trim()))
+        {
+                    pretest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+                     marks_obtained++;
+        }
+        else
+            pretest_answer.append("6."+correctAnswer+"Children are fascinated by advancements in technology."+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+         pretest_answer.append("Score for this test : "+marks_obtained+" / "+total);
+        bw.write(pretest_answer.toString());
+        bw.flush(); 
+        } catch (IOException ex) {
+            Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        super.dispose();
+        WritingTestMain.main(null);
+
     }
 
     /**
@@ -73,6 +145,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
         quest6 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         answer6 = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -146,6 +219,9 @@ public class PreTest_Writing extends javax.swing.JFrame {
 
         answer6.setName("answer6"); // NOI18N
 
+        jLabel4.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
+        jLabel4.setText("06 : 00");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -189,21 +265,26 @@ public class PreTest_Writing extends javax.swing.JFrame {
                                         .addComponent(jLabel3)
                                         .addComponent(answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addComponent(jLabel1))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(314, 314, 314)
                         .addComponent(jLabel2))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(138, 138, 138)
                         .addComponent(jButton1)))
                 .addContainerGap(253, Short.MAX_VALUE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(233, 233, 233)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4)
+                .addGap(128, 128, 128))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(jLabel1)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -279,70 +360,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        String fileName = "PreTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
-        String correctAnswer="Correct Answer :";
-        String wrongAnswer="Wrong Answer :";
-        StringBuilder pretest_answer=new StringBuilder();
-        FileWriter fw;
-        int marks_obtained=0;
-        int total=6;
-        BufferedWriter bw;
-        File file=new File("C:\\Results\\Writing\\"+fileName);
-        if(!file.exists())
-        try {
-                file.createNewFile();
-                 fw = new FileWriter(file);
-                bw = new BufferedWriter(fw);
-        if("The bag which was stolen is mine.".equalsIgnoreCase(answer1.getText().trim()))
-        {
-                    pretest_answer.append("1."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            pretest_answer.append("1."+correctAnswer+"The bag which was stolen is mine."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
-        if("When do you go to school?".equalsIgnoreCase(answer2.getText().trim()))
-        {
-                    pretest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            pretest_answer.append("2."+correctAnswer+"When do you go to school?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
-        if("The old woman despite her age walked very quickly.".equalsIgnoreCase(answer3.getText().trim()))
-        {
-                    pretest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            pretest_answer.append("3."+correctAnswer+"The old woman despite her age walked very quickly."+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
-        if("I haven’t completed my Social Studies Project.".equalsIgnoreCase(answer4.getText().trim()))
-        {
-                    pretest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            pretest_answer.append("4."+correctAnswer+"I haven’t completed my Social Studies Project."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
-        if("Dad didn’t pack the lunch box did he?".equalsIgnoreCase(answer5.getText().trim()))
-        {
-                    pretest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            pretest_answer.append("5."+correctAnswer+"Dad didn’t pack the lunch box did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
-        if("Children are fascinated by advancements in technology.".equalsIgnoreCase(answer6.getText().trim()))
-        {
-                    pretest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
-                     marks_obtained++;
-        }
-        else
-            pretest_answer.append("6."+correctAnswer+"Children are fascinated by advancements in technology."+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
-         pretest_answer.append("Score for this test : "+marks_obtained+" / "+total);
-        bw.write(pretest_answer.toString());
-        bw.flush(); 
-        } catch (IOException ex) {
-            Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        super.dispose();
-        WritingTestMain.main(null);
+        submitForm();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -398,6 +416,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel quest1;
     private javax.swing.JLabel quest2;

@@ -5,6 +5,8 @@
  */
 package net.sine90.forms.questionforms;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -13,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 
 /**
@@ -21,10 +24,11 @@ import net.sine90.forms.ListeningTestParameters;
  */
 public class PreTest_Listening extends javax.swing.JFrame {
 
-    public static int pretest_listening_marks_obtained=0;
+    public static int marks_obtained=0;
     /**
      * Creates new form PreTest_Listening
      */
+    Timer timer;
     public PreTest_Listening() {
         initComponents();
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -40,6 +44,105 @@ public class PreTest_Listening extends javax.swing.JFrame {
                 "Column 1", "Column 2", "Column 3"
             }
         ));
+        ActionListener taskPerformer = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                submitForm();
+            }
+        }; 
+        timer = new Timer(300000,taskPerformer);
+        timer.start();
+    }
+    private void submitForm()
+    {
+        timer.stop();
+        String fileName = ListeningTestParameters.student_name+"PreTest_Blanks"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String correctAnswer="Correct Answer :";
+        String wrongAnswer="Wrong Answer :";
+        StringBuilder pretest_answer=new StringBuilder();
+        int marks_obtained=0;
+        int total=8;
+        BufferedWriter bw;
+        FileWriter fw;
+        File file=new File("C:\\Results\\Listening\\"+fileName);
+        if(!file.exists())
+            try {
+                file.createNewFile();
+                fw = new FileWriter(file);
+                bw = new BufferedWriter(fw);
+        if("Peacefully".equalsIgnoreCase(jTextField2.getText().trim()))
+        {
+            pretest_answer.append("1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("1."+correctAnswer+"Peacefully"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+        if("Inseparable".equalsIgnoreCase(jTextField3.getText().trim()))
+        {
+            pretest_answer.append("2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("2."+correctAnswer+"Inseparable"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+        if("Frightened".equalsIgnoreCase(jTextField4.getText().trim()))
+        {
+            pretest_answer.append("3."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("3."+correctAnswer+"Frightened"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+        if("well".equalsIgnoreCase(jTextField5.getText().trim()))
+        {
+            pretest_answer.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("4."+correctAnswer+"well"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+        if("Amazing".equalsIgnoreCase(jTextField6.getText().trim()))
+        {
+            pretest_answer.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("5."+correctAnswer+"Amazing"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+       if(jTextField7.getText().trim().toLowerCase().contains("in")&&jTextField8.getText().trim().toLowerCase().contains("up"))
+        {
+            pretest_answer.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("6."+correctAnswer+"in / up"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+" /"+jTextField8.getText().trim()+System.getProperty("line.separator"));
+        if("Had".equalsIgnoreCase(jTextField9.getText().trim()))
+        {
+            pretest_answer.append("7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("7."+correctAnswer+"Had"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+        if("A".equalsIgnoreCase(jTextField10.getText().trim()))
+        {
+            pretest_answer.append("8."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("8."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+        if("Fear".equalsIgnoreCase(jTextField11.getText().trim()))
+        {
+            pretest_answer.append("9."+correctAnswer+jTextField11.getText().trim()+System.getProperty("line.separator"));
+             marks_obtained++;
+        }
+        else
+            pretest_answer.append("9."+correctAnswer+"Fear"+System.getProperty("line.separator")+wrongAnswer+jTextField11.getText().trim()+System.getProperty("line.separator"));
+        pretest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+        bw.write(pretest_answer.toString());
+        bw.flush();
+        fw.close();
+        bw.close();
+        } catch (IOException ex) {
+            Logger.getLogger(PreTest_Listening.class.getName()).log(Level.SEVERE, null, ex);
+        }    
+        super.dispose();
+        PreTest_Listening1.main(null);
     }
 
     /**
@@ -83,21 +186,8 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jTextField11 = new javax.swing.JTextField();
         jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jLabel27 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -174,23 +264,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
 
         jLabel19.setText("Fill in the Blanks with suitable words given below:");
 
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
-        jLabel20.setText("Place them in the Right Order:");
-
-        jLabel21.setText("1. One day, the deer went in search of water and did not return. ");
-        jLabel21.setVerifyInputWhenFocusTarget(false);
-
-        jLabel22.setText("2. Once upon a time, there lived four friends in a forest.");
-        jLabel22.setToolTipText("");
-
-        jLabel23.setText("3. In the end, the hunter flees the forest.");
-
-        jLabel24.setText("4. At last, the deer is found in a clearing with its foot caught in the net.");
-
-        jLabel25.setText("5. They would usually meet during the evenings to discuss the events of the day.");
-
-        jLabel26.setText("6. When they come to know what had happened, they go in search of the deer. ");
-
         jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -198,32 +271,76 @@ public class PreTest_Listening extends javax.swing.JFrame {
             }
         });
 
-        jTextField12.setToolTipText("");
-
-        jTextField13.setToolTipText("");
-
-        jTextField14.setToolTipText("");
-
-        jTextField15.setToolTipText("");
-
-        jTextField16.setToolTipText("");
-
-        jTextField17.setToolTipText("");
-
-        jLabel27.setText("Note: Enter the option number in box");
+        jLabel20.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
+        jLabel20.setText("05 : 00");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(61, 61, 61)
+                .addGap(28, 28, 28)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel19))
+                    .addComponent(jLabel19)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel9))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel12)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel13)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel10))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel15))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel17))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel18)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(161, 161, 161))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(349, 349, 349)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
@@ -233,101 +350,16 @@ public class PreTest_Listening extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(42, 42, 42)
                         .addComponent(jLabel4)))
-                .addGap(353, 353, 353))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(52, 52, 52)
-                                .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel9))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel12)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel13)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel10))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel14)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel15))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel16)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jLabel17))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel18)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel25)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel21)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField12))
-                                    .addComponent(jLabel24, javax.swing.GroupLayout.Alignment.LEADING))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel20)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(254, 254, 254)
-                                .addComponent(jLabel27)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addGap(55, 55, 55))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addGap(106, 106, 106))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -382,46 +414,16 @@ public class PreTest_Listening extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel27))
-                .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel21)
-                    .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel22)
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25)
-                    .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel26)
-                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1)
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 887, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 784, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -433,89 +435,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         
-        String fileName = ListeningTestParameters.student_name+"PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
-        String correctAnswer="Correct Answer :";
-        String wrongAnswer="Wrong Answer :";
-        StringBuilder pretest_answe=new StringBuilder();
-        BufferedWriter bw;
-        FileWriter fw;
-        File file=new File("C:\\Results\\Listening\\"+fileName);
-        if(!file.exists())
-            try {
-                file.createNewFile();
-                fw = new FileWriter(file);
-                bw = new BufferedWriter(fw);
-        if("Peacefully".equalsIgnoreCase(jTextField2.getText().trim()))
-        {
-            pretest_answe.append("1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("1."+correctAnswer+"Peacefully"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
-        if("Inseparable".equalsIgnoreCase(jTextField3.getText().trim()))
-        {
-            pretest_answe.append("2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("2."+correctAnswer+"Inseparable"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
-        if("Frightened".equalsIgnoreCase(jTextField4.getText().trim()))
-        {
-            pretest_answe.append("3."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("3."+correctAnswer+"Frightened"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
-        if("well".equalsIgnoreCase(jTextField5.getText().trim()))
-        {
-            pretest_answe.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("4."+correctAnswer+"well"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
-        if("Amazing".equalsIgnoreCase(jTextField6.getText().trim()))
-        {
-            pretest_answe.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("5."+correctAnswer+"Amazing"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
-       if(jTextField7.getText().trim().toLowerCase().contains("in")||jTextField7.getText().trim().toLowerCase().contains("up"))
-        {
-            pretest_answe.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("6."+correctAnswer+"in / up"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
-        if("Had".equalsIgnoreCase(jTextField8.getText().trim()))
-        {
-            pretest_answe.append("7."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("7."+correctAnswer+"Had"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
-        if("A".equalsIgnoreCase(jTextField9.getText().trim()))
-        {
-            pretest_answe.append("8."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("8."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
-        if("Fear".equalsIgnoreCase(jTextField10.getText().trim()))
-        {
-            pretest_answe.append("9."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
-             pretest_listening_marks_obtained++;
-        }
-        else
-            pretest_answe.append("9."+correctAnswer+"Fear"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
-        
-        bw.write(pretest_answe.toString());
-        bw.flush();
-        } catch (IOException ex) {
-            Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
-        }    
-        super.dispose();
-        PreTest2_Listening.main(null);
+        submitForm();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -568,13 +488,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -587,12 +500,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;

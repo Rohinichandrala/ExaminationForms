@@ -1,0 +1,21 @@
+1.Correct Answer :about
+Wrong Answer :1
+2.Correct Answer :was
+Wrong Answer :2
+3.Correct Answer :As/when 
+Wrong Answer :3
+4.Correct Answer :tell
+Wrong Answer :4
+5.Correct Answer :well
+Wrong Answer :5
+6.Correct Answer :dishonest
+Wrong Answer :6
+7.Correct Answer :I 
+Wrong Answer :7
+8.Correct Answer :heart
+Wrong Answer :8
+9.Correct Answer :would
+Wrong Answer :9
+10.Correct Answer :A
+Wrong Answer :10
+Score for this test : 0 / 10
