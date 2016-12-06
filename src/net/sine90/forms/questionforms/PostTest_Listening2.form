@@ -283,7 +283,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="1. When somebody tells us to follow your dreams, what does it mean? (Generic) "/>
+            <Property name="text" type="java.lang.String" value="1. When somebody tells us to follow your dreams, what does it mean?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton1">
@@ -308,7 +308,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="4. By comparing the &#x201c;journey of life&#x201d; with &#x201c;steps&#x201d;, the author decodes life as something&#x2026;&#x2026;(critical)"/>
+            <Property name="text" type="java.lang.String" value="4. By comparing the &#x201c;journey of life&#x201d; with &#x201c;steps&#x201d;, the author decodes life as something"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton5">
@@ -333,7 +333,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
-            <Property name="text" type="java.lang.String" value="3. The five ways given by the speaker for achieving one&#x2019;s dreams will help&#x2026;. (Beyond)  (  )"/>
+            <Property name="text" type="java.lang.String" value="3. The five ways given by the speaker for achieving one&#x2019;s dreams will help"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton9">
@@ -358,7 +358,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
-            <Property name="text" type="java.lang.String" value="2. According to the speaker, no one else has the _______answer for your life except you&#x2026;(Specific)"/>
+            <Property name="text" type="java.lang.String" value="2. According to the speaker, no one else has the _______answer for your life except you"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton13">
@@ -386,7 +386,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel11">
           <Properties>
-            <Property name="text" type="java.lang.String" value="5. The speaker provides all of the following &#x201c;tips to kill their dreams&#x201d; except  (Negative facts) "/>
+            <Property name="text" type="java.lang.String" value="5. The speaker provides all of the following &#x201c;tips to kill their dreams&#x201d; except"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton17">
@@ -411,7 +411,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel12">
           <Properties>
-            <Property name="text" type="java.lang.String" value="6. What is the synonym of the word humble in &#x201c;I come from a humble family&#x201d;? (lexical)"/>
+            <Property name="text" type="java.lang.String" value="6. What is the synonym of the word humble in &#x201c;I come from a humble family&#x201d;? "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton21">
@@ -436,7 +436,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel13">
           <Properties>
-            <Property name="text" type="java.lang.String" value="7. From the sentence &#x201c;There&#x2019;s no time to settle down&#x201d;, what does one infer from this line? (Inferential)"/>
+            <Property name="text" type="java.lang.String" value="7. From the sentence &#x201c;There&#x2019;s no time to settle down&#x201d;, what does one infer from this line?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton25">
@@ -461,7 +461,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel14">
           <Properties>
-            <Property name="text" type="java.lang.String" value="8. Be (responsible) for your dreams. The word in braces belongs to which part of speech? (grammar)"/>
+            <Property name="text" type="java.lang.String" value="8. Be (responsible) for your dreams. The word in braces belongs to which part of speech?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton29">

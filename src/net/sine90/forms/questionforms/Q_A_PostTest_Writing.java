@@ -21,15 +21,6 @@ public class Q_A_PostTest_Writing extends javax.swing.JFrame {
      */
     public Q_A_PostTest_Writing() {
         initComponents();
-        Component[] components=jPanel1.getComponents();
-      for(int i=0;i<components.length;i++)
-      {
-          System.out.println(components[i].getName());
-          if(components[i] instanceof JButton && WritingTestParameters.qa_post_test_params.containsKey(components[i].getName()))
-          {
-            ((JButton)components[i]).setText(WritingTestParameters.qa_post_test_params.get(components[i].getName()));
-          }
-      }
     }
 
     /**

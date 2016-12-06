@@ -10,6 +10,8 @@ package net.sine90.forms;
  * @author rohini
  */
 public class ReadingTestParameters {
+     public static int total_marks_reading=30;
+    public static int marks_obtained_reading=0;
     
     public static String pre_test="One day, an old millionaire entered a richly luxurious restaurant to ___1___ a meal.\n"+"The staff of the restaurant sighed when ___2___ saw him. They knew he was a man who wanted the best but was only willing to pay the least.\n" +
 "A menu was placed in Mr. Praveen’s hands, and the waiter waited ___3___ as the millionaire kept changing his ___4___.\n"+"Finally, he decided to order a bowl ___5___ oxtail soup.\n"+"Relieved the waiter ___6___ the order and promptly disappeared before Mr. Praveen changed his mind again.\n" +

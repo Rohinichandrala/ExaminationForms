@@ -5,6 +5,17 @@
  */
 package net.sine90.forms.questionforms;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import net.sine90.forms.ListeningTestParameters;
+import net.sine90.forms.ReadingTestParameters;
+
 /**
  *
  * @author rohini
@@ -147,6 +158,23 @@ public class ReadingTestMain extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        String fileName = ListeningTestParameters.student_name+"_ScoreCard";
+        FileWriter fw;
+        BufferedWriter bw;
+        File file=new File("C:\\Results\\"+fileName);
+        try{
+        if(!file.exists())
+                file.createNewFile();           
+                 fw = new FileWriter(file);
+                bw = new BufferedWriter(fw);
+                String result="Total Score in Reading : "+ReadingTestParameters.marks_obtained_reading+"/ "+ReadingTestParameters.total_marks_reading;        bw.append(result.toString());
+        bw.flush(); 
+         bw.flush();
+        fw.close();
+        }catch (IOException ex) {
+            Logger.getLogger(ReadingTestMain.class.getName()).log(Level.SEVERE, null, ex);
+        
+        }
         super.dispose();
         SelectionForm.main(null);
     }//GEN-LAST:event_jButton4ActionPerformed

@@ -126,6 +126,7 @@ public class PostTest_Listening extends javax.swing.JFrame {
             posttest_answer.append("8."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         bw.write(posttest_answer.toString());
+        ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.flush();
         fw.close();
         bw.close();

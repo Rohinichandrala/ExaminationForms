@@ -135,6 +135,7 @@ public class PreTest_Reading extends javax.swing.JFrame {
         else
             pretest_answer.append("10."+correctAnswer+"Bandaged/broken"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         
+        ReadingTestParameters.marks_obtained_reading+=marks_obtained;
         pretest_answer.append("Score for this test : "+marks_obtained+" / "+total);
         bw.write(pretest_answer.toString());
         bw.flush();

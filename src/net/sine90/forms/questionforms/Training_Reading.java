@@ -17,6 +17,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
 import javax.swing.Timer;
+import net.sine90.forms.ListeningTestParameters;
 import net.sine90.forms.ReadingTestParameters;
 
 /**
@@ -44,7 +45,7 @@ public class Training_Reading extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = "TrainingTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"TrainingTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         int marks_obtained=0;
@@ -129,10 +130,12 @@ public class Training_Reading extends javax.swing.JFrame {
         }
         else
             training_answer.append("10."+correctAnswer+"Would"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
-        
+        ReadingTestParameters.marks_obtained_reading+=marks_obtained;
         training_answer.append("Score for this test : "+marks_obtained+" / "+total);
         bw.write(training_answer.toString());
         bw.flush(); 
+         bw.flush();
+        fw.close();
         } catch (IOException ex) {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }

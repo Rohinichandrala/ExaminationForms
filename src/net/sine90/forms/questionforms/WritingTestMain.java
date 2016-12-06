@@ -5,6 +5,16 @@
  */
 package net.sine90.forms.questionforms;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import net.sine90.forms.ListeningTestParameters;
+import net.sine90.forms.ReadingTestParameters;
+import net.sine90.forms.WritingTestParameters;
+
 /**
  *
  * @author rohini
@@ -57,7 +67,7 @@ public class WritingTestMain extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 16)); // NOI18N
         jLabel2.setText("Please select a category to start the Test");
 
-        jButton3.setText("Q & A");
+        jButton3.setText("Training");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -130,6 +140,24 @@ public class WritingTestMain extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    String fileName = ListeningTestParameters.student_name+"_ScoreCard";
+        FileWriter fw;
+        BufferedWriter bw;
+        File file=new File("C:\\Results\\"+fileName);
+        try{
+        if(!file.exists())
+                file.createNewFile();           
+                 fw = new FileWriter(file);
+                bw = new BufferedWriter(fw);
+                String result="Total Score in Writing : "+WritingTestParameters.marks_obtained_writing+"/ "+WritingTestParameters.total_marks_writing;
+       bw.append(result.toString());
+        bw.flush();
+        fw.close();
+        bw.close();
+        }catch (IOException ex) {
+            Logger.getLogger(ReadingTestMain.class.getName()).log(Level.SEVERE, null, ex);
+        
+        }
         super.dispose();
         SelectionForm.main(null);
        
@@ -147,7 +175,7 @@ public class WritingTestMain extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         super.dispose();
-        Q_A_MainScreen.main(null);
+        WritingTestMain.main(null);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

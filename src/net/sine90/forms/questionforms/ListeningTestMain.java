@@ -5,6 +5,15 @@
  */
 package net.sine90.forms.questionforms;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import net.sine90.forms.ListeningTestParameters;
+import net.sine90.forms.ReadingTestParameters;
+
 /**
  *
  * @author rohini
@@ -160,6 +169,24 @@ public class ListeningTestMain extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        String fileName = ListeningTestParameters.student_name+"_ScoreCard";
+        FileWriter fw;
+        BufferedWriter bw;
+        File file=new File("C:\\Results\\"+fileName);
+        try{
+        if(!file.exists())
+                file.createNewFile();           
+                 fw = new FileWriter(file);
+                bw = new BufferedWriter(fw);
+                String result="Total Score in Listening : "+ListeningTestParameters.marks_obtained_listening+"/ "+ListeningTestParameters.total_marks_listening;
+       bw.append(result.toString());
+        bw.flush();
+        fw.close();
+        bw.close();
+        }catch (IOException ex) {
+            Logger.getLogger(ReadingTestMain.class.getName()).log(Level.SEVERE, null, ex);
+        
+        }
         super.dispose();
         Training1_Listening.main(null);
     }//GEN-LAST:event_jButton4ActionPerformed

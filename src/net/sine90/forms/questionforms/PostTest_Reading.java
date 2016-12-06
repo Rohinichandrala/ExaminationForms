@@ -47,7 +47,7 @@ public class PostTest_Reading extends javax.swing.JFrame {
 
     private void submitForm() {
         timer.stop();
-        String fileName = ListeningTestParameters.student_name+"PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"PostTest_passage"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         int marks_obtained=0;
@@ -132,6 +132,8 @@ public class PostTest_Reading extends javax.swing.JFrame {
         }
         else
             posttest_answer.append("10."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+        
+        ReadingTestParameters.marks_obtained_reading+=marks_obtained;
         posttest_answer.append("Score for this test : "+marks_obtained+" / " +total);
         bw.write(posttest_answer.toString());
         bw.flush();

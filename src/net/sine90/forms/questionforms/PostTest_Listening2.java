@@ -114,6 +114,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
             posttest_answer.append("8."+correctAnswer+jRadioButton30.getText().trim()+System.getProperty("line.separator"));
         
         posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+        ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(posttest_answer.toString());
         bw.flush();
         fw.close();
@@ -184,7 +185,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
         jLabel5.setText("Choose the right answer :");
 
-        jLabel6.setText("1. When somebody tells us to follow your dreams, what does it mean? (Generic) ");
+        jLabel6.setText("1. When somebody tells us to follow your dreams, what does it mean?");
 
         jRadioButton1.setText("Follow nightmares and hallucinations");
 
@@ -194,7 +195,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
 
         jRadioButton4.setText("Follow fancy imaginations ");
 
-        jLabel7.setText("4. By comparing the “journey of life” with “steps”, the author decodes life as something……(critical)");
+        jLabel7.setText("4. By comparing the “journey of life” with “steps”, the author decodes life as something");
 
         jRadioButton5.setText("Filled with only impossible steps");
 
@@ -204,7 +205,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
 
         jRadioButton8.setText("None of the above  ");
 
-        jLabel8.setText("3. The five ways given by the speaker for achieving one’s dreams will help…. (Beyond)  (  )");
+        jLabel8.setText("3. The five ways given by the speaker for achieving one’s dreams will help");
 
         jRadioButton9.setText("Only students");
 
@@ -214,7 +215,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
 
         jRadioButton12.setText("No body ");
 
-        jLabel10.setText("2. According to the speaker, no one else has the _______answer for your life except you…(Specific)");
+        jLabel10.setText("2. According to the speaker, no one else has the _______answer for your life except you");
 
         jRadioButton13.setText("Perfect");
 
@@ -229,7 +230,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
 
         jRadioButton16.setText("Right");
 
-        jLabel11.setText("5. The speaker provides all of the following “tips to kill their dreams” except  (Negative facts) ");
+        jLabel11.setText("5. The speaker provides all of the following “tips to kill their dreams” except");
 
         jRadioButton17.setText("Believe someone else has the answer for you");
 
@@ -239,7 +240,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
 
         jRadioButton20.setText("Believe in settling down on attaining growth");
 
-        jLabel12.setText("6. What is the synonym of the word humble in “I come from a humble family”? (lexical)");
+        jLabel12.setText("6. What is the synonym of the word humble in “I come from a humble family”? ");
 
         jRadioButton21.setText("Grand");
 
@@ -249,7 +250,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
 
         jRadioButton24.setText("Modest");
 
-        jLabel13.setText("7. From the sentence “There’s no time to settle down”, what does one infer from this line? (Inferential)");
+        jLabel13.setText("7. From the sentence “There’s no time to settle down”, what does one infer from this line?");
 
         jRadioButton25.setText("That there is so much to accomplish");
 
@@ -259,7 +260,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
 
         jRadioButton28.setText("Could not settle down due to paucity of time");
 
-        jLabel14.setText("8. Be (responsible) for your dreams. The word in braces belongs to which part of speech? (grammar)");
+        jLabel14.setText("8. Be (responsible) for your dreams. The word in braces belongs to which part of speech?");
 
         jRadioButton29.setText("Noun");
 

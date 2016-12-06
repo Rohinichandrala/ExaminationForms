@@ -102,13 +102,14 @@ public class PreTest_Writing extends javax.swing.JFrame {
         else
             pretest_answer.append("6."+correctAnswer+"Children are fascinated by advancements in technology."+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
          pretest_answer.append("Score for this test : "+marks_obtained+" / "+total);
+         WritingTestParameters.marks_obtained_writing+=marks_obtained;
         bw.write(pretest_answer.toString());
         bw.flush(); 
         } catch (IOException ex) {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
         super.dispose();
-        WritingTestMain.main(null);
+        Q_A_PreTest_Writing.main(null);
 
     }
 
@@ -203,7 +204,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
 
         answer5.setName("answer5"); // NOI18N
 
-        jButton1.setText("Submit Answers");
+        jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -266,10 +267,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
                                         .addComponent(answer1, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(314, 314, 314)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(138, 138, 138)
-                        .addComponent(jButton1)))
+                        .addComponent(jLabel2)))
                 .addContainerGap(253, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(233, 233, 233)
@@ -277,6 +275,10 @@ public class PreTest_Writing extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(128, 128, 128))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(149, 149, 149))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -325,9 +327,9 @@ public class PreTest_Writing extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(answer6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(27, 27, 27))
+                .addGap(37, 37, 37))
         );
 
         quest1.getAccessibleContext().setAccessibleName("");

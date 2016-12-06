@@ -5,7 +5,6 @@
  */
 package net.sine90.forms.questionforms;
 
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
@@ -16,8 +15,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JLabel;
 import javax.swing.Timer;
+import net.sine90.forms.ListeningTestParameters;
 import net.sine90.forms.WritingTestParameters;
 
 /**
@@ -44,7 +43,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-         String fileName = "PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+         String fileName = ListeningTestParameters.student_name+"PostTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         int marks_obtained=0;
@@ -100,6 +99,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
         }
         else
             posttest_answer.append("6."+correctAnswer+"Which place would you be visiting this vacation?"+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+       WritingTestParameters.marks_obtained_writing+=marks_obtained;
         posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         bw.write(posttest_answer.toString());
         bw.flush(); 
@@ -156,53 +156,71 @@ public class PostTest_Writing extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Put the words in order to make a meaningful sentence.");
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel5.setText("Understand/ I / weird/ don’t / . /behavior / his/");
         jLabel5.setName("quest1"); // NOI18N
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel6.setText("Isn’t / he / brilliant / he / is /? /");
         jLabel6.setName("quest2"); // NOI18N
 
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel7.setText("Hates/ ? / doesn’t / she / apples / she/");
         jLabel7.setName("quest3"); // NOI18N
 
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel8.setText("Diversity / India / known/ for / is / . /unity/ in/");
         jLabel8.setName("quest4"); // NOI18N
 
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel9.setText("/ ./ Malaysian Airlines/ blasted/ the / belonged / mid-air/ to / which / jet /");
         jLabel9.setName("quest5"); // NOI18N
 
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel10.setText("Correct Answer");
 
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel11.setText("Correct Answer");
 
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel12.setText("Correct Answer");
 
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel13.setText("Correct Answer");
 
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel14.setText("Correct Answer");
 
+        answer1.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         answer1.setName("answer1"); // NOI18N
 
+        answer2.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         answer2.setName(""); // NOI18N
 
+        answer3.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         answer3.setName("answer3"); // NOI18N
 
+        answer4.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         answer4.setName("answer4"); // NOI18N
 
+        answer5.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         answer5.setName("answer5"); // NOI18N
 
-        jButton1.setText("Submit Answers");
+        jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel15.setText("Place / ? / you / would / vacation / this / which / visiting / be /");
         jLabel15.setName("quest6"); // NOI18N
 
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel16.setText("Correct Answer");
 
+        answer6.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         answer6.setName("answer6"); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
@@ -252,17 +270,18 @@ public class PostTest_Writing extends javax.swing.JFrame {
                                     .addComponent(answer6, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGap(314, 314, 314)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(138, 138, 138)
-                        .addComponent(jButton1)))
-                .addContainerGap(309, Short.MAX_VALUE))
+                        .addComponent(jLabel2)))
+                .addContainerGap(301, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(233, 233, 233)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel4)
                 .addGap(49, 49, 49))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(230, 230, 230))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -311,9 +330,9 @@ public class PostTest_Writing extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(answer6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(27, 27, 27))
+                .addGap(34, 34, 34))
         );
 
         jLabel5.getAccessibleContext().setAccessibleName("quest1");

@@ -57,7 +57,7 @@ public class Q_A_Writing_Generic extends javax.swing.JFrame {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
         super.dispose();
-        Q_A_MainScreen.main(null);
+        WritingTestMain.main(null);
     }
 
     /** This method is called from within the constructor to

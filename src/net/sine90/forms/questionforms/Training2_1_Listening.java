@@ -99,6 +99,7 @@ public class Training2_1_Listening extends javax.swing.JFrame {
                 else
                 training1_answer.append("6."+correctAnswer+"4"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
                 training1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+                ListeningTestParameters.marks_obtained_listening+=marks_obtained;
                 bw.write(training1_answer.toString());
                 bw.flush();
                 fw.close();

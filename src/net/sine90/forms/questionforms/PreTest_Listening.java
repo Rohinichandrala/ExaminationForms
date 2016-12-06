@@ -134,6 +134,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         else
             pretest_answer.append("9."+correctAnswer+"Fear"+System.getProperty("line.separator")+wrongAnswer+jTextField11.getText().trim()+System.getProperty("line.separator"));
         pretest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+        ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(pretest_answer.toString());
         bw.flush();
         fw.close();

@@ -114,6 +114,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
             pretest_answer.append("8."+correctAnswer+jRadioButton30.getText().trim()+System.getProperty("line.separator"));
         
         pretest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+        ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(pretest_answer.toString());
         bw.flush();
         fw.close();

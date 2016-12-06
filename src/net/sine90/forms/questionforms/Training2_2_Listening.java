@@ -114,6 +114,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
             training2_answer.append("8."+correctAnswer+jRadioButton32.getText().trim()+System.getProperty("line.separator"));
         
         training2_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+        ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(training2_answer.toString());
         bw.flush();
         fw.close();

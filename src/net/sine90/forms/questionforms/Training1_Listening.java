@@ -126,6 +126,7 @@ public class Training1_Listening extends javax.swing.JFrame {
         else
             training1_answer.append("8."+correctAnswer+"Are"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         training1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
+        ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(training1_answer.toString());
         bw.flush();
         fw.close();
