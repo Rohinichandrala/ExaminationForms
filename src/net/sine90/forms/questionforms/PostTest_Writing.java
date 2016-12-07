@@ -106,8 +106,8 @@ public class PostTest_Writing extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
-        super.dispose();
-        WritingTestMain.main(null);
+         super.dispose();
+       PostTest_Writing1.main(null);
         
     }
 
@@ -367,8 +367,8 @@ public class PostTest_Writing extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        
        submitForm();
+      
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

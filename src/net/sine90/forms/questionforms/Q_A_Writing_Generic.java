@@ -24,6 +24,7 @@ import javax.swing.Timer;
  */
 public class Q_A_Writing_Generic extends javax.swing.JFrame {
 
+    public static String screen= "";
     /** Creates new form Q_A_Writing_Generic */
     Timer timer;
     public Q_A_Writing_Generic(String name) {
@@ -57,7 +58,13 @@ public class Q_A_Writing_Generic extends javax.swing.JFrame {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
         super.dispose();
-        WritingTestMain.main(null);
+        if(screen.equalsIgnoreCase("pre"))
+            Q_A_PreTest_Writing.main(null);
+        else if(screen.equalsIgnoreCase("post"))
+            Q_A_PostTest_Writing.main(null);
+        else
+            WritingTestMain.main(null);
+        
     }
 
     /** This method is called from within the constructor to
@@ -193,6 +200,7 @@ public class Q_A_Writing_Generic extends javax.swing.JFrame {
 
         /* Create and display the form */
         final String name=args[0];
+        screen=args[1];
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 //System.out.println(name);

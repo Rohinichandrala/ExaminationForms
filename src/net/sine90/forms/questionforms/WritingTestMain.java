@@ -175,7 +175,7 @@ public class WritingTestMain extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         super.dispose();
-        WritingTestMain.main(null);
+        Training_Writing.main(null);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
