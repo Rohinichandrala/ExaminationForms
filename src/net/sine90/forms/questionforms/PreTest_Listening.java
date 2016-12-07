@@ -189,19 +189,24 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel1.setText("Listening Skill");
 
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel2.setText("Pre-Test");
 
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Topic- The Four Friends");
 
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel4.setText("Exercises");
 
-        jTable1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTable1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -215,56 +220,82 @@ public class PreTest_Listening extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel5.setText("1. There was a forest in which all animals and birds lived together");
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel6.setText("2. The forest was home to four");
 
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel7.setText("3. But one day, the deer became very");
 
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel8.setText("4. Present participle of the word “Amaze” is");
 
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel9.setText("of doves got trapped in a hunter’s net.");
 
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel10.setText("the sky. ");
 
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel11.setText("5. A");
 
+        jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField2.setToolTipText("");
 
+        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField3.setToolTipText("");
 
+        jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField4.setToolTipText("");
 
+        jTextField5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField5.setToolTipText("");
 
+        jTextField6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField6.setToolTipText("");
 
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel12.setText("6. The doves picked ");
 
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("the net and flew");
 
+        jTextField7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField7.setToolTipText("");
 
+        jTextField8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField8.setToolTipText("");
 
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel14.setText("7. The Crow tells them the story of how the mouse");
 
+        jTextField9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField9.setToolTipText("");
 
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel15.setText(" freed the doves.");
 
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel16.setText("8. The crow finds the deer in");
 
+        jTextField10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField10.setToolTipText("");
 
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel17.setText("clearing with its foot caught in the net.");
 
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel18.setText("9.The synonym of the word fright is");
 
+        jTextField11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField11.setToolTipText("");
 
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel19.setText("Fill in the Blanks with suitable words given below:");
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -274,6 +305,12 @@ public class PreTest_Listening extends javax.swing.JFrame {
 
         jLabel20.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
         jLabel20.setText("05 : 00");
+
+        jLabel28.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel28.setText("Answers are auto submited");
+
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel21.setText("Time :");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -352,17 +389,29 @@ public class PreTest_Listening extends javax.swing.JFrame {
                         .addGap(42, 42, 42)
                         .addComponent(jLabel4)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel20)
-                .addGap(106, 106, 106))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel20)
+                        .addGap(38, 38, 38))
+                    .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(87, 87, 87))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel20))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel20))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel28)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -489,6 +538,8 @@ public class PreTest_Listening extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

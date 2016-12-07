@@ -132,16 +132,21 @@ public class Training2_3_Listening extends javax.swing.JFrame {
         jRadioButton42 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
         jLabel1.setText("Select True or False");
 
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel2.setText("Abdul Kalam and his friends rested on the banks of their village sea.  (content)");
 
+        jRadioButton33.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton33.setText("True");
 
+        jRadioButton34.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton34.setText("False");
         jRadioButton34.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -149,6 +154,7 @@ public class Training2_3_Listening extends javax.swing.JFrame {
             }
         });
 
+        jRadioButton36.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton36.setText("False");
         jRadioButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,14 +162,19 @@ public class Training2_3_Listening extends javax.swing.JFrame {
             }
         });
 
+        jRadioButton35.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton35.setText("True");
 
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Kalam would sit and watch the parrots and doves soar in the sky  (content)");
 
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel4.setText("He knew he had to get into engineering to realize his dreams.  (content)");
 
+        jRadioButton37.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton37.setText("True");
 
+        jRadioButton38.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton38.setText("False");
         jRadioButton38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,6 +182,7 @@ public class Training2_3_Listening extends javax.swing.JFrame {
             }
         });
 
+        jRadioButton40.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton40.setText("False");
         jRadioButton40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -178,14 +190,19 @@ public class Training2_3_Listening extends javax.swing.JFrame {
             }
         });
 
+        jRadioButton39.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton39.setText("True");
 
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel15.setText("His final project was to prepare an electronic car.  (content)");
 
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel16.setText("Kalam’s teacher gave him an extension of three days to complete the project.  (content)");
 
+        jRadioButton41.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton41.setText("True");
 
+        jRadioButton42.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton42.setText("False");
         jRadioButton42.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -193,6 +210,7 @@ public class Training2_3_Listening extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Submit");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -202,6 +220,12 @@ public class Training2_3_Listening extends javax.swing.JFrame {
 
         jLabel28.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
         jLabel28.setText("03 : 00");
+
+        jLabel30.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel30.setText("Answers are auto submited");
+
+        jLabel29.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel29.setText("Time :");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -248,21 +272,31 @@ public class Training2_3_Listening extends javax.swing.JFrame {
                                         .addComponent(jRadioButton36)))))
                         .addContainerGap(21, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 538, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButton1)
                                 .addGap(34, 34, 34))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel28)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel29)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jLabel28)
+                                        .addGap(38, 38, 38))
+                                    .addComponent(jLabel30, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addGap(29, 29, 29))))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jLabel28)
-                .addGap(61, 61, 61)
+                .addGap(27, 27, 27)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(jLabel28))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel30)
+                .addGap(40, 40, 40)
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -289,7 +323,7 @@ public class Training2_3_Listening extends javax.swing.JFrame {
                     .addComponent(jLabel16)
                     .addComponent(jRadioButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jRadioButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(35, 35, 35))
         );
@@ -374,7 +408,9 @@ public class Training2_3_Listening extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JRadioButton jRadioButton33;

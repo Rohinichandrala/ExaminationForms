@@ -153,12 +153,16 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
         jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
         jLabel20.setText("Place them in the Right Order:");
 
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel10.setText("Note: Enter the option number in box");
 
+        jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel21.setText("1. Regularly, they would venture into the forest to collect rare flowers.");
 
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel22.setText("2. Once upon a time, there were two sisters named Sally and Kelly, who lived in a cottage by the woods. They were hardworking and honest.");
 
+        jTextField12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField12.setToolTipText("");
         jTextField12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -166,24 +170,34 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
             }
         });
 
+        jTextField13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField13.setToolTipText("");
 
+        jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel23.setText("3. Thus, their life continued in this manner.");
 
+        jTextField14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField14.setToolTipText("");
 
+        jTextField15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField15.setToolTipText("");
 
+        jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel24.setText("4. Even though, they lived a good life, they were quite unhappy. One day, they encounter an angel who meets their demands.");
 
+        jTextField16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField16.setToolTipText("");
 
+        jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel25.setText("5. Later, they would sell the same in the market where it would fetch them a reasonable price.");
 
+        jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel26.setText("6. Although, happy for some time, they finally realize that happiness does not come out of material things");
 
+        jTextField17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField17.setToolTipText("");
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -191,9 +205,10 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel27.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel27.setText("06 : 00");
 
+        jLabel28.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel28.setText("7. However, the sisters always seemed sad and morose. ");
 
         jTextField18.setToolTipText("");
@@ -241,7 +256,7 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                         .addComponent(jLabel24)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(22, 22, 22)
@@ -260,7 +275,7 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                 .addComponent(jLabel27)
                 .addGap(57, 57, 57)
                 .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel22)
                     .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))

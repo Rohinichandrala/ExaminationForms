@@ -36,7 +36,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
                 submitForm();
             }
         }; 
-        timer = new Timer(240000,taskPerformer);
+        timer = new Timer(480000,taskPerformer);
         timer.start();
     }
     private void submitForm()
@@ -123,7 +123,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
             Logger.getLogger(PostTest_Listening2.class.getName()).log(Level.SEVERE, null, ex);
         }    
         super.dispose();
-        PreTest_Listening3.main(null); 
+        PostTest_Listening3.main(null); 
     }
 
     /**
@@ -179,46 +179,66 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton32 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
         jLabel5.setText("Choose the right answer :");
 
+        jLabel6.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jLabel6.setText("1. When somebody tells us to follow your dreams, what does it mean?");
 
+        jRadioButton1.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton1.setText("Follow nightmares and hallucinations");
 
+        jRadioButton2.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton2.setText("Follow reveries");
 
+        jRadioButton3.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton3.setText("Follow life’s goals and vision ");
 
+        jRadioButton4.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton4.setText("Follow fancy imaginations ");
 
+        jLabel7.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jLabel7.setText("4. By comparing the “journey of life” with “steps”, the author decodes life as something");
 
+        jRadioButton5.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton5.setText("Filled with only impossible steps");
 
+        jRadioButton6.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton6.setText("Filled with all easy steps");
 
+        jRadioButton7.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton7.setText("Consisting of achievable and learning steps");
 
+        jRadioButton8.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton8.setText("None of the above  ");
 
+        jLabel8.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jLabel8.setText("3. The five ways given by the speaker for achieving one’s dreams will help");
 
+        jRadioButton9.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton9.setText("Only students");
 
+        jRadioButton10.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton10.setText("Only working professionals");
 
+        jRadioButton11.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton11.setText("People from all walks of life");
 
+        jRadioButton12.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton12.setText("No body ");
 
+        jLabel10.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jLabel10.setText("2. According to the speaker, no one else has the _______answer for your life except you");
 
+        jRadioButton13.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton13.setText("Perfect");
 
+        jRadioButton14.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton14.setText("Best");
         jRadioButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,50 +246,73 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
             }
         });
 
+        jRadioButton15.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton15.setText("Appropriate");
 
+        jRadioButton16.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton16.setText("Right");
 
+        jLabel11.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jLabel11.setText("5. The speaker provides all of the following “tips to kill their dreams” except");
 
+        jRadioButton17.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton17.setText("Believe someone else has the answer for you");
 
+        jRadioButton18.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton18.setText("Believe in overnight success ");
 
+        jRadioButton19.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton19.setText("Believe the fault is one’s own and not someone else’s");
 
+        jRadioButton20.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton20.setText("Believe in settling down on attaining growth");
 
+        jLabel12.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jLabel12.setText("6. What is the synonym of the word humble in “I come from a humble family”? ");
 
+        jRadioButton21.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton21.setText("Grand");
 
+        jRadioButton22.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton22.setText("Proud");
 
+        jRadioButton23.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton23.setText("Noble");
 
+        jRadioButton24.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton24.setText("Modest");
 
+        jLabel13.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jLabel13.setText("7. From the sentence “There’s no time to settle down”, what does one infer from this line?");
 
+        jRadioButton25.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton25.setText("That there is so much to accomplish");
 
+        jRadioButton26.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton26.setText("That one should always be in a bizarre hurry");
 
+        jRadioButton27.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton27.setText("We need time to settle down in a particular place");
 
+        jRadioButton28.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton28.setText("Could not settle down due to paucity of time");
 
-        jLabel14.setText("8. Be (responsible) for your dreams. The word in braces belongs to which part of speech?");
+        jLabel14.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
+        jLabel14.setText("8. Be RESPONSIBLE for your dreams. The word in CAPITAL letters belongs to which part of speech?");
 
+        jRadioButton29.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton29.setText("Noun");
 
+        jRadioButton30.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton30.setText("Adjective");
 
+        jRadioButton31.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton31.setText("Adverb");
 
+        jRadioButton32.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton32.setText("Verb");
 
+        jButton1.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -278,7 +321,13 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         });
 
         jLabel28.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
-        jLabel28.setText("04 : 00");
+        jLabel28.setText("08 : 00");
+
+        jLabel27.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel27.setText("Answers are auto submited");
+
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel18.setText("Time :");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -361,24 +410,37 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jRadioButton28)
                             .addComponent(jRadioButton25))))
-                .addContainerGap(59, Short.MAX_VALUE))
+                .addContainerGap(55, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(562, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton1)
                         .addGap(28, 28, 28))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel28)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel18)
+                                .addGap(31, 31, 31)
+                                .addComponent(jLabel28)
+                                .addGap(19, 19, 19))
+                            .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(43, 43, 43))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(25, Short.MAX_VALUE)
-                .addComponent(jLabel28)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel5)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addComponent(jLabel5))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel28))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel27)))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -532,6 +594,8 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;

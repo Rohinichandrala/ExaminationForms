@@ -181,13 +181,16 @@ public class Training2_Listening extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
         jLabel1.setText("Listening Skill");
 
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel2.setText("Training");
 
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Topic- How to study");
 
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel4.setText("Exercises");
 
-        jTable1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jTable1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -201,24 +204,34 @@ public class Training2_Listening extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel5.setText("1. As a ");
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel6.setText("2. I knew I had to get into engineering to realize my ");
 
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel7.setText("3. The allowance or a grant given to a student to facilitate their study is called");
 
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel8.setText("4. The past-tense of fascinate is");
 
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel11.setText("5. My final project was to design a ");
 
+        jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField2.setToolTipText("");
 
+        jTextField3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField3.setToolTipText("");
 
+        jTextField4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField4.setToolTipText("");
 
+        jTextField5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField5.setToolTipText("");
 
+        jTextField6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField6.setToolTipText("");
         jTextField6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -226,24 +239,34 @@ public class Training2_Listening extends javax.swing.JFrame {
             }
         });
 
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel12.setText("6. The teacher reviewed my");
 
+        jTextField7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField7.setToolTipText("");
 
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel14.setText("7. I ");
 
+        jTextField9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField9.setToolTipText("");
 
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel15.setText("hardly slept or eaten in the past three days. ");
 
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel16.setText("8. Not only did I keep my scholarship, but I also graduated from MIT");
 
+        jTextField10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField10.setToolTipText("");
 
+        jLabel17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel17.setText("outstanding marks.");
 
+        jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel19.setText("Fill in the Blanks with suitable words given below:");
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -251,6 +274,7 @@ public class Training2_Listening extends javax.swing.JFrame {
             }
         });
 
+        jLabel27.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel27.setText("boy, my friends and I walked back home from school.");
 
         jLabel20.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N

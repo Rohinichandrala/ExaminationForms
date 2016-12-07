@@ -44,11 +44,12 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel1.setText("Post-Test Topics");
+        jLabel1.setText("Pre-Test Topics");
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel2.setText("Please choose one topic from below list");
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton1.setText("Write about the festival that you enjoy most.");
         jButton1.setName("topic1"); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -57,6 +58,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton2.setText("Write about yourself.");
         jButton2.setName("topic2"); // NOI18N
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -65,6 +67,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton3.setText("What are your aims and goals in life and how do you achieve them?");
         jButton3.setName("topic3"); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -73,6 +76,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton4.setText("What is the movie that you liked most and why?");
         jButton4.setName("topic4"); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -81,6 +85,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton5.setText("What is the one motivating/inspiring experience in your life and why?");
         jButton5.setName("topic5"); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -89,6 +94,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jButton6.setText("Back");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,7 +154,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 938, Short.MAX_VALUE)
+            .addGap(0, 1011, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -157,7 +163,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 481, Short.MAX_VALUE)
+            .addGap(0, 485, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)

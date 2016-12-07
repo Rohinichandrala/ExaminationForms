@@ -144,6 +144,8 @@ public class PostTest_Writing extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         answer6 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -156,56 +158,57 @@ public class PostTest_Writing extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Put the words in order to make a meaningful sentence.");
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel5.setText("Understand/ I / weird/ don’t / . /behavior / his/");
         jLabel5.setName("quest1"); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel6.setText("Isn’t / he / brilliant / he / is /? /");
         jLabel6.setName("quest2"); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel7.setText("Hates/ ? / doesn’t / she / apples / she/");
         jLabel7.setName("quest3"); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel8.setText("Diversity / India / known/ for / is / . /unity/ in/");
         jLabel8.setName("quest4"); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel9.setText("/ ./ Malaysian Airlines/ blasted/ the / belonged / mid-air/ to / which / jet /");
         jLabel9.setName("quest5"); // NOI18N
 
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel10.setText("Correct Answer");
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel11.setText("Correct Answer");
 
-        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel12.setText("Correct Answer");
 
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("Correct Answer");
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel14.setText("Correct Answer");
 
-        answer1.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        answer1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         answer1.setName("answer1"); // NOI18N
 
-        answer2.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        answer2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         answer2.setName(""); // NOI18N
 
-        answer3.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        answer3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         answer3.setName("answer3"); // NOI18N
 
-        answer4.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        answer4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         answer4.setName("answer4"); // NOI18N
 
-        answer5.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        answer5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         answer5.setName("answer5"); // NOI18N
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -213,23 +216,45 @@ public class PostTest_Writing extends javax.swing.JFrame {
             }
         });
 
-        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel15.setText("Place / ? / you / would / vacation / this / which / visiting / be /");
         jLabel15.setName("quest6"); // NOI18N
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel16.setText("Correct Answer");
 
-        answer6.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
+        answer6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         answer6.setName("answer6"); // NOI18N
 
         jLabel4.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
         jLabel4.setText("06 : 00");
 
+        jLabel27.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel27.setText("Answers are auto submited");
+
+        jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        jLabel18.setText("Time :");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(230, 230, 230))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(314, 314, 314)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 257, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel18)
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel4)
+                        .addGap(23, 23, 23))
+                    .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(36, 36, 36))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -269,29 +294,25 @@ public class PostTest_Writing extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(answer6, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(314, 314, 314)
-                        .addComponent(jLabel2)))
-                .addContainerGap(301, Short.MAX_VALUE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(233, 233, 233)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel4)
-                .addGap(49, 49, 49))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(230, 230, 230))
+                        .addGap(233, 233, 233)
+                        .addComponent(jLabel1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
+                .addGap(17, 17, 17)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel27)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addGap(38, 38, 38)
@@ -330,7 +351,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(answer6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(34, 34, 34))
         );
@@ -422,7 +443,9 @@ public class PostTest_Writing extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

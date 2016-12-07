@@ -73,6 +73,7 @@ public class SelectionForm extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel2.setText("Please select a category from the options below");
 
+        jButton1.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
         jButton1.setText("Writing");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,6 +81,7 @@ public class SelectionForm extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
         jButton2.setText("Listening");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,6 +89,7 @@ public class SelectionForm extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
         jButton3.setText("Reading ");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,6 +97,7 @@ public class SelectionForm extends javax.swing.JFrame {
             }
         });
 
+        jTextField1.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
         jTextField1.setText("Name/Roll Number");
         jTextField1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -101,9 +105,10 @@ public class SelectionForm extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
         jLabel3.setText("Enter your name and click on submit to start the test");
 
+        jButton4.setFont(new java.awt.Font("Times New Roman", 0, 17)); // NOI18N
         jButton4.setText("Submit");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
