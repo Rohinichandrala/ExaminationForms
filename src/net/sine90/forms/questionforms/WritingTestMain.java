@@ -169,17 +169,17 @@ public class WritingTestMain extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         super.dispose();
-        PreTest_Writing.main(null);
+        PreTest_Writing1.main(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         super.dispose();
-        PostTest_Writing.main(null);
+        PostTest_Writing1.main(null);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         super.dispose();
-        Training_Writing.main(null);
+        Training_Writing1.main(null);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

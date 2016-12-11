@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ButtonGroup;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 
@@ -30,6 +31,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
     Timer timer;
     public PostTest_Listening2() {
         initComponents();
+        addButtonGroups();
         ActionListener taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -38,6 +40,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         }; 
         timer = new Timer(480000,taskPerformer);
         timer.start();
+        
     }
     private void submitForm()
     {
@@ -268,7 +271,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton20.setText("Believe in settling down on attaining growth");
 
         jLabel12.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel12.setText("6. What is the synonym of the word humble in “I come from a humble family”? ");
+        jLabel12.setText("6. What is the synonym of the word \"humble\" in “I come from a humble family”? ");
 
         jRadioButton21.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton21.setText("Grand");
@@ -635,4 +638,48 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
     // End of variables declaration//GEN-END:variables
+
+    private void addButtonGroups() {
+        ButtonGroup group1=new ButtonGroup();
+                group1.add(jRadioButton1);
+                group1.add(jRadioButton2);
+                group1.add(jRadioButton3);
+                group1.add(jRadioButton4);
+        ButtonGroup group2=new ButtonGroup();
+                group2.add(jRadioButton13);
+                group2.add(jRadioButton14);
+                group2.add(jRadioButton15);
+                group2.add(jRadioButton16);
+        ButtonGroup group3=new ButtonGroup();
+                group3.add(jRadioButton5);
+                group3.add(jRadioButton6);
+                group3.add(jRadioButton7);
+                group3.add(jRadioButton8);
+        ButtonGroup group4=new ButtonGroup();
+                group4.add(jRadioButton9);
+                group4.add(jRadioButton10);
+                group4.add(jRadioButton11);
+                group4.add(jRadioButton12);
+        ButtonGroup group5=new ButtonGroup();
+                group5.add(jRadioButton17);
+                group5.add(jRadioButton18);
+                group5.add(jRadioButton19);
+                group5.add(jRadioButton20);
+        ButtonGroup group6=new ButtonGroup();
+                group6.add(jRadioButton21);
+                group6.add(jRadioButton22);
+                group6.add(jRadioButton23);
+                group6.add(jRadioButton24);
+        ButtonGroup group7=new ButtonGroup();
+                group7.add(jRadioButton25);
+                group7.add(jRadioButton26);
+                group7.add(jRadioButton27);
+                group7.add(jRadioButton28);
+        ButtonGroup group8=new ButtonGroup();
+                group8.add(jRadioButton29);
+                group8.add(jRadioButton30);
+                group8.add(jRadioButton31);
+                group8.add(jRadioButton32);
+                
+    }
 }

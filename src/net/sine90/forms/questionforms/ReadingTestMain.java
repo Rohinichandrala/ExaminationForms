@@ -171,10 +171,11 @@ public class ReadingTestMain extends javax.swing.JFrame {
                 file.createNewFile();           
                  fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
-                String result="Total Score in Reading : "+ReadingTestParameters.marks_obtained_reading+"/ "+ReadingTestParameters.total_marks_reading;        bw.append(result.toString());
-        bw.flush(); 
-         bw.flush();
+                String result="Total Score in Reading : "+ReadingTestParameters.marks_obtained_reading+"/ "+ReadingTestParameters.total_marks_reading;        
+                bw.append(result.toString());
+        bw.flush();    
         fw.close();
+        bw.close();
         }catch (IOException ex) {
             Logger.getLogger(ReadingTestMain.class.getName()).log(Level.SEVERE, null, ex);
         

@@ -271,7 +271,7 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jLabel17.setText("dream is a momentary sensation, but your life isn’t.");
 
         jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel19.setText("Fill in the Blanks with suitable words given below:");
+        jLabel19.setText("Fill in the blanks with suitable words given below:");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");

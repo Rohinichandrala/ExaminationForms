@@ -109,7 +109,7 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
                 Logger.getLogger(PostTest_Writing1.class.getName()).log(Level.SEVERE, null, ex);
             }
             super.dispose();
-            Q_A_PostTest_Writing.main(null);
+           PostTest_Writing.main(null);
     }
 
     /**

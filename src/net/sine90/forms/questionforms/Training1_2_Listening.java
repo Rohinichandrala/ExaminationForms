@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ButtonGroup;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 
@@ -30,6 +31,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
     Timer timer;
     public Training1_2_Listening() {
         initComponents();
+        addButtonGroups();
         ActionListener taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -188,7 +190,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jLabel5.setText("Choose the right answer :");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("1. Why is it important to learn about different ways of studying? (Generic)");
+        jLabel6.setText("1. Why is it important to learn about different ways of studying?");
 
         jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton1.setText("To gain good grades");
@@ -203,7 +205,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton4.setText("To Just to have fun trying out different techniques each time");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("3. The tips given by the speaker for effective studying will help….(Beyond)");
+        jLabel7.setText("3. The tips given by the speaker for effective studying will help");
 
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton5.setText("Only lazy students");
@@ -218,7 +220,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton8.setText("None of the above");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("4. What do you understand of the speaker’s views on technology or gadgets like Internet, TV, mobiles etc.?    (Critical) ");
+        jLabel8.setText("4. What do you understand of the speaker’s views on technology or gadgets like Internet, TV, mobiles etc.?");
 
         jRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton9.setText("These gadgets are a menace");
@@ -233,7 +235,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton12.setText("One should use technology and gadgets effectively");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("2. According to the speaker, how can we best connect different pieces of information? (Specific)");
+        jLabel10.setText("2. According to the speaker, how can we best connect different pieces of information?");
 
         jRadioButton13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton13.setText("By drawing mind maps");
@@ -248,7 +250,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton16.setText("By drawing boxes with notes");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. The speaker recommends all of the following as effective ways for studying  except (Negative facts)");
+        jLabel11.setText("5. The speaker recommends all of the following as effective ways for studying  except");
 
         jRadioButton17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton17.setText("Planning a ten-minute break after every half-hour of concentrated study");
@@ -263,7 +265,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton20.setText("Preparing notes");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. But there’s always room for improvement.  To which part of speech does the underlined word belong? (Lexical) ");
+        jLabel12.setText("6. But there’s always room for improvement. To which part of speech does the word \"improvement\" belong?");
 
         jRadioButton21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton21.setText("Adjective");
@@ -278,7 +280,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton24.setText("Noun");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel13.setText("7.From the sentence “if you think you can concentrate better listening to music, experiment and see if it’s really true’, what does one infer from this line? (Inferential) ");
+        jLabel13.setText("7.From the sentence “if you think you can concentrate better listening to music, experiment and see if it’s really true’, what does one infer from this line?");
 
         jRadioButton25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton25.setText("Carry out a trial and error method to check if music really helps in studying");
@@ -293,7 +295,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton28.setText("Music and studies are inseparable ");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("8. You might be surprised at how much better you work away from a TV.  The word might is a …   (Grammar) ");
+        jLabel14.setText("8. You might be surprised at how much better you work away from a TV.  The word \"might\" is a _____");
 
         jRadioButton29.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton29.setText("“Be” form of the verb ");
@@ -398,17 +400,17 @@ public class Training1_2_Listening extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jRadioButton16)
                                     .addComponent(jRadioButton13))))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(88, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jRadioButton29)
-                                    .addComponent(jRadioButton30))
-                                .addGap(64, 64, 64)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jRadioButton31)
                                     .addComponent(jRadioButton32))
+                                .addGap(63, 63, 63)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jRadioButton29)
+                                    .addComponent(jRadioButton30))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jButton1))
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -512,13 +514,14 @@ public class Training1_2_Listening extends javax.swing.JFrame {
                 .addComponent(jLabel14)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jRadioButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jRadioButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jRadioButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jRadioButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jRadioButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jRadioButton32, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(12, 12, 12)
                         .addComponent(jButton1)))
@@ -629,4 +632,47 @@ public class Training1_2_Listening extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
     // End of variables declaration//GEN-END:variables
+
+    private void addButtonGroups() {
+         ButtonGroup group1=new ButtonGroup();
+                group1.add(jRadioButton1);
+                group1.add(jRadioButton2);
+                group1.add(jRadioButton3);
+                group1.add(jRadioButton4);
+        ButtonGroup group2=new ButtonGroup();
+                group2.add(jRadioButton13);
+                group2.add(jRadioButton14);
+                group2.add(jRadioButton15);
+                group2.add(jRadioButton16);
+        ButtonGroup group3=new ButtonGroup();
+                group3.add(jRadioButton5);
+                group3.add(jRadioButton6);
+                group3.add(jRadioButton7);
+                group3.add(jRadioButton8);
+        ButtonGroup group4=new ButtonGroup();
+                group4.add(jRadioButton9);
+                group4.add(jRadioButton10);
+                group4.add(jRadioButton11);
+                group4.add(jRadioButton12);
+        ButtonGroup group5=new ButtonGroup();
+                group5.add(jRadioButton17);
+                group5.add(jRadioButton18);
+                group5.add(jRadioButton19);
+                group5.add(jRadioButton20);
+        ButtonGroup group6=new ButtonGroup();
+                group6.add(jRadioButton21);
+                group6.add(jRadioButton22);
+                group6.add(jRadioButton23);
+                group6.add(jRadioButton24);
+        ButtonGroup group7=new ButtonGroup();
+                group7.add(jRadioButton25);
+                group7.add(jRadioButton26);
+                group7.add(jRadioButton27);
+                group7.add(jRadioButton28);
+        ButtonGroup group8=new ButtonGroup();
+                group8.add(jRadioButton29);
+                group8.add(jRadioButton30);
+                group8.add(jRadioButton31);
+                group8.add(jRadioButton32);
+    }
 }

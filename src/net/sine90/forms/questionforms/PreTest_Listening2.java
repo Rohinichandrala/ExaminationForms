@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ButtonGroup;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 
@@ -30,6 +31,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
     Timer timer;
     public PreTest_Listening2() {
         initComponents();
+        addButtonGroups();
         ActionListener taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -188,7 +190,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jLabel5.setText("Choose the right answer :");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("1. What does this narrative say about friendship?  ( generic) ");
+        jLabel6.setText("1. What does this narrative say about friendship? ");
 
         jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton1.setText("Friends will never abandon you in times of need");
@@ -203,7 +205,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton4.setText("Friends are needed to fight common enemies\t");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("4. What would have happened if the animals weren’t friends (critical)");
+        jLabel7.setText("4. What would have happened if the animals weren’t friends ");
 
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton5.setText("The hunter would not have escaped");
@@ -218,7 +220,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton8.setText("It wouldn’t have mattered");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("3. The deer is found in a clearing. What could clearing mean (Beyond)");
+        jLabel8.setText("3. The deer is found in a clearing. What could clearing mean ");
 
         jRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton9.setText("Process of becoming clear");
@@ -233,7 +235,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton12.setText("Total claims settled");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("2. According to the narrative, when would the four friends usually meet? (Specific) ");
+        jLabel10.setText("2. According to the narrative, when would the four friends usually meet? ");
 
         jRadioButton13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton13.setText("During the evenings");
@@ -248,7 +250,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton16.setText("Midnight");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. The story had all the given characters except   (Negative facts)");
+        jLabel11.setText("5. The story had all the given characters except");
 
         jRadioButton17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton17.setText("Mouse");
@@ -263,7 +265,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton20.setText("Deer");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6.What is the antonym of the word grateful in “The doves were grateful to the mouse”? (Lexical) ");
+        jLabel12.setText("6.What is the antonym of the word grateful in “The doves were grateful to the mouse”? ");
 
         jRadioButton21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton21.setText("Indebted");
@@ -278,7 +280,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton24.setText("Thankless");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel13.setText("7.From the sentence “The hunter trembled with fear and fled”, what does one infer about handling an enemy?  (Inferential)  ");
+        jLabel13.setText("7.From the sentence “The hunter trembled with fear and fled”, what does one infer about handling an enemy? ");
 
         jRadioButton25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton25.setText("United we can conquer the enemy");
@@ -293,7 +295,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton28.setText("A strong enemy cannot be defeated");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("8. What is the simple past tense of the word goes in “The deer goes in search of water and does not return”? (grammar) ");
+        jLabel14.setText("8. What is the simple past tense of the word goes in “The deer goes in search of water and does not return”? ");
 
         jRadioButton29.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton29.setText("gone");
@@ -582,6 +584,49 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         });
     }
 
+    private void addButtonGroups() {
+        ButtonGroup group1=new ButtonGroup();
+                group1.add(jRadioButton1);
+                group1.add(jRadioButton2);
+                group1.add(jRadioButton3);
+                group1.add(jRadioButton4);
+        ButtonGroup group2=new ButtonGroup();
+                group2.add(jRadioButton13);
+                group2.add(jRadioButton14);
+                group2.add(jRadioButton15);
+                group2.add(jRadioButton16);
+        ButtonGroup group3=new ButtonGroup();
+                group3.add(jRadioButton5);
+                group3.add(jRadioButton6);
+                group3.add(jRadioButton7);
+                group3.add(jRadioButton8);
+        ButtonGroup group4=new ButtonGroup();
+                group4.add(jRadioButton9);
+                group4.add(jRadioButton10);
+                group4.add(jRadioButton11);
+                group4.add(jRadioButton12);
+        ButtonGroup group5=new ButtonGroup();
+                group5.add(jRadioButton17);
+                group5.add(jRadioButton18);
+                group5.add(jRadioButton19);
+                group5.add(jRadioButton20);
+        ButtonGroup group6=new ButtonGroup();
+                group6.add(jRadioButton21);
+                group6.add(jRadioButton22);
+                group6.add(jRadioButton23);
+                group6.add(jRadioButton24);
+        ButtonGroup group7=new ButtonGroup();
+                group7.add(jRadioButton25);
+                group7.add(jRadioButton26);
+                group7.add(jRadioButton27);
+                group7.add(jRadioButton28);
+        ButtonGroup group8=new ButtonGroup();
+                group8.add(jRadioButton29);
+                group8.add(jRadioButton30);
+                group8.add(jRadioButton31);
+                group8.add(jRadioButton32);
+                
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;

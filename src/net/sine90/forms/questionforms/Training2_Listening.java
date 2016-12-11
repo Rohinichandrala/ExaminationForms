@@ -266,7 +266,7 @@ public class Training2_Listening extends javax.swing.JFrame {
         jLabel17.setText("outstanding marks.");
 
         jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel19.setText("Fill in the Blanks with suitable words given below:");
+        jLabel19.setText("Fill in the blanks with suitable words given below:");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");
@@ -349,10 +349,8 @@ public class Training2_Listening extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGap(40, 40, 40)
                                         .addComponent(jLabel2))
-                                    .addGroup(jPanel1Layout.createSequentialGroup()
-                                        .addComponent(jLabel1)
-                                        .addGap(0, 0, Short.MAX_VALUE)))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(jLabel1))
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                         .addComponent(jLabel29)

@@ -91,21 +91,21 @@ public class PreTest_Listening extends javax.swing.JFrame {
         }
         else
             pretest_answer.append("3."+correctAnswer+"Frightened"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
-        if("well".equalsIgnoreCase(jTextField5.getText().trim()))
+        if("Amazing".equalsIgnoreCase(jTextField5.getText().trim()))
         {
             pretest_answer.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("4."+correctAnswer+"well"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
-        if("Amazing".equalsIgnoreCase(jTextField6.getText().trim()))
+            pretest_answer.append("4."+correctAnswer+"Amazing"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+        if("Flock".equalsIgnoreCase(jTextField6.getText().trim()))
         {
             pretest_answer.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("5."+correctAnswer+"Amazing"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
-       if(jTextField7.getText().trim().toLowerCase().contains("in")&&jTextField8.getText().trim().toLowerCase().contains("up"))
+            pretest_answer.append("5."+correctAnswer+"Flock"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+       if(jTextField7.getText().trim().equalsIgnoreCase("in")&&jTextField8.getText().trim().equalsIgnoreCase("up"))
         {
             pretest_answer.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
@@ -293,7 +293,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jTextField11.setToolTipText("");
 
         jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel19.setText("Fill in the Blanks with suitable words given below:");
+        jLabel19.setText("Fill in the blanks with suitable words given below:");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");

@@ -15,6 +15,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ButtonGroup;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 
@@ -30,6 +31,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
     Timer timer;
     public Training2_2_Listening() {
         initComponents();
+        addButtonGroups();
         ActionListener taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -203,7 +205,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
         jRadioButton4.setText("To win accolades from people around us");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("4. What would have happened had the professor given Kalam that one month extension which he had requested for?  (Critical)");
+        jLabel7.setText("4. What would have happened had the professor given Kalam that one month extension which he had requested for?");
 
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton5.setText("Kalam would have happily taken his sweet time to complete the project");
@@ -218,7 +220,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
         jRadioButton8.setText("Kalam wouldn’t have earned the compliments from his professor ");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("3. How is Kalam portrayed through this narrative? (Thinking beyond) ");
+        jLabel8.setText("3. How is Kalam portrayed through this narrative?");
 
         jRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton9.setText("As a determined and hardworking student");
@@ -233,7 +235,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
         jRadioButton12.setText("As an expert in skimming pebbles");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("2. According to the narrative, when did Kalam’s goals become clearer?  (Specific)");
+        jLabel10.setText("2. According to the narrative, when did Kalam’s goals become clearer? ");
 
         jRadioButton13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton13.setText("When he grew older");
@@ -248,7 +250,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
         jRadioButton16.setText("When he skimmed pebbles over waters");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. Kalam did all of the following for his project except  (Negative facts)  ");
+        jLabel11.setText("5. Kalam did all of the following for his project except");
 
         jRadioButton17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton17.setText("Eating very little ");
@@ -263,7 +265,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
         jRadioButton20.setText("Remaining awake all night");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. What does accomplishment mean?  (Lexical) ");
+        jLabel12.setText("6. What does accomplishment mean? ");
 
         jRadioButton21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton21.setText("Contentment");
@@ -278,7 +280,8 @@ public class Training2_2_Listening extends javax.swing.JFrame {
         jRadioButton24.setText("Achievement");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel13.setText("7. What is the noun form of the word inspired in “The sight of the birds “inspired” me? (Grammar) ");
+        jLabel13.setText("7. What is the noun for the word \"inspired\" in “The sight of the birds inspired me\"?");
+        jLabel13.setToolTipText("");
 
         jRadioButton25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton25.setText("Inspiration");
@@ -293,7 +296,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
         jRadioButton28.setText("Inspiringly");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("8. From the sentence “Scholarship was my lifeline\", what does one infer from this line? (Inferential)");
+        jLabel14.setText("8. From the sentence “Scholarship was my lifeline\", what does one infer from this line?");
 
         jRadioButton29.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton29.setText("There is no life without scholarship");
@@ -621,4 +624,48 @@ public class Training2_2_Listening extends javax.swing.JFrame {
     private javax.swing.JRadioButton jRadioButton8;
     private javax.swing.JRadioButton jRadioButton9;
     // End of variables declaration//GEN-END:variables
+
+    private void addButtonGroups() {
+         ButtonGroup group1=new ButtonGroup();
+                group1.add(jRadioButton1);
+                group1.add(jRadioButton2);
+                group1.add(jRadioButton3);
+                group1.add(jRadioButton4);
+        ButtonGroup group2=new ButtonGroup();
+                group2.add(jRadioButton13);
+                group2.add(jRadioButton14);
+                group2.add(jRadioButton15);
+                group2.add(jRadioButton16);
+        ButtonGroup group3=new ButtonGroup();
+                group3.add(jRadioButton5);
+                group3.add(jRadioButton6);
+                group3.add(jRadioButton7);
+                group3.add(jRadioButton8);
+        ButtonGroup group4=new ButtonGroup();
+                group4.add(jRadioButton9);
+                group4.add(jRadioButton10);
+                group4.add(jRadioButton11);
+                group4.add(jRadioButton12);
+        ButtonGroup group5=new ButtonGroup();
+                group5.add(jRadioButton17);
+                group5.add(jRadioButton18);
+                group5.add(jRadioButton19);
+                group5.add(jRadioButton20);
+        ButtonGroup group6=new ButtonGroup();
+                group6.add(jRadioButton21);
+                group6.add(jRadioButton22);
+                group6.add(jRadioButton23);
+                group6.add(jRadioButton24);
+        ButtonGroup group7=new ButtonGroup();
+                group7.add(jRadioButton25);
+                group7.add(jRadioButton26);
+                group7.add(jRadioButton27);
+                group7.add(jRadioButton28);
+        ButtonGroup group8=new ButtonGroup();
+                group8.add(jRadioButton29);
+                group8.add(jRadioButton30);
+                group8.add(jRadioButton31);
+                group8.add(jRadioButton32);
+                
+    }
 }

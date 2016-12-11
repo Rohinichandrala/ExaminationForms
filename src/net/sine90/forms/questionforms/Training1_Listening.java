@@ -83,20 +83,20 @@ public class Training1_Listening extends javax.swing.JFrame {
         }
         else
             training1_answer.append("2."+correctAnswer+"Long term"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
-        if(jTextField4.getText().trim().toLowerCase().contains("Comfortable")&&jTextField18.getText().trim().toLowerCase().contains("noises"))
+        if(jTextField4.getText().trim().equalsIgnoreCase("comfortable")&&jTextField18.getText().trim().equalsIgnoreCase("noises"))
         {
             training1_answer.append("3."+correctAnswer+"Comfortable /noises"+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
             training1_answer.append("3."+correctAnswer+"Comfortable /noises"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+" /"+jTextField18.getText().trim()+System.getProperty("line.separator"));
-        if("well".equalsIgnoreCase(jTextField5.getText().trim()))
+        if("Headphones".equalsIgnoreCase(jTextField5.getText().trim()))
         {
             training1_answer.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("4."+correctAnswer+"well"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("4."+correctAnswer+"Headphones"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
         if("Ignore".equalsIgnoreCase(jTextField6.getText().trim()))
         {
             training1_answer.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
@@ -280,7 +280,7 @@ public class Training1_Listening extends javax.swing.JFrame {
         jLabel17.setText("great for showing the connections between different bits of information.");
 
         jLabel19.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel19.setText("Fill in the Blanks with suitable words given below:");
+        jLabel19.setText("Fill in the blanks with suitable words given below:");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");

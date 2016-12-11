@@ -63,41 +63,41 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
                 }
                 else
                 posttest_answer.append("1."+correctAnswer+"2"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("6".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("6".equalsIgnoreCase(jTextField13.getText().trim()))
                 {
-                posttest_answer.append("2."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                posttest_answer.append("2."+correctAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("2."+correctAnswer+"6"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("1".equalsIgnoreCase(jTextField12.getText().trim()))
+                posttest_answer.append("2."+correctAnswer+"6"+System.getProperty("line.separator")+wrongAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
+                if("1".equalsIgnoreCase(jTextField14.getText().trim()))
                 {
-                posttest_answer.append("3."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                posttest_answer.append("3."+correctAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("3."+correctAnswer+"1"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("4".equalsIgnoreCase(jTextField12.getText().trim()))
+                posttest_answer.append("3."+correctAnswer+"1"+System.getProperty("line.separator")+wrongAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
+                if("4".equalsIgnoreCase(jTextField15.getText().trim()))
                 {
-                posttest_answer.append("4."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                posttest_answer.append("4."+correctAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("4."+correctAnswer+"4"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("5".equalsIgnoreCase(jTextField12.getText().trim()))
+                posttest_answer.append("4."+correctAnswer+"4"+System.getProperty("line.separator")+wrongAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
+                if("5".equalsIgnoreCase(jTextField16.getText().trim()))
                 {
-                posttest_answer.append("5."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                posttest_answer.append("5."+correctAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("5."+correctAnswer+"5"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("3".equalsIgnoreCase(jTextField12.getText().trim()))
+                posttest_answer.append("5."+correctAnswer+"5"+System.getProperty("line.separator")+wrongAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
+                if("3".equalsIgnoreCase(jTextField17.getText().trim()))
                 {
-                posttest_answer.append("6."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                posttest_answer.append("6."+correctAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("6."+correctAnswer+"3"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                posttest_answer.append("6."+correctAnswer+"3"+System.getProperty("line.separator")+wrongAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
                 posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
                 ListeningTestParameters.marks_obtained_listening+=marks_obtained;
                 bw.write(posttest_answer.toString());

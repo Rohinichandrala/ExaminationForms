@@ -338,7 +338,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="4. What would have happened had the professor given Kalam that one month extension which he had requested for?  (Critical)"/>
+            <Property name="text" type="java.lang.String" value="4. What would have happened had the professor given Kalam that one month extension which he had requested for?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton5">
@@ -378,7 +378,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="3. How is Kalam portrayed through this narrative? (Thinking beyond) "/>
+            <Property name="text" type="java.lang.String" value="3. How is Kalam portrayed through this narrative?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton9">
@@ -418,7 +418,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="2. According to the narrative, when did Kalam&#x2019;s goals become clearer?  (Specific)"/>
+            <Property name="text" type="java.lang.String" value="2. According to the narrative, when did Kalam&#x2019;s goals become clearer? "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton13">
@@ -458,7 +458,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="5. Kalam did all of the following for his project except  (Negative facts)  "/>
+            <Property name="text" type="java.lang.String" value="5. Kalam did all of the following for his project except"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton17">
@@ -498,7 +498,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="6. What does accomplishment mean?  (Lexical) "/>
+            <Property name="text" type="java.lang.String" value="6. What does accomplishment mean? "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton21">
@@ -538,7 +538,8 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="7. What is the noun form of the word inspired in &#x201c;The sight of the birds &#x201c;inspired&#x201d; me? (Grammar) "/>
+            <Property name="text" type="java.lang.String" value="7. What is the noun for the word &quot;inspired&quot; in &#x201c;The sight of the birds inspired me&quot;?"/>
+            <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton25">
@@ -578,7 +579,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="8. From the sentence &#x201c;Scholarship was my lifeline&quot;, what does one infer from this line? (Inferential)"/>
+            <Property name="text" type="java.lang.String" value="8. From the sentence &#x201c;Scholarship was my lifeline&quot;, what does one infer from this line?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton29">
