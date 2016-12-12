@@ -64,10 +64,10 @@ public class Training_ReadingComprehension extends javax.swing.JFrame {
         jLabel1.setText("Reading Comprehension");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("Pretest");
+        jLabel2.setText("Training");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
-        jLabel3.setText("Topic: SELF REFLECTION");
+        jLabel3.setText("Topic: Where on Earth are you? ");
 
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N

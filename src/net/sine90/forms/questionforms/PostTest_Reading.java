@@ -142,7 +142,7 @@ public class PostTest_Reading extends javax.swing.JFrame {
         }    
         
         super.dispose();
-        ReadingTestMain.main(null);
+        PostTest_ReadingComprehension.main(null);
     }
 
     /**
@@ -264,7 +264,7 @@ public class PostTest_Reading extends javax.swing.JFrame {
         });
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton1.setText("Submit");
+        jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
