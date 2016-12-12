@@ -38,6 +38,7 @@ public class Training1_1_Listening extends javax.swing.JFrame {
         }; 
         timer = new Timer(180000,taskPerformer);
         timer.start();
+        new Utilities().startTimer(3, jLabel27);
     }
     private void submitForm()
     {

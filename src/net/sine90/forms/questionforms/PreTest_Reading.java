@@ -45,6 +45,7 @@ public class PreTest_Reading extends javax.swing.JFrame {
         }; 
         timer = new Timer(420000,taskPerformer);
         timer.start();
+        new Utilities().startTimer(7, jLabel4);
     }
     private void submitForm()
     {

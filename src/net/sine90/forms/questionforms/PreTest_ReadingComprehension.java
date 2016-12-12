@@ -46,6 +46,7 @@ public class PreTest_ReadingComprehension extends javax.swing.JFrame {
         }; 
         timer = new Timer(480000,taskPerformer);
         timer.start();
+        new Utilities().startTimer(8, jLabel4);
     }
 
     /**
@@ -96,7 +97,7 @@ public class PreTest_ReadingComprehension extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel4.setText("07 : 00");
+        jLabel4.setText("08 : 00");
 
         jLabel29.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel29.setText("Time :");

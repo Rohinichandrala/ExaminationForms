@@ -40,6 +40,7 @@ public class PostTest_Listening3 extends javax.swing.JFrame {
         }; 
         timer = new Timer(180000,taskPerformer);
         timer.start();
+        new Utilities().startTimer(3, jLabel28);
     }
     private void submitForm()
     {

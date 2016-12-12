@@ -39,6 +39,7 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
         }; 
         timer = new Timer(360000,taskPerformer);
         timer.start();
+        new Utilities().startTimer(6, jLabel27);
     }
     private void submitForm()
     {

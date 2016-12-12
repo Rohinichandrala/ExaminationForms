@@ -32,12 +32,12 @@ public class Training1_Listening extends javax.swing.JFrame {
         initComponents();
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Long term" , "Ignoring", "Headphones"},
-                {"Processed", "Concentrating", "Short term"},
-                {"Ignore", "Noisy / irritable", "Mind"},
-                {"Mouse-pad ", "Comfortable / noises ", "Atlas"},
-                {"An","Is ","Are"},
-                {"A",null,null}
+                {"long term" , "ignoring", "headphones"},
+                {"processed", "concentrating", "short term"},
+                {"ignore", "noisy / irritable", "mind"},
+                {"mouse-pad ", "comfortable / noises ", "atlas"},
+                {"an","as ","are"},
+                {"a",null,null}
             },
             new String [] {
                 "Column 1", "Column 2", "Column 3"
@@ -51,6 +51,7 @@ public class Training1_Listening extends javax.swing.JFrame {
         }; 
         timer = new Timer(300000,taskPerformer);
         timer.start();
+        new Utilities().startTimer(5, jLabel20);
     }
     private void submitForm()
     {
@@ -69,62 +70,62 @@ public class Training1_Listening extends javax.swing.JFrame {
                 file.createNewFile();
                 fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
-        if("Concentrating".equalsIgnoreCase(jTextField2.getText().trim()))
+        if("concentrating".equalsIgnoreCase(jTextField2.getText().trim()))
         {
             training1_answer.append("1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("1."+correctAnswer+"Concentrating"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
-        if("Long term".equalsIgnoreCase(jTextField3.getText().trim()))
+            training1_answer.append("1."+correctAnswer+"concentrating"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+        if("cong term".equalsIgnoreCase(jTextField3.getText().trim()))
         {
             training1_answer.append("2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("2."+correctAnswer+"Long term"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("2."+correctAnswer+"cong term"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
         if(jTextField4.getText().trim().equalsIgnoreCase("comfortable")&&jTextField18.getText().trim().equalsIgnoreCase("noises"))
         {
-            training1_answer.append("3."+correctAnswer+"Comfortable /noises"+System.getProperty("line.separator"));
+            training1_answer.append("3."+correctAnswer+"comfortable /noises"+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("3."+correctAnswer+"Comfortable /noises"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+" /"+jTextField18.getText().trim()+System.getProperty("line.separator"));
-        if("Headphones".equalsIgnoreCase(jTextField5.getText().trim()))
+            training1_answer.append("3."+correctAnswer+"comfortable /noises"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+" /"+jTextField18.getText().trim()+System.getProperty("line.separator"));
+        if("headphones".equalsIgnoreCase(jTextField5.getText().trim()))
         {
             training1_answer.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("4."+correctAnswer+"Headphones"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
-        if("Ignore".equalsIgnoreCase(jTextField6.getText().trim()))
+            training1_answer.append("4."+correctAnswer+"headphones"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+        if("ignore".equalsIgnoreCase(jTextField6.getText().trim()))
         {
             training1_answer.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("5."+correctAnswer+"Ignore"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
-       if("Mind".equalsIgnoreCase(jTextField7.getText().trim()))
+            training1_answer.append("5."+correctAnswer+"ignore"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+       if("mind".equalsIgnoreCase(jTextField7.getText().trim()))
         {
             training1_answer.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("6."+correctAnswer+"Mind"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
-        if("An".equalsIgnoreCase(jTextField9.getText().trim()))
+            training1_answer.append("6."+correctAnswer+"mind"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+        if("an".equalsIgnoreCase(jTextField9.getText().trim()))
         {
             training1_answer.append("7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("7."+correctAnswer+"An"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
-        if("Are".equalsIgnoreCase(jTextField10.getText().trim()))
+            training1_answer.append("7."+correctAnswer+"an"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+        if("are".equalsIgnoreCase(jTextField10.getText().trim()))
         {
             training1_answer.append("8."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("8."+correctAnswer+"Are"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("8."+correctAnswer+"are"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         training1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(training1_answer.toString());

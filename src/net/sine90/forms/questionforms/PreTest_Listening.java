@@ -52,6 +52,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         }; 
         timer = new Timer(300000,taskPerformer);
         timer.start();
+        new Utilities().startTimer(5, jLabel20);
     }
     private void submitForm()
     {
