@@ -28,6 +28,7 @@ public class Training_Writing1 extends javax.swing.JFrame {
      * Creates new form Training1_1_Listening1
      */
     Timer timer;
+    
     public Training_Writing1() {
         initComponents();
         ActionListener taskPerformer = new ActionListener() {
@@ -43,7 +44,7 @@ public class Training_Writing1 extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = ListeningTestParameters.student_name+"training_writing_jumble_sentence"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"Training_rightOrder"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         StringBuilder writing1_answer=new StringBuilder();

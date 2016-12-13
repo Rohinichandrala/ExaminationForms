@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ButtonGroup;
+import javax.swing.JRadioButton;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 
@@ -29,6 +30,17 @@ public class Training1_2_Listening extends javax.swing.JFrame {
      * Creates new form TrainingForm2_Listening
      */
     Timer timer;
+    ButtonGroup group1=new ButtonGroup();
+    ButtonGroup group2=new ButtonGroup();
+    ButtonGroup group3=new ButtonGroup();
+    ButtonGroup group4=new ButtonGroup();
+    ButtonGroup group5=new ButtonGroup();
+    ButtonGroup group6=new ButtonGroup();
+    ButtonGroup group7=new ButtonGroup();
+    ButtonGroup group8=new ButtonGroup();
+    
+
+    
     public Training1_2_Listening() {
         initComponents();
         addButtonGroups();
@@ -65,56 +77,56 @@ public class Training1_2_Listening extends javax.swing.JFrame {
              marks_obtained++;
         }
         else
-            training1_answer.append("1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
         if(jRadioButton13.isSelected())
         {
             training1_answer.append("2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
         if(jRadioButton7.isSelected())
         {
             training1_answer.append("3."+correctAnswer+jRadioButton7.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("3."+correctAnswer+jRadioButton7.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("3."+correctAnswer+jRadioButton7.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
         if(jRadioButton12.isSelected())
         {
             training1_answer.append("4."+correctAnswer+jRadioButton12.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("4."+correctAnswer+jRadioButton12.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("4."+correctAnswer+jRadioButton12.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
         if(jRadioButton19.isSelected())
         {
             training1_answer.append("5."+correctAnswer+jRadioButton19.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("5."+correctAnswer+jRadioButton19.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("5."+correctAnswer+jRadioButton19.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
         if(jRadioButton24.isSelected())
         {
             training1_answer.append("6."+correctAnswer+jRadioButton24.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("6."+correctAnswer+jRadioButton24.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("6."+correctAnswer+jRadioButton24.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
         if(jRadioButton25.isSelected())
         {
             training1_answer.append("7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
         if(jRadioButton32.isSelected())
         {
             training1_answer.append("8."+correctAnswer+jRadioButton32.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("8."+correctAnswer+jRadioButton32.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("8."+correctAnswer+jRadioButton32.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group8)+System.getProperty("line.separator"));
         
         training1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
@@ -311,7 +323,7 @@ public class Training1_2_Listening extends javax.swing.JFrame {
         jRadioButton32.setText("Modal verb ");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton1.setText("Submit");
+        jButton1.setText("Next");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -635,42 +647,42 @@ public class Training1_2_Listening extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addButtonGroups() {
-         ButtonGroup group1=new ButtonGroup();
+         
                 group1.add(jRadioButton1);
                 group1.add(jRadioButton2);
                 group1.add(jRadioButton3);
                 group1.add(jRadioButton4);
-        ButtonGroup group2=new ButtonGroup();
+        
                 group2.add(jRadioButton13);
                 group2.add(jRadioButton14);
                 group2.add(jRadioButton15);
                 group2.add(jRadioButton16);
-        ButtonGroup group3=new ButtonGroup();
+      
                 group3.add(jRadioButton5);
                 group3.add(jRadioButton6);
                 group3.add(jRadioButton7);
                 group3.add(jRadioButton8);
-        ButtonGroup group4=new ButtonGroup();
+       
                 group4.add(jRadioButton9);
                 group4.add(jRadioButton10);
                 group4.add(jRadioButton11);
                 group4.add(jRadioButton12);
-        ButtonGroup group5=new ButtonGroup();
+      
                 group5.add(jRadioButton17);
                 group5.add(jRadioButton18);
                 group5.add(jRadioButton19);
                 group5.add(jRadioButton20);
-        ButtonGroup group6=new ButtonGroup();
+        
                 group6.add(jRadioButton21);
                 group6.add(jRadioButton22);
                 group6.add(jRadioButton23);
                 group6.add(jRadioButton24);
-        ButtonGroup group7=new ButtonGroup();
+       
                 group7.add(jRadioButton25);
                 group7.add(jRadioButton26);
                 group7.add(jRadioButton27);
                 group7.add(jRadioButton28);
-        ButtonGroup group8=new ButtonGroup();
+        
                 group8.add(jRadioButton29);
                 group8.add(jRadioButton30);
                 group8.add(jRadioButton31);

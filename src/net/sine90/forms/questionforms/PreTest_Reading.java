@@ -21,6 +21,7 @@ import java.util.logging.Logger;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.Timer;
+import net.sine90.forms.ListeningTestParameters;
 import net.sine90.forms.ReadingTestParameters;
 import net.sine90.forms.WritingTestParameters;
 
@@ -50,7 +51,7 @@ public class PreTest_Reading extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = "PreTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"PreTest_cloze_passage"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         int marks_obtained=0;

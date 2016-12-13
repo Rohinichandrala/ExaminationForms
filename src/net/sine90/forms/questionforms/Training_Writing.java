@@ -155,7 +155,7 @@ public class Training_Writing extends javax.swing.JFrame {
         jLabel1.setText("Writing Comprehension");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel2.setText("Post Test");
+        jLabel2.setText("Training");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Put the words in order to make a meaningful sentence.");

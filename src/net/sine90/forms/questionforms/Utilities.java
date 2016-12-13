@@ -7,6 +7,9 @@ package net.sine90.forms.questionforms;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Enumeration;
+import javax.swing.AbstractButton;
+import javax.swing.ButtonGroup;
 import javax.swing.Timer;
 import javax.swing.JLabel;
 
@@ -43,6 +46,17 @@ public class Utilities {
                  timer.stop();
             }
         }     
+    }
+    public static String getSelectedObject(ButtonGroup group)
+    {
+        for (Enumeration<AbstractButton> buttons = group.getElements(); buttons.hasMoreElements();) {
+            AbstractButton button = buttons.nextElement();
+
+            if (button.isSelected()) {
+                return button.getText();
+            }
+        }
+        return null;
     }
     
 }

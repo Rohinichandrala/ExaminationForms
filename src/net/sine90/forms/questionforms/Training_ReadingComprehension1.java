@@ -27,7 +27,16 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
     /**
      * Creates new form TrainingForm2_Listening
      */
-    Timer timer;
+    
+     ButtonGroup group1=new ButtonGroup();
+    ButtonGroup group2=new ButtonGroup();
+    ButtonGroup group3=new ButtonGroup();
+    ButtonGroup group4=new ButtonGroup();
+    ButtonGroup group5=new ButtonGroup();
+    ButtonGroup group6=new ButtonGroup();
+    ButtonGroup group7=new ButtonGroup();
+    
+    
     public Training_ReadingComprehension1() {
         initComponents();
         addButtonGroups();
@@ -35,7 +44,7 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
     }
     public void submitForm()
     {
-        String fileName = ListeningTestParameters.student_name+"PreTest_Reading_Comprehension"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"Training_Reading_Comprehension"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         StringBuilder reading_com_answer=new StringBuilder();
@@ -55,49 +64,49 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
              marks_obtained++;
         }
         else
-            reading_com_answer.append("1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
         if(jRadioButton15.isSelected())
         {
             reading_com_answer.append("2."+correctAnswer+jRadioButton15.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("2."+correctAnswer+jRadioButton15.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2."+correctAnswer+jRadioButton15.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
         if(jRadioButton8.isSelected())
         {
             reading_com_answer.append("3."+correctAnswer+jRadioButton8.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("3."+correctAnswer+jRadioButton8.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("3."+correctAnswer+jRadioButton8.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
         if(jRadioButton9.isSelected())
         {
             reading_com_answer.append("4."+correctAnswer+jRadioButton9.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("4."+correctAnswer+jRadioButton9.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("4."+correctAnswer+jRadioButton9.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
         if(jRadioButton17.isSelected())
         {
             reading_com_answer.append("5."+correctAnswer+jRadioButton17.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("5."+correctAnswer+jRadioButton17.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("5."+correctAnswer+jRadioButton17.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
         if(jRadioButton23.isSelected())
         {
             reading_com_answer.append("6."+correctAnswer+jRadioButton23.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("6."+correctAnswer+jRadioButton23.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("6."+correctAnswer+jRadioButton23.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
         if(jRadioButton27.isSelected())
         {
             reading_com_answer.append("7."+correctAnswer+jRadioButton27.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("7."+correctAnswer+jRadioButton27.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("7."+correctAnswer+jRadioButton27.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
         
         reading_com_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ReadingTestParameters.marks_obtained_reading+=marks_obtained;
@@ -544,37 +553,37 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void addButtonGroups() {
-       ButtonGroup group1=new ButtonGroup();
+       
                 group1.add(jRadioButton1);
                 group1.add(jRadioButton2);
                 group1.add(jRadioButton3);
                 group1.add(jRadioButton4);
-        ButtonGroup group2=new ButtonGroup();
+        
                 group2.add(jRadioButton13);
                 group2.add(jRadioButton14);
                 group2.add(jRadioButton15);
                 group2.add(jRadioButton16);
-        ButtonGroup group3=new ButtonGroup();
+        
                 group3.add(jRadioButton5);
                 group3.add(jRadioButton6);
                 group3.add(jRadioButton7);
                 group3.add(jRadioButton8);
-        ButtonGroup group4=new ButtonGroup();
+        
                 group4.add(jRadioButton9);
                 group4.add(jRadioButton10);
                 group4.add(jRadioButton11);
                 group4.add(jRadioButton12);
-        ButtonGroup group5=new ButtonGroup();
+        
                 group5.add(jRadioButton17);
                 group5.add(jRadioButton18);
                 group5.add(jRadioButton19);
                 group5.add(jRadioButton20);
-        ButtonGroup group6=new ButtonGroup();
+        
                 group6.add(jRadioButton21);
                 group6.add(jRadioButton22);
                 group6.add(jRadioButton23);
                 group6.add(jRadioButton24);
-        ButtonGroup group7=new ButtonGroup();
+        
                 group7.add(jRadioButton25);
                 group7.add(jRadioButton26);
                 group7.add(jRadioButton27);

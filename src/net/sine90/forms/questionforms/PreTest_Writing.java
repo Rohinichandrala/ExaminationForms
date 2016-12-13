@@ -20,6 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JLabel;
 import javax.swing.Timer;
+import net.sine90.forms.ListeningTestParameters;
 import net.sine90.forms.WritingTestParameters;
 /**
  *
@@ -46,7 +47,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = "PreTest"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"PreTest_meaningful_sen"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         StringBuilder pretest_answer=new StringBuilder();

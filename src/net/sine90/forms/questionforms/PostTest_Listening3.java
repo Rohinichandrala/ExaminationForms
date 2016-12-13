@@ -45,7 +45,7 @@ public class PostTest_Listening3 extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = ListeningTestParameters.student_name+"PreTest_TrueOrFalse"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"PostTest_TrueOrFalse"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         StringBuilder posttest_answer=new StringBuilder();
@@ -440,17 +440,17 @@ public class PostTest_Listening3 extends javax.swing.JFrame {
                 group1.add(jRadioButton33);
                 group1.add(jRadioButton34);
         ButtonGroup group2=new ButtonGroup();
-                group1.add(jRadioButton35);
-                group1.add(jRadioButton36);
+                group2.add(jRadioButton35);
+                group2.add(jRadioButton36);
         ButtonGroup group3=new ButtonGroup();
-                group1.add(jRadioButton37);
-                group1.add(jRadioButton38);
+                group3.add(jRadioButton37);
+                group3.add(jRadioButton38);
         ButtonGroup group4=new ButtonGroup();
-                group1.add(jRadioButton39);
-                group1.add(jRadioButton40);
+                group4.add(jRadioButton39);
+                group4.add(jRadioButton40);
         ButtonGroup group5=new ButtonGroup();
-                group1.add(jRadioButton41);
-                group1.add(jRadioButton42);
+                group5.add(jRadioButton41);
+                group5.add(jRadioButton42);
        
     }
 }

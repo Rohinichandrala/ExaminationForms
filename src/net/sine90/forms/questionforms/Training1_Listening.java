@@ -34,10 +34,10 @@ public class Training1_Listening extends javax.swing.JFrame {
             new Object [][] {
                 {"long term" , "ignoring", "headphones"},
                 {"processed", "concentrating", "short term"},
-                {"ignore", "noisy / irritable", "mind"},
-                {"mouse-pad ", "comfortable / noises ", "atlas"},
+                {"ignore", "irritable", "mind"},
+                {"mouse-pad ", "noises ", "atlas"},
                 {"an","as ","are"},
-                {"a",null,null}
+                {"a","comfortable","noisy"}
             },
             new String [] {
                 "Column 1", "Column 2", "Column 3"
@@ -190,7 +190,7 @@ public class Training1_Listening extends javax.swing.JFrame {
         jLabel1.setText("Listening Skill");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("Training");
+        jLabel2.setText("Training-1");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Topic- How to study");

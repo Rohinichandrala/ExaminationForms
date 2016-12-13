@@ -79,14 +79,14 @@ public class Training1_3_Listening extends javax.swing.JFrame {
              marks_obtained++;
         }
         else
-            pretest_answer.append("3."+correctAnswer+jRadioButton38.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("3."+correctAnswer+jRadioButton38.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
         if(jRadioButton40.isSelected())
         {
             pretest_answer.append("4."+correctAnswer+jRadioButton40.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("4."+correctAnswer+jRadioButton40.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("4."+correctAnswer+jRadioButton40.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
         if(jRadioButton41.isSelected())
         {
             pretest_answer.append("5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator"));
@@ -456,16 +456,16 @@ public class Training1_3_Listening extends javax.swing.JFrame {
                 group1.add(jRadioButton33);
                 group1.add(jRadioButton34);
         ButtonGroup group2=new ButtonGroup();
-                group1.add(jRadioButton35);
-                group1.add(jRadioButton36);
+                group2.add(jRadioButton35);
+                group2.add(jRadioButton36);
         ButtonGroup group3=new ButtonGroup();
-                group1.add(jRadioButton37);
-                group1.add(jRadioButton38);
+                group3.add(jRadioButton37);
+                group3.add(jRadioButton38);
         ButtonGroup group4=new ButtonGroup();
-                group1.add(jRadioButton39);
-                group1.add(jRadioButton40);
+                group4.add(jRadioButton39);
+                group4.add(jRadioButton40);
         ButtonGroup group5=new ButtonGroup();
-                group1.add(jRadioButton41);
-                group1.add(jRadioButton42);
+                group5.add(jRadioButton41);
+                group5.add(jRadioButton42);
     }
 }

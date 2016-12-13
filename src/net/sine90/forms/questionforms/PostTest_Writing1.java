@@ -44,7 +44,7 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = ListeningTestParameters.student_name+"posttest_writing_jumble_sentence"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"posttest_rightOrder"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         StringBuilder writing1_answer=new StringBuilder();
@@ -52,7 +52,7 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
         int total=6;
         BufferedWriter bw;
         FileWriter fw;
-        File file=new File("C:\\Results\\Listening\\"+fileName);
+        File file=new File("C:\\Results\\Writing\\"+fileName);
             if(!file.exists())
             try {
                 file.createNewFile();

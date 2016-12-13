@@ -17,6 +17,7 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.Timer;
+import net.sine90.forms.ListeningTestParameters;
 
 /**
  *
@@ -44,7 +45,7 @@ public class Q_A_Writing_Generic extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = "Q_A"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());        
+        String fileName = ListeningTestParameters.student_name+"Q_A"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());        
         File file=new File("C:\\Results\\Writing\\"+fileName);
         
         if(!file.exists())

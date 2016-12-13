@@ -35,10 +35,10 @@ public class PreTest_Listening extends javax.swing.JFrame {
             new Object [][] {
                 {"Crows" , "Amazing", "Inseparable"},
                 {"Amazement", "Peacefully", "Close"},
-                {"in / up ", "Flock", "Noisily"},
+                {"in ", "Flock", "Noisily"},
                 {"Collaborate", "Frightened", "Has"},
                 {"An","A","Had"},
-                {"Fear",null,null}
+                {"Fear","up",null}
             },
             new String [] {
                 "Column 1", "Column 2", "Column 3"
@@ -106,13 +106,13 @@ public class PreTest_Listening extends javax.swing.JFrame {
         }
         else
             pretest_answer.append("5."+correctAnswer+"Flock"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
-       if(jTextField7.getText().trim().equalsIgnoreCase("in")&&jTextField8.getText().trim().equalsIgnoreCase("up"))
+       if(jTextField7.getText().trim().equalsIgnoreCase("up")&&jTextField8.getText().trim().equalsIgnoreCase("in"))
         {
             pretest_answer.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("6."+correctAnswer+"in / up"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+" /"+jTextField8.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("6."+correctAnswer+"up / in"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+" /"+jTextField8.getText().trim()+System.getProperty("line.separator"));
         if("Had".equalsIgnoreCase(jTextField9.getText().trim()))
         {
             pretest_answer.append("7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
@@ -192,6 +192,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel20 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -313,6 +314,9 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel21.setText("Time :");
 
+        jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel22.setText("friends.");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -333,7 +337,9 @@ public class PreTest_Listening extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel6)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel22))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel5)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -428,7 +434,8 @@ public class PreTest_Listening extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel22))
                 .addGap(8, 8, 8)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -540,6 +547,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
