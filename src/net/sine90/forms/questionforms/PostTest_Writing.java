@@ -65,20 +65,20 @@ public class PostTest_Writing extends javax.swing.JFrame {
         }
         else
             posttest_answer.append("1."+correctAnswer+"I don’t understand his weird behavior."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
-        if("He is brilliant isn’t he?".equalsIgnoreCase(answer2.getText().trim()))
+        if("He is brilliant, isn’t he?".equalsIgnoreCase(answer2.getText().trim()) || "He is brilliant,isn’t he?".equalsIgnoreCase(answer2.getText().trim()))
         {
                     posttest_answer.append("2."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            posttest_answer.append("2."+correctAnswer+"He is brilliant isn’t he?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
-        if("She hates apples doesn’t she?".equalsIgnoreCase(answer3.getText().trim()))
+            posttest_answer.append("2."+correctAnswer+"He is brilliant, isn’t he?"+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+        if("She hates apples, doesn’t she?".equalsIgnoreCase(answer3.getText().trim()) || "She hates apples,doesn’t she?".equalsIgnoreCase(answer3.getText().trim()))
         {
                     posttest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            posttest_answer.append("3."+correctAnswer+"She hates apples doesn’t she?"+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3."+correctAnswer+"She hates apples, doesn’t she?"+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
         if("India is known for unity in diversity.".equalsIgnoreCase(answer4.getText().trim()))
         {
                     posttest_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
@@ -86,13 +86,13 @@ public class PostTest_Writing extends javax.swing.JFrame {
         }
         else
             posttest_answer.append("4."+correctAnswer+"India is known for unity in diversity."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
-        if("The jet which blasted mid-air belonged to Malaysian Airlines.".equalsIgnoreCase(answer5.getText().trim()))
+        if("The jet, which blasted mid-air, belonged to Malaysian Airlines.".equalsIgnoreCase(answer5.getText().trim()) || "The jet,which blasted mid-air,belonged to Malaysian Airlines.".equalsIgnoreCase(answer5.getText().trim()))
         {
                     posttest_answer.append("5."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            posttest_answer.append("5."+correctAnswer+"The jet which blasted mid-air belonged to Malaysian Airlines."+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("5."+correctAnswer+"The jet, which blasted mid-air, belonged to Malaysian Airlines."+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
         if("Which place would you be visiting this vacation?".equalsIgnoreCase(answer6.getText().trim()))
         {
                     posttest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
@@ -160,23 +160,23 @@ public class PostTest_Writing extends javax.swing.JFrame {
         jLabel3.setText("Put the words in order to make a meaningful sentence.");
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel5.setText("Understand/ I / weird/ don’t / . /behavior / his/");
+        jLabel5.setText("understand/ I / weird/ don’t / . /behavior / his/");
         jLabel5.setName("quest1"); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("Isn’t / he / brilliant / he / is /? /");
+        jLabel6.setText("isn’t / he / brilliant / He / is /? / , /");
         jLabel6.setName("quest2"); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("Hates/ ? / doesn’t / she / apples / she/");
+        jLabel7.setText("hates/ ? / doesn’t / She / apples / she/ , /");
         jLabel7.setName("quest3"); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("Diversity / India / known/ for / is / . /unity/ in/");
+        jLabel8.setText("diversity / India / known/ for / is / . /unity/ in/");
         jLabel8.setName("quest4"); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel9.setText("/ ./ Malaysian Airlines/ blasted/ the / belonged / mid-air/ to / which / jet /");
+        jLabel9.setText("/ ./ Malaysian Airlines/ blasted/ , / The / belonged / mid-air/ to / which / , / jet /");
         jLabel9.setName("quest5"); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -218,7 +218,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
         });
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel15.setText("Place / ? / you / would / vacation / this / which / visiting / be /");
+        jLabel15.setText("place / ? / you / would / vacation / this / which / visiting / be /");
         jLabel15.setName("quest6"); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N

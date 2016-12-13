@@ -230,7 +230,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Fishing/ .  / because/ fun / is / fishing / like / I /"/>
+            <Property name="text" type="java.lang.String" value="fishing/ .  / because/ fun / is / fishing / like / I /"/>
             <Property name="name" type="java.lang.String" value="quest2" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -242,7 +242,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Whom / professor / the man / my / yesterday / . / you / is / met /"/>
+            <Property name="text" type="java.lang.String" value="whom / professor / The man / , / my / yesterday / . / you / , / is / met /"/>
             <Property name="name" type="java.lang.String" value="quest3" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -254,7 +254,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Rich/ .  / he / very / is / he / still / though/ unhappy/ is/"/>
+            <Property name="text" type="java.lang.String" value="rich/ .  / he / very / is / he / still / Though/ unhappy/ is/ , /"/>
             <Property name="name" type="java.lang.String" value="quest4" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -266,7 +266,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Noticed / train / hadn&#x2019;t / . / the / she / coming / opposite / the / direction / in/"/>
+            <Property name="text" type="java.lang.String" value="noticed / train / hadn&#x2019;t / . / the / she / coming / opposite / the / direction / in/"/>
             <Property name="name" type="java.lang.String" value="quest5" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -384,7 +384,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Everything / had / read / I / feared / yet/ exam /I / the / writing /. /"/>
+            <Property name="text" type="java.lang.String" value="everything / , / had / read / I / feared / yet/ exam /I / the / writing /. /"/>
             <Property name="name" type="java.lang.String" value="quest6" noResource="true"/>
           </Properties>
         </Component>

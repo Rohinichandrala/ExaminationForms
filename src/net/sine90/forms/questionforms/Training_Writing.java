@@ -74,14 +74,14 @@ public class Training_Writing extends javax.swing.JFrame {
         }
         else
             training_answer.append("2."+correctAnswer+"I like fishing because fishing is fun."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
-        if("The man, whom you met yesterday, is my professor.".equalsIgnoreCase(answer3.getText().trim()))
+        if("The man, whom you met yesterday, is my professor.".equalsIgnoreCase(answer3.getText().trim()) || "The man,whom you met yesterday,is my professor.".equalsIgnoreCase(answer3.getText().trim()))
         {
                     training_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
             training_answer.append("3."+correctAnswer+"The man, whom you met yesterday, is my professor."+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
-        if("Though he is very rich, he is still unhappy.".equalsIgnoreCase(answer4.getText().trim()))
+        if("Though he is very rich, he is still unhappy.".equalsIgnoreCase(answer4.getText().trim()) || "Though he is very rich,he is still unhappy.".equalsIgnoreCase(answer4.getText().trim()))
         {
                     training_answer.append("4."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
@@ -95,7 +95,7 @@ public class Training_Writing extends javax.swing.JFrame {
         }
         else
             training_answer.append("5."+correctAnswer+"She hadn’t noticed the train coming in the opposite direction."+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
-        if("I had read everything, yet I feared writing the exam.".equalsIgnoreCase(answer6.getText().trim()))
+        if("I had read everything, yet I feared writing the exam.".equalsIgnoreCase(answer6.getText().trim()) || "I had read everything,yet I feared writing the exam.".equalsIgnoreCase(answer6.getText().trim()))
         {
                     training_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
@@ -165,19 +165,19 @@ public class Training_Writing extends javax.swing.JFrame {
         jLabel5.setName("quest1"); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("Fishing/ .  / because/ fun / is / fishing / like / I /");
+        jLabel6.setText("fishing/ .  / because/ fun / is / fishing / like / I /");
         jLabel6.setName("quest2"); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("Whom / professor / the man / my / yesterday / . / you / is / met /");
+        jLabel7.setText("whom / professor / The man / , / my / yesterday / . / you / , / is / met /");
         jLabel7.setName("quest3"); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("Rich/ .  / he / very / is / he / still / though/ unhappy/ is/");
+        jLabel8.setText("rich/ .  / he / very / is / he / still / Though/ unhappy/ is/ , /");
         jLabel8.setName("quest4"); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel9.setText("Noticed / train / hadn’t / . / the / she / coming / opposite / the / direction / in/");
+        jLabel9.setText("noticed / train / hadn’t / . / the / she / coming / opposite / the / direction / in/");
         jLabel9.setName("quest5"); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -219,7 +219,7 @@ public class Training_Writing extends javax.swing.JFrame {
         });
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel15.setText("Everything / had / read / I / feared / yet/ exam /I / the / writing /. /");
+        jLabel15.setText("everything / , / had / read / I / feared / yet/ exam /I / the / writing /. /");
         jLabel15.setName("quest6"); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N

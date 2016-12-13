@@ -52,7 +52,7 @@ public class Training_Writing1 extends javax.swing.JFrame {
         int total=6;
         BufferedWriter bw;
         FileWriter fw;
-        File file=new File("C:\\Results\\Listening\\"+fileName);
+        File file=new File("C:\\Results\\Writing\\"+fileName);
             if(!file.exists())
             try {
                 file.createNewFile();
@@ -65,37 +65,37 @@ public class Training_Writing1 extends javax.swing.JFrame {
                 }
                 else
                 writing1_answer.append("1."+correctAnswer+"3"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("6".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("6".equalsIgnoreCase(jTextField13.getText().trim()))
                 {
-                writing1_answer.append("2."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("2."+correctAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
                 writing1_answer.append("2."+correctAnswer+"6"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("4".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("4".equalsIgnoreCase(jTextField14.getText().trim()))
                 {
-                writing1_answer.append("3."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("3."+correctAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
                 writing1_answer.append("3."+correctAnswer+"4"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("1".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("1".equalsIgnoreCase(jTextField15.getText().trim()))
                 {
-                writing1_answer.append("4."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("4."+correctAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
                 writing1_answer.append("4."+correctAnswer+"1"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("5".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("5".equalsIgnoreCase(jTextField16.getText().trim()))
                 {
-                writing1_answer.append("5."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("5."+correctAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
                 writing1_answer.append("5."+correctAnswer+"5"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("2".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("2".equalsIgnoreCase(jTextField17.getText().trim()))
                 {
-                writing1_answer.append("6."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("6."+correctAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
