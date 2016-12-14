@@ -209,6 +209,7 @@ public class PreTest_ReadingComprehension extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
+        if(child.isVisible())
         child.setVisible(false);
             child.submitForm();      
         

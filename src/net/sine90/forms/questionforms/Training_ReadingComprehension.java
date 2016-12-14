@@ -182,7 +182,9 @@ public class Training_ReadingComprehension extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        child.setVisible(false);
+        
+        if(child.isVisible())
+            child.setVisible(false);
             child.submitForm();      
         
         super.dispose();
