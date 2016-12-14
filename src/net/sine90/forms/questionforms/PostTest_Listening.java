@@ -33,11 +33,11 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jLabel20.setText("Answers are auto submited");
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Dedication" , "Answers", "Journey"},
-                {"Dreams", "Questions", "Dedicated"},
-                {"Failure", "Success", "Goals"},
-                {"Road-trip ", "A", "An"},
-                {"Of","To",null},
+                {"dedication" , "answers", "journey"},
+                {"dreams", "questions", "dedicated"},
+                {"failure", "success", "goals"},
+                {"road-trip ", "a", "an"},
+                {"of","to",null},
             },
             new String [] {
                 "Column 1", "Column 2", "Column 3"

@@ -33,12 +33,12 @@ public class PreTest_Listening extends javax.swing.JFrame {
         initComponents();
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Crows" , "Amazing", "Inseparable"},
-                {"Amazement", "Peacefully", "Close"},
-                {"in ", "Flock", "Noisily"},
-                {"Collaborate", "Frightened", "Has"},
-                {"An","A","Had"},
-                {"Fear","up",null}
+                {"crows" , "amazing", "inseparable"},
+                {"amazement", "peacefully", "close"},
+                {"in ", "flock", "noisily"},
+                {"collaborate", "frightened", "has"},
+                {"an","a","had"},
+                {"fear","up",null}
             },
             new String [] {
                 "Column 1", "Column 2", "Column 3"
