@@ -169,10 +169,11 @@ public class ReadingTestMain extends javax.swing.JFrame {
         try{
         if(!file.exists())
                 file.createNewFile();           
-                 fw = new FileWriter(file);
+                 fw = new FileWriter(file,true);
                 bw = new BufferedWriter(fw);
                 String result="Total Score in Reading : "+ReadingTestParameters.marks_obtained_reading+"/ "+ReadingTestParameters.total_marks_reading;        
-                bw.append(result.toString());
+        bw.newLine();
+        bw.append(result.toString());
         bw.flush();    
         fw.close();
         bw.close();

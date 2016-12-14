@@ -151,10 +151,11 @@ public class WritingTestMain extends javax.swing.JFrame {
         try{
         if(!file.exists())
                 file.createNewFile();           
-                 fw = new FileWriter(file);
+                 fw = new FileWriter(file,true);
                 bw = new BufferedWriter(fw);
                 String result="Total Score in Writing : "+WritingTestParameters.marks_obtained_writing+"/ "+WritingTestParameters.total_marks_writing;
-       bw.append(result.toString());
+        bw.newLine();
+        bw.append(result.toString());
         bw.flush();
         fw.close();
         bw.close();

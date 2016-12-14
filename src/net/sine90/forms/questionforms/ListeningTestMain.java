@@ -70,7 +70,7 @@ public class ListeningTestMain extends javax.swing.JFrame {
         });
 
         jButton3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton3.setText("Training");
+        jButton3.setText("Training-1");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -78,7 +78,7 @@ public class ListeningTestMain extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton4.setText("Training2");
+        jButton4.setText("Training-2");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -114,7 +114,7 @@ public class ListeningTestMain extends javax.swing.JFrame {
                                 .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButton4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 301, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 296, Short.MAX_VALUE)
                                 .addComponent(jButton5)))))
                 .addGap(104, 104, 104))
         );
@@ -162,10 +162,11 @@ public class ListeningTestMain extends javax.swing.JFrame {
         try{
         if(!file.exists())
                 file.createNewFile();           
-                 fw = new FileWriter(file);
+                 fw = new FileWriter(file,true);
                 bw = new BufferedWriter(fw);
                 String result="Total Score in Listening : "+ListeningTestParameters.marks_obtained_listening+"/ "+ListeningTestParameters.total_marks_listening;
-       bw.append(result.toString());
+       bw.newLine();
+        bw.append(result.toString());
         bw.flush();
         fw.close();
         bw.close();

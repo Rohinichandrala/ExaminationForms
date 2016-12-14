@@ -19,8 +19,11 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JLabel;
+import javax.swing.JScrollBar;
 import javax.swing.JTextField;
+import javax.swing.JTextPane;
 import javax.swing.Timer;
+import javax.swing.text.DefaultCaret;
 import net.sine90.forms.ReadingTestParameters;
 import net.sine90.forms.WritingTestParameters;
 
@@ -37,7 +40,15 @@ public class PreTest_ReadingComprehension extends javax.swing.JFrame {
     Timer timer;
     public PreTest_ReadingComprehension() {
         initComponents();
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+   public void run() { 
+       jScrollPane1.getVerticalScrollBar().setValue(0);
+   }
+});
+     
+//        jScrollPane1.getVerticalScrollBar().setValue(0);
         jTextArea1.setText(ReadingTestParameters.pre_test_com);
+        
         ActionListener taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -84,6 +95,7 @@ public class PreTest_ReadingComprehension extends javax.swing.JFrame {
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         jTextArea1.setRows(5);
+        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         jTextArea1.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTextArea1.setEnabled(false);
         jScrollPane1.setViewportView(jTextArea1);
