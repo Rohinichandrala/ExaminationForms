@@ -95,7 +95,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
                      marks_obtained++;
         }
         else
-            pretest_answer.append("5."+correctAnswer+"Dad didn’t pack the lunch box did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("5."+correctAnswer+"Dad didn’t pack the lunch box, did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
         if("Children are fascinated by advancements in technology.".equalsIgnoreCase(answer6.getText().trim()))
         {
                     pretest_answer.append("6."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
