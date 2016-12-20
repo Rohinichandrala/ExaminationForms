@@ -49,9 +49,9 @@ public class PostTest_Listening extends javax.swing.JFrame {
                 submitForm();
             }
         }; 
-        timer = new Timer(300000,taskPerformer);
+        timer = new Timer(420000,taskPerformer);
         timer.start(); 
-        new Utilities().startTimer(5, jLabel10);
+        new Utilities().startTimer(7, jLabel10);
     }
     private void submitForm()
     {
@@ -289,7 +289,7 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jLabel28.setText("for you. ");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("05 : 00");
+        jLabel10.setText("07 : 00");
 
         jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel18.setText("Time :");

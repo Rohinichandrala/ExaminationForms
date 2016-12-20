@@ -50,9 +50,9 @@ public class PreTest_Listening extends javax.swing.JFrame {
                 submitForm();
             }
         }; 
-        timer = new Timer(300000,taskPerformer);
+        timer = new Timer(420000,taskPerformer);
         timer.start();
-        new Utilities().startTimer(5, jLabel20);
+        new Utilities().startTimer(7, jLabel20);
     }
     private void submitForm()
     {
@@ -306,7 +306,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         });
 
         jLabel20.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
-        jLabel20.setText("05 : 00");
+        jLabel20.setText("07 : 00");
 
         jLabel28.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         jLabel28.setText("Answers are auto submited");

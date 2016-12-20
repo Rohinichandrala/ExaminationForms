@@ -262,7 +262,7 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton23.setText("Skunks releasing horrible smell");
 
         jRadioButton24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jRadioButton24.setText("Skunks releasing horrible smell");
+        jRadioButton24.setText("Trees growing flowers");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("7. Which idea is correct?");
@@ -294,6 +294,10 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(98, 98, 98))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel7)
@@ -359,15 +363,9 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jRadioButton16)
-                                    .addComponent(jRadioButton13))))
-                        .addContainerGap(272, Short.MAX_VALUE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(35, 877, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addGap(98, 98, 98))))
+                                    .addComponent(jRadioButton13)))
+                            .addComponent(jLabel5))
+                        .addContainerGap(272, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
