@@ -168,7 +168,7 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton27 = new javax.swing.JRadioButton();
         jRadioButton28 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -288,8 +288,8 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("\"sometimes just passing to think deeply allows your brain to make connections so that new information can be quickly retrieved when you need it again\"");
+        jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
+        jLabel15.setText("\"you can accurately identified absolute or exact locations on earth\"");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -298,13 +298,13 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1)
                         .addGap(24, 24, 24))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -353,7 +353,6 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
                                     .addComponent(jRadioButton2)
                                     .addComponent(jRadioButton4)))
                             .addComponent(jLabel10)
-                            .addComponent(jLabel11)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jRadioButton18)
@@ -371,7 +370,8 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jRadioButton16)
                                     .addComponent(jRadioButton13)))
-                            .addComponent(jLabel5))
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel11))
                         .addContainerGap(74, Short.MAX_VALUE))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -432,7 +432,7 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel14)
+                .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jRadioButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -524,7 +524,7 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
