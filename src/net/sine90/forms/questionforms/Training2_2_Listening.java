@@ -55,7 +55,7 @@ public class Training2_2_Listening extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = ListeningTestParameters.student_name+"Training2_MutlipleChoice"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"PostTest_MutlipleChoice"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         StringBuilder training2_answer=new StringBuilder();

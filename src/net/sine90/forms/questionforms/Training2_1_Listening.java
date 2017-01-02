@@ -43,7 +43,7 @@ public class Training2_1_Listening extends javax.swing.JFrame {
     private void submitForm()
     {
         timer.stop();
-        String fileName = ListeningTestParameters.student_name+"Training2_rightOrder"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
+        String fileName = ListeningTestParameters.student_name+"PostTest_rightOrder"+new SimpleDateFormat("yyyyMMddhhmm'.txt'").format(new Date());
         String correctAnswer="Correct Answer :";
         String wrongAnswer="Wrong Answer :";
         StringBuilder training1_answer=new StringBuilder();
