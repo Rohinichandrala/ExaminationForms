@@ -284,7 +284,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         });
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("\"sometimes just passing to think deeply allows your brain to make connections so that new information can be quickly retrieved when you need it again\"");
+        jLabel14.setText("\"sometimes just pausing to think deeply allows your brain to make connections so that new information can be quickly retrieved when you need it again\"");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -298,7 +298,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
                         .addComponent(jButton1))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel14)
-                        .addGap(0, 84, Short.MAX_VALUE))
+                        .addGap(0, 82, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()

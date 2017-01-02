@@ -289,7 +289,7 @@ public class Training_ReadingComprehension1 extends javax.swing.JFrame {
         });
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel15.setText("\"you can accurately identified absolute or exact locations on earth\"");
+        jLabel15.setText("\"you can accurately identify absolute or exact locations on earth\"");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
