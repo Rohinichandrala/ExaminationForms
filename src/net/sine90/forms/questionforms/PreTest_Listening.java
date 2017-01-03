@@ -35,7 +35,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
             new Object [][] {
                 {"crows" , "amazing", "inseparable"},
                 {"amazement", "peacefully", "close"},
-                {"up ", "flock", "noisily"},
+                {"in ", "flock", "noisily"},
                 {"collaborate", "frightened", "has"},
                 {"an","a","had"},
                 {"fear",null}
@@ -106,13 +106,13 @@ public class PreTest_Listening extends javax.swing.JFrame {
         }
         else
             pretest_answer.append("5."+correctAnswer+"Flock"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
-       if(jTextField8.getText().trim().equalsIgnoreCase("up"))
+       if(jTextField8.getText().trim().equalsIgnoreCase("in"))
         {
             pretest_answer.append("6."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("6."+correctAnswer+"up"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("6."+correctAnswer+"in"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
         if("Had".equalsIgnoreCase(jTextField9.getText().trim()))
         {
             pretest_answer.append("7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
@@ -258,7 +258,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jTextField6.setToolTipText("");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. The doves picked in");
+        jLabel12.setText("6. The doves picked up");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("the net and flew");

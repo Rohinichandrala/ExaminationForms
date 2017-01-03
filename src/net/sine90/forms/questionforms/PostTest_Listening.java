@@ -189,7 +189,7 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jLabel1.setText("Listening Skill");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("Post-Test");
+        jLabel2.setText("Training - 2");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Topic- How to kill your dreams");
