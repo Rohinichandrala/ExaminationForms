@@ -54,7 +54,7 @@ public class ListeningTestMain extends javax.swing.JFrame {
         jLabel2.setText("Please select a category to start the test");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton1.setText("PreTest");
+        jButton1.setText("Pre-test");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -78,7 +78,7 @@ public class ListeningTestMain extends javax.swing.JFrame {
         });
 
         jButton4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton4.setText("PostTest");
+        jButton4.setText("Post-test");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);

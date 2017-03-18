@@ -62,7 +62,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         String wrongAnswer="Wrong Answer :";
         StringBuilder pretest_answer=new StringBuilder();
         int marks_obtained=0;
-        int total=9;
+        int total=8;
         BufferedWriter bw;
         FileWriter fw;
         File file=new File("C:\\Results\\Listening\\"+fileName);
@@ -99,41 +99,34 @@ public class PreTest_Listening extends javax.swing.JFrame {
         }
         else
             pretest_answer.append("4."+correctAnswer+"Amazing"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
-        if("Flock".equalsIgnoreCase(jTextField6.getText().trim()))
-        {
-            pretest_answer.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
-             marks_obtained++;
-        }
-        else
-            pretest_answer.append("5."+correctAnswer+"Flock"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
        if(jTextField8.getText().trim().equalsIgnoreCase("in"))
         {
-            pretest_answer.append("6."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("5."+correctAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("6."+correctAnswer+"in"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("5."+correctAnswer+"in"+System.getProperty("line.separator")+wrongAnswer+jTextField8.getText().trim()+System.getProperty("line.separator"));
         if("Had".equalsIgnoreCase(jTextField9.getText().trim()))
         {
-            pretest_answer.append("7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("6."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("7."+correctAnswer+"Had"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("6."+correctAnswer+"Had"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
         if("A".equalsIgnoreCase(jTextField10.getText().trim()))
         {
-            pretest_answer.append("8."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("7."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("8."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("7."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         if("Fear".equalsIgnoreCase(jTextField11.getText().trim()))
         {
-            pretest_answer.append("9."+correctAnswer+jTextField11.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("8."+correctAnswer+jTextField11.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("9."+correctAnswer+"Fear"+System.getProperty("line.separator")+wrongAnswer+jTextField11.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("8."+correctAnswer+"Fear"+System.getProperty("line.separator")+wrongAnswer+jTextField11.getText().trim()+System.getProperty("line.separator"));
         pretest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(pretest_answer.toString());
@@ -167,14 +160,11 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
         jTextField4 = new javax.swing.JTextField();
         jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jTextField8 = new javax.swing.JTextField();
@@ -199,7 +189,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel1.setText("Listening Skill");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("Pre-Test");
+        jLabel2.setText("Pre-test");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Topic- The Four Friends");
@@ -233,14 +223,8 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel8.setText("4. Present participle of the word “Amaze” is");
 
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel9.setText("of doves got trapped in a hunter’s net.");
-
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel10.setText("the sky. ");
-
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. A");
 
         jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField2.setToolTipText("");
@@ -254,11 +238,8 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jTextField5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField5.setToolTipText("");
 
-        jTextField6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField6.setToolTipText("");
-
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. The doves picked up");
+        jLabel12.setText("5. The doves picked up");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("the net and flew");
@@ -267,7 +248,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jTextField8.setToolTipText("");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("7. The Crow tells them the story of how the mouse");
+        jLabel14.setText("6. The Crow tells them the story of how the mouse");
 
         jTextField9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField9.setToolTipText("");
@@ -276,7 +257,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel15.setText(" freed the doves.");
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel16.setText("8. The crow finds the deer in");
+        jLabel16.setText("7. The crow finds the deer in");
 
         jTextField10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField10.setToolTipText("");
@@ -285,7 +266,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
         jLabel17.setText("clearing with its foot caught in the net.");
 
         jLabel18.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel18.setText("9.The synonym of the word fright is");
+        jLabel18.setText("8.The synonym of the word fright is");
 
         jTextField11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField11.setToolTipText("");
@@ -323,11 +304,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 826, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel19)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel9))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -344,7 +320,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
                                 .addComponent(jLabel8)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel12)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -438,11 +413,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(5, 5, 5)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
-                    .addComponent(jLabel11)
-                    .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel12)
@@ -463,7 +433,7 @@ public class PreTest_Listening extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel18)
                     .addComponent(jTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
+                .addGap(53, 53, 53)
                 .addComponent(jButton1)
                 .addContainerGap(21, Short.MAX_VALUE))
         );
@@ -526,7 +496,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
@@ -546,7 +515,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
@@ -556,7 +524,6 @@ public class PreTest_Listening extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables

@@ -5,15 +5,12 @@
  */
 package net.sine90.forms;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
 /**
  *
  * @author rohini
  */
 public class WritingTestParameters {
-    public static int total_marks_writing=37;
+    public static int total_marks_writing=36;
     public static int marks_obtained_writing=0;
     
 }

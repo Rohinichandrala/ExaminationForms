@@ -51,7 +51,7 @@ public class WritingTestMain extends javax.swing.JFrame {
         jLabel1.setText("Writing Test");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton1.setText("PreTest");
+        jButton1.setText("Pre-test");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -59,7 +59,8 @@ public class WritingTestMain extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 14)); // NOI18N
-        jButton2.setText("PostTest");
+        jButton2.setText("Post-test");
+        jButton2.setToolTipText("");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -155,7 +156,7 @@ public class WritingTestMain extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
                 String result="Total Score in Writing : "+WritingTestParameters.marks_obtained_writing+"/ "+WritingTestParameters.total_marks_writing;
         bw.newLine();
-        bw.append(result.toString());
+        bw.append(result);
         bw.flush();
         fw.close();
         bw.close();
@@ -170,17 +171,18 @@ public class WritingTestMain extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         super.dispose();
-        PreTest_Writing1.main(null);
+//        PreTest_Writing1.main(null);
+        PreTest_Writing.main(null);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         super.dispose();
-        PostTest_Writing1.main(null);
+        PostTest_Writing.main(null);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         super.dispose();
-        Training_Writing1.main(null);
+        Training_Writing.main(null);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     /**

@@ -108,7 +108,8 @@ public class PostTest_Writing extends javax.swing.JFrame {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
          super.dispose();
-       Q_A_PostTest_Writing.main(null);
+//       Q_A_PostTest_Writing.main(null);
+         PostTest_Writing1.main(null);
         
     }
 
@@ -154,29 +155,29 @@ public class PostTest_Writing extends javax.swing.JFrame {
         jLabel1.setText("Writing Comprehension");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel2.setText("Post Test");
+        jLabel2.setText("Post-test");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Put the words in order to make a meaningful sentence.");
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel5.setText("understand/ I / weird/ don’t / . /behavior / his/");
+        jLabel5.setText("understand/ I / weird/ don’t / behavior. / his/");
         jLabel5.setName("quest1"); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("isn’t / he / brilliant / He / is /? / , /");
+        jLabel6.setText("isn’t / he? / brilliant, / He / is /");
         jLabel6.setName("quest2"); // NOI18N
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("hates/ ? / doesn’t / She / apples / she/ , /");
+        jLabel7.setText("hates / doesn’t / She / apples, / she?/");
         jLabel7.setName("quest3"); // NOI18N
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("diversity / India / known/ for / is / . /unity/ in/");
+        jLabel8.setText("diversity. / India / known/ for / is /unity/ in/");
         jLabel8.setName("quest4"); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel9.setText("/ ./ Malaysian Airlines/ blasted/ , / The / belonged / mid-air/ to / which / , / jet /");
+        jLabel9.setText("Malaysian Airlines./ blasted / The / belonged / mid-air,/ to / which / jet, /");
         jLabel9.setName("quest5"); // NOI18N
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -218,7 +219,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
         });
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel15.setText("place / ? / you / would / vacation / this / which / visiting / be /");
+        jLabel15.setText("place / you / would / vacation? / this / Which / visiting / be /");
         jLabel15.setName("quest6"); // NOI18N
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
@@ -247,7 +248,7 @@ public class PostTest_Writing extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(314, 314, 314)
                 .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 257, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 262, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel18)

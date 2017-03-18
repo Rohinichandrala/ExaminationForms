@@ -9,8 +9,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import net.sine90.forms.ListeningTestParameters;
@@ -53,7 +51,7 @@ public class ReadingTestMain extends javax.swing.JFrame {
         jLabel1.setName(""); // NOI18N
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton1.setText("PreTest");
+        jButton1.setText("Pre-test");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -61,7 +59,7 @@ public class ReadingTestMain extends javax.swing.JFrame {
         });
 
         jButton2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jButton2.setText("PostTest");
+        jButton2.setText("Post-test");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);

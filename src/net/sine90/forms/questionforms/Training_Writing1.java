@@ -109,7 +109,7 @@ public class Training_Writing1 extends javax.swing.JFrame {
                 Logger.getLogger(Training_Writing1.class.getName()).log(Level.SEVERE, null, ex);
             }
         super.dispose();
-        Training_Writing.main(null);
+        WritingTestMain.main(null);
     }
 
     /**

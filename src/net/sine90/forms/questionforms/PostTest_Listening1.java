@@ -57,48 +57,48 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
                 file.createNewFile();
                 fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
-                if("2".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("b".equalsIgnoreCase(jTextField12.getText().trim()))
                 {
                 posttest_answer.append("1."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("1."+correctAnswer+"2"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("6".equalsIgnoreCase(jTextField13.getText().trim()))
+                posttest_answer.append("1."+correctAnswer+"b"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("f".equalsIgnoreCase(jTextField13.getText().trim()))
                 {
                 posttest_answer.append("2."+correctAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("2."+correctAnswer+"6"+System.getProperty("line.separator")+wrongAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
-                if("1".equalsIgnoreCase(jTextField14.getText().trim()))
+                posttest_answer.append("2."+correctAnswer+"f"+System.getProperty("line.separator")+wrongAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
+                if("a".equalsIgnoreCase(jTextField14.getText().trim()))
                 {
                 posttest_answer.append("3."+correctAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("3."+correctAnswer+"1"+System.getProperty("line.separator")+wrongAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
-                if("4".equalsIgnoreCase(jTextField15.getText().trim()))
+                posttest_answer.append("3."+correctAnswer+"a"+System.getProperty("line.separator")+wrongAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
+                if("d".equalsIgnoreCase(jTextField15.getText().trim()))
                 {
                 posttest_answer.append("4."+correctAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("4."+correctAnswer+"4"+System.getProperty("line.separator")+wrongAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
-                if("5".equalsIgnoreCase(jTextField16.getText().trim()))
+                posttest_answer.append("4."+correctAnswer+"d"+System.getProperty("line.separator")+wrongAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
+                if("e".equalsIgnoreCase(jTextField16.getText().trim()))
                 {
                 posttest_answer.append("5."+correctAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("5."+correctAnswer+"5"+System.getProperty("line.separator")+wrongAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
-                if("3".equalsIgnoreCase(jTextField17.getText().trim()))
+                posttest_answer.append("5."+correctAnswer+"e"+System.getProperty("line.separator")+wrongAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
+                if("c".equalsIgnoreCase(jTextField17.getText().trim()))
                 {
                 posttest_answer.append("6."+correctAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                posttest_answer.append("6."+correctAnswer+"3"+System.getProperty("line.separator")+wrongAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
+                posttest_answer.append("6."+correctAnswer+"c"+System.getProperty("line.separator")+wrongAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
                 posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
                 ListeningTestParameters.marks_obtained_listening+=marks_obtained;
                 bw.write(posttest_answer.toString());
@@ -124,7 +124,6 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
@@ -145,16 +144,13 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
-        jLabel20.setText("Place them in the Right Order:");
-
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("Note: Enter the option number in box");
+        jLabel20.setText("Rearrange the following sentences in the right order and enter the corresponding letter in the box");
 
         jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel21.setText("1. Firstly, your success story is always a result of everything you‘ve done in your life through that moment.");
+        jLabel21.setText("a. Firstly, your success story is always a result of everything you‘ve done in your life through that moment.");
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel22.setText("2. Finally, life is never about the goals themselves but all about the journey.");
+        jLabel22.setText("b. Finally, life is never about the goals themselves but all about the journey.");
 
         jTextField13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField13.setToolTipText("");
@@ -166,16 +162,16 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
         jTextField14.setToolTipText("");
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel23.setText("3. To begin with, I have dedicated the past two years to understanding how people achieve their dreams.");
+        jLabel23.setText("c. To begin with, I have dedicated the past two years to understanding how people achieve their dreams.");
 
         jTextField15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField15.setToolTipText("");
 
         jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel24.setText("4. Secondly, when you’re growing towards a peak, you need to work harder than ever.");
+        jLabel24.setText("d. Secondly, when you’re growing towards a peak, you need to work harder than ever.");
 
         jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel25.setText("5. Because there is no time to settle down at one peak as you need to achieve many.");
+        jLabel25.setText("e. Because there is no time to settle down at one peak as you need to achieve many.");
 
         jTextField16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField16.setToolTipText("");
@@ -184,7 +180,7 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
         jTextField17.setToolTipText("");
 
         jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel26.setText("6. Just like the 17 years of hard work that I had put in my life to get into MIT.");
+        jLabel26.setText("f. Just like the 17 years of hard work that I had put in my life to get into MIT.");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");
@@ -232,10 +228,7 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
                                 .addComponent(jLabel25)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel20)
-                                .addGap(30, 30, 30)
-                                .addComponent(jLabel10))
+                            .addComponent(jLabel20)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                                 .addComponent(jLabel24)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -263,11 +256,9 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
                     .addComponent(jLabel28))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel27)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel10))
-                .addGap(16, 16, 16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addGap(17, 17, 17)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -352,7 +343,6 @@ public class PostTest_Listening1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;

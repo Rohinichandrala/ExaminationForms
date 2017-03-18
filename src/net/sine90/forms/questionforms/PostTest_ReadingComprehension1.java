@@ -5,8 +5,6 @@
  */
 package net.sine90.forms.questionforms;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
@@ -16,7 +14,6 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ButtonGroup;
-import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 import net.sine90.forms.ReadingTestParameters;
 
@@ -205,19 +202,24 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton8.setText("Adaptations");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("4. The Monkeys’ long tails enables them to do all of the following except:");
+        jLabel8.setText("4. It can be inferred from paragraph 2 that “Smell of the skunk”");
 
         jRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jRadioButton9.setText("Allow them to eat");
+        jRadioButton9.setText("Is horrible");
+        jRadioButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton9ActionPerformed(evt);
+            }
+        });
 
         jRadioButton10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jRadioButton10.setText("Use it like any other hand");
+        jRadioButton10.setText("Puts off animals");
 
         jRadioButton11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jRadioButton11.setText("Swing quickly ");
+        jRadioButton11.setText("Puts off people");
 
         jRadioButton12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jRadioButton12.setText("Move through the tops of trees");
+        jRadioButton12.setText("Is misleading");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel10.setText("2. The writer feels “adaptation” means all of the following except:");
@@ -466,6 +468,10 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         submitForm();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jRadioButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton9ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -49,7 +49,7 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
         String wrongAnswer="Wrong Answer :";
         StringBuilder writing1_answer=new StringBuilder();
         int marks_obtained=0;
-        int total=7;
+        int total=6;
         BufferedWriter bw;
         FileWriter fw;
         File file=new File("C:\\Results\\Writing\\"+fileName);
@@ -58,55 +58,48 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                 file.createNewFile();
                 fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
-                if("2".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("b".equalsIgnoreCase(jTextField12.getText().trim()))
                 {
                 writing1_answer.append("1."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("1."+correctAnswer+"2"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("1".equalsIgnoreCase(jTextField13.getText().trim()))
+                writing1_answer.append("1."+correctAnswer+"b"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("a".equalsIgnoreCase(jTextField13.getText().trim()))
                 {
                 writing1_answer.append("2."+correctAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("2."+correctAnswer+"1"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("4".equalsIgnoreCase(jTextField14.getText().trim()))
+                writing1_answer.append("2."+correctAnswer+"a"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("d".equalsIgnoreCase(jTextField14.getText().trim()))
                 {
                 writing1_answer.append("3."+correctAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("3."+correctAnswer+"4"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("6".equalsIgnoreCase(jTextField15.getText().trim()))
+                writing1_answer.append("3."+correctAnswer+"d"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("f".equalsIgnoreCase(jTextField15.getText().trim()))
                 {
                 writing1_answer.append("4."+correctAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("4."+correctAnswer+"6"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("3".equalsIgnoreCase(jTextField16.getText().trim()))
+                writing1_answer.append("4."+correctAnswer+"f"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("c".equalsIgnoreCase(jTextField16.getText().trim()))
                 {
                 writing1_answer.append("5."+correctAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("5."+correctAnswer+"3"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("7".equalsIgnoreCase(jTextField17.getText().trim()))
-                {
-                writing1_answer.append("6."+correctAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
-                 marks_obtained++;
-                }
-                else
-                writing1_answer.append("6."+correctAnswer+"7"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("5".equalsIgnoreCase(jTextField18.getText().trim()))
+                writing1_answer.append("5."+correctAnswer+"c"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("e".equalsIgnoreCase(jTextField18.getText().trim()))
                 {
                 writing1_answer.append("6."+correctAnswer+jTextField18.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("6."+correctAnswer+"5"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("6."+correctAnswer+"e"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
                 writing1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
                 WritingTestParameters.marks_obtained_writing+=marks_obtained;
                 bw.write(writing1_answer.toString());
@@ -117,7 +110,9 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                 Logger.getLogger(PreTest_Writing1.class.getName()).log(Level.SEVERE, null, ex);
             }
             super.dispose();
-            PreTest_Writing.main(null);
+//            PreTest_Writing.main(null);
+            Q_A_PreTest_Writing.main(null);
+
     }
 
     /**
@@ -142,8 +137,6 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
         jLabel24 = new javax.swing.JLabel();
         jTextField16 = new javax.swing.JTextField();
         jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel27 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
@@ -154,16 +147,16 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
-        jLabel20.setText("Place them in the Right Order:");
+        jLabel20.setText("Write the correct order for the jumbled sentences of a passage");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel10.setText("Note: Enter the option number in box");
 
         jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel21.setText("1. Regularly, they would venture into the forest to collect rare flowers.");
+        jLabel21.setText("a. Regularly, they would venture into the forest to collect rare flowers.");
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel22.setText("2. Once upon a time, there were two sisters named Sally and Kelly, who lived in a cottage by the woods. They were hardworking and honest.");
+        jLabel22.setText("b. Once upon a time, there were two sisters named Sally and Kelly, who lived in a cottage by the woods. They were hardworking and honest.");
 
         jTextField12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField12.setToolTipText("");
@@ -177,7 +170,7 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
         jTextField13.setToolTipText("");
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel23.setText("3. Thus, their life continued in this manner.");
+        jLabel23.setText("c. Thus, their life continued in this manner.");
 
         jTextField14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField14.setToolTipText("");
@@ -186,19 +179,13 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
         jTextField15.setToolTipText("");
 
         jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel24.setText("4. Even though, they lived a good life, they were quite unhappy. One day, they encounter an angel who meets their demands.");
+        jLabel24.setText("d. Even though, they lived a good life, they were quite unhappy. One day, they encounter an angel who meets their demands.");
 
         jTextField16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField16.setToolTipText("");
 
         jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel25.setText("5. Later, they would sell the same in the market where it would fetch them a reasonable price.");
-
-        jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel26.setText("6. Although, happy for some time, they finally realize that happiness does not come out of material things");
-
-        jTextField17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jTextField17.setToolTipText("");
+        jLabel25.setText("e. Later, they would sell the same in the market where it would fetch them a reasonable price.");
 
         jButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jButton1.setText("Next");
@@ -212,7 +199,7 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
         jLabel27.setText("06 : 00");
 
         jLabel28.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel28.setText("7. However, the sisters always seemed sad and morose. ");
+        jLabel28.setText("g. However, the sisters always seemed sad and morose. ");
 
         jTextField18.setToolTipText("");
 
@@ -242,10 +229,6 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel25)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -253,7 +236,7 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                         .addComponent(jLabel24)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField15, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(234, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -310,14 +293,10 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                     .addComponent(jLabel25)
                     .addComponent(jTextField16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel26)
-                    .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel28)
                     .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(22, 22, 22)
+                .addGap(58, 58, 58)
                 .addComponent(jButton1)
                 .addGap(37, 37, 37))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -404,7 +383,6 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
@@ -415,7 +393,6 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField15;
     private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
     private javax.swing.JTextField jTextField18;
     // End of variables declaration//GEN-END:variables
 }

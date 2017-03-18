@@ -16,7 +16,7 @@ public class ListeningTestParameters {
     {
         student_name=name;
     }
-     public static int total_marks_listening=108;
+     public static int total_marks_listening=107;
     public static int marks_obtained_listening=0;
  
     

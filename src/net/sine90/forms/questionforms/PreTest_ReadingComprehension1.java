@@ -96,13 +96,13 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         }
         else
             reading_com_answer.append("6."+correctAnswer+jRadioButton21.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
-        if(jRadioButton25.isSelected())
+        if(jRadioButton26.isSelected())
         {
-            reading_com_answer.append("7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("7."+correctAnswer+jRadioButton26.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
+            reading_com_answer.append("7."+correctAnswer+jRadioButton26.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
         
         reading_com_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ReadingTestParameters.marks_obtained_reading+=marks_obtained;

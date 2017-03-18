@@ -87,7 +87,7 @@
                                   </Group>
                               </Group>
                           </Group>
-                          <EmptySpace min="0" pref="33" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="34" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="1" attributes="0">
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
@@ -170,7 +170,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="15" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Place them in the Right Order:"/>
+            <Property name="text" type="java.lang.String" value="Write the correct order for the jumbled sentences of a passage"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
@@ -186,7 +186,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="1. Mahatma Gandhi was a great Indian visionary who led an independence movement against the British rule in India"/>
+            <Property name="text" type="java.lang.String" value="a. Mahatma Gandhi was a great Indian visionary who led an independence movement against the British rule in India"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel22">
@@ -194,7 +194,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="2. However, he returned to India as a lawyer and started practicing law initially."/>
+            <Property name="text" type="java.lang.String" value="b. However, he returned to India as a lawyer and started practicing law initially."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField12">
@@ -218,7 +218,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="3. Despite the many challenges faced by him back home, he successfully moved to England to study Law. "/>
+            <Property name="text" type="java.lang.String" value="c. Despite the many challenges faced by him back home, he successfully moved to England to study Law. "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField14">
@@ -242,7 +242,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="4. Finally, India became an independent country on 15th&#xa0;of August in 1947 under his great leadership."/>
+            <Property name="text" type="java.lang.String" value="d. Finally, India became an independent country on 15th&#xa0;of August in 1947 under his great leadership."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField16">
@@ -258,7 +258,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="5. Thereafter, he decided to champion the cause of liberating Indians, who were then facing humiliation and exploitation by the British rulers."/>
+            <Property name="text" type="java.lang.String" value="e. Thereafter, he decided to champion the cause of liberating Indians, who were then facing humiliation and exploitation by the British rulers."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel26">
@@ -266,7 +266,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="6. The father of our nation, Mohandas Karamchand Gandhi, was born in 1869 on 2nd&#xa0;of October at Porbander in Gujarat, India"/>
+            <Property name="text" type="java.lang.String" value="f. The father of our nation, Mohandas Karamchand Gandhi, was born in 1869 on 2nd&#xa0;of October at Porbander in Gujarat, India"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="jTextField17">

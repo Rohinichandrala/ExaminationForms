@@ -16,7 +16,6 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.ButtonGroup;
-import javax.swing.JRadioButton;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 

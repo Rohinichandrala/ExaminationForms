@@ -53,7 +53,7 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="314" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="257" max="32767" attributes="0"/>
+                  <EmptySpace pref="262" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
@@ -206,7 +206,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="18" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Post Test"/>
+            <Property name="text" type="java.lang.String" value="Post-test"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
@@ -222,7 +222,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="understand/ I / weird/ don&#x2019;t / . /behavior / his/"/>
+            <Property name="text" type="java.lang.String" value="understand/ I / weird/ don&#x2019;t / behavior. / his/"/>
             <Property name="name" type="java.lang.String" value="quest1" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -235,7 +235,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="isn&#x2019;t / he / brilliant / He / is /? / , /"/>
+            <Property name="text" type="java.lang.String" value="isn&#x2019;t / he? / brilliant, / He / is /"/>
             <Property name="name" type="java.lang.String" value="quest2" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -247,7 +247,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="hates/ ? / doesn&#x2019;t / She / apples / she/ , /"/>
+            <Property name="text" type="java.lang.String" value="hates / doesn&#x2019;t / She / apples, / she?/"/>
             <Property name="name" type="java.lang.String" value="quest3" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -259,7 +259,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="diversity / India / known/ for / is / . /unity/ in/"/>
+            <Property name="text" type="java.lang.String" value="diversity. / India / known/ for / is /unity/ in/"/>
             <Property name="name" type="java.lang.String" value="quest4" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -271,7 +271,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="/ ./ Malaysian Airlines/ blasted/ , / The / belonged / mid-air/ to / which / , / jet /"/>
+            <Property name="text" type="java.lang.String" value="Malaysian Airlines./ blasted / The / belonged / mid-air,/ to / which / jet, /"/>
             <Property name="name" type="java.lang.String" value="quest5" noResource="true"/>
           </Properties>
           <AccessibilityProperties>
@@ -389,7 +389,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="place / ? / you / would / vacation / this / which / visiting / be /"/>
+            <Property name="text" type="java.lang.String" value="place / you / would / vacation? / this / Which / visiting / be /"/>
             <Property name="name" type="java.lang.String" value="quest6" noResource="true"/>
           </Properties>
         </Component>

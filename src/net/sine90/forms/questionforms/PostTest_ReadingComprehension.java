@@ -72,7 +72,7 @@ ActionListener taskPerformer = new ActionListener() {
         jLabel1.setText("Reading Comprehension");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("PostTest");
+        jLabel2.setText("Post-test");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel3.setText("Topic: ADAPTING TO SURVIVE");

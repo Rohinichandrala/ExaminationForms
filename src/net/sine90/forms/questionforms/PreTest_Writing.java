@@ -5,20 +5,16 @@
  */
 package net.sine90.forms.questionforms;
 
-import com.sun.java.swing.plaf.windows.resources.windows;
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JLabel;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 import net.sine90.forms.WritingTestParameters;
@@ -111,7 +107,8 @@ public class PreTest_Writing extends javax.swing.JFrame {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
         super.dispose();
-        Q_A_PreTest_Writing.main(null);
+//        Q_A_PreTest_Writing.main(null);
+        PreTest_Writing1.main(null);
 
     }
 
@@ -158,37 +155,37 @@ public class PreTest_Writing extends javax.swing.JFrame {
         jLabel1.setText("Writing Comprehension");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
-        jLabel2.setText("Pre Test");
+        jLabel2.setText("Pre-test");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel3.setText("Put the words in order to make a meaningful sentence.");
 
         quest1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest1.setText("Which / stolen / is / , /was/ The / mine / bag/ . /");
+        quest1.setText("which / stolen / is  /was/ The / mine. / bag,/");
 
         org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest1, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest1, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest2.setText("go / do / to / you / school / when /?/");
+        quest2.setText("go / do / to / you / school? / When /");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest2, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest2, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest3.setText("despite /walked / old woman / . / very / the / her / age / quickly");
+        quest3.setText("despite /walked / old woman / very / The / her / age / quickly.");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest3, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest3, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest4.setText("completed / . / social / studies/ I/ project/ haven’t / my/");
+        quest4.setText("completed / Social / Studies / I / Project. / haven’t / my/");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest4, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest4, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest5.setText("lunch / pack / ? / box / the / Dad /he / didn’t / did/ , /");
+        quest5.setText("lunch / pack / box, / the / Dad /he? / didn’t / did/");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest5, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest5, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
@@ -232,7 +229,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
         });
 
         quest6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest6.setText("advancements/ Fascinated / . / children/ by/ are / technology/ in");
+        quest6.setText("advancements/ fascinated / Children/ by/ are / technology. / in");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest6, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest6, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);

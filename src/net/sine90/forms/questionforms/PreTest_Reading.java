@@ -5,12 +5,9 @@
  */
 package net.sine90.forms.questionforms;
 
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
-import java.io.DataOutput;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -18,12 +15,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
 import net.sine90.forms.ReadingTestParameters;
-import net.sine90.forms.WritingTestParameters;
 
 /**
  *
@@ -185,7 +180,7 @@ public class PreTest_Reading extends javax.swing.JFrame {
         jLabel1.setText("Reading");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("Pretest");
+        jLabel2.setText("Pre-test");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 15)); // NOI18N
         jLabel3.setText("Cloze Passage");

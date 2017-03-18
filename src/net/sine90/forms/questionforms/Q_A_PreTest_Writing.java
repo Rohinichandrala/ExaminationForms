@@ -5,10 +5,6 @@
  */
 package net.sine90.forms.questionforms;
 
-import java.awt.Component;
-import javax.swing.JButton;
-import net.sine90.forms.WritingTestParameters;
-
 /**
  *
  * @author rohini
@@ -44,7 +40,7 @@ public class Q_A_PreTest_Writing extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 24)); // NOI18N
-        jLabel1.setText("Pre-Test Topics");
+        jLabel1.setText("Pre-test Topics");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 18)); // NOI18N
         jLabel2.setText("Please choose one topic from below list");

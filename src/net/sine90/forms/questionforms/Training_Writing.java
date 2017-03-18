@@ -5,7 +5,6 @@
  */
 package net.sine90.forms.questionforms;
 
-import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedWriter;
@@ -16,10 +15,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JLabel;
 import javax.swing.Timer;
 import net.sine90.forms.ListeningTestParameters;
-import net.sine90.forms.WritingTestParameters;
 
 /**
  *
@@ -109,7 +106,8 @@ public class Training_Writing extends javax.swing.JFrame {
             Logger.getLogger(PreTest_Reading.class.getName()).log(Level.SEVERE, null, ex);
         }
      super.dispose();
-     WritingTestMain.main(null);
+//     WritingTestMain.main(null);
+        Training_Writing1.main(null);
        
     }
 

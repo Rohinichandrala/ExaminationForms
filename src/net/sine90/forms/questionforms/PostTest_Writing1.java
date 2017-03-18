@@ -58,48 +58,48 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
                 file.createNewFile();
                 fw = new FileWriter(file);
                 bw = new BufferedWriter(fw);
-                if("2".equalsIgnoreCase(jTextField12.getText().trim()))
+                if("b".equalsIgnoreCase(jTextField12.getText().trim()))
                 {
                 writing1_answer.append("1."+correctAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("1."+correctAnswer+"2"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("4".equalsIgnoreCase(jTextField13.getText().trim()))
+                writing1_answer.append("1."+correctAnswer+"b"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("d".equalsIgnoreCase(jTextField13.getText().trim()))
                 {
                 writing1_answer.append("2."+correctAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("2."+correctAnswer+"4"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("3".equalsIgnoreCase(jTextField14.getText().trim()))
+                writing1_answer.append("2."+correctAnswer+"d"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("c".equalsIgnoreCase(jTextField14.getText().trim()))
                 {
                 writing1_answer.append("3."+correctAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("3."+correctAnswer+"3"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("6".equalsIgnoreCase(jTextField15.getText().trim()))
+                writing1_answer.append("3."+correctAnswer+"c"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("f".equalsIgnoreCase(jTextField15.getText().trim()))
                 {
                 writing1_answer.append("4."+correctAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("4."+correctAnswer+"6"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("5".equalsIgnoreCase(jTextField16.getText().trim()))
+                writing1_answer.append("4."+correctAnswer+"f"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("e".equalsIgnoreCase(jTextField16.getText().trim()))
                 {
                 writing1_answer.append("5."+correctAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("5."+correctAnswer+"5"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
-                if("1".equalsIgnoreCase(jTextField17.getText().trim()))
+                writing1_answer.append("5."+correctAnswer+"e"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                if("a".equalsIgnoreCase(jTextField17.getText().trim()))
                 {
                 writing1_answer.append("6."+correctAnswer+jTextField17.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("6."+correctAnswer+"1"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("6."+correctAnswer+"a"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
                 writing1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
                 WritingTestParameters.marks_obtained_writing+=marks_obtained;
                 bw.write(writing1_answer.toString());
@@ -110,7 +110,7 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
                 Logger.getLogger(PostTest_Writing1.class.getName()).log(Level.SEVERE, null, ex);
             }
             super.dispose();
-           PostTest_Writing.main(null);
+           Q_A_PostTest_Writing.main(null);
     }
 
     /**
@@ -145,16 +145,16 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 15)); // NOI18N
-        jLabel20.setText("Place them in the Right Order:");
+        jLabel20.setText("Write the correct order for the jumbled sentences of a passage");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel10.setText("Note: Enter the option number in box");
 
         jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel21.setText("1. Mahatma Gandhi was a great Indian visionary who led an independence movement against the British rule in India");
+        jLabel21.setText("a. Mahatma Gandhi was a great Indian visionary who led an independence movement against the British rule in India");
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel22.setText("2. However, he returned to India as a lawyer and started practicing law initially.");
+        jLabel22.setText("b. However, he returned to India as a lawyer and started practicing law initially.");
 
         jTextField12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField12.setToolTipText("");
@@ -163,7 +163,7 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
         jTextField13.setToolTipText("");
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel23.setText("3. Despite the many challenges faced by him back home, he successfully moved to England to study Law. ");
+        jLabel23.setText("c. Despite the many challenges faced by him back home, he successfully moved to England to study Law. ");
 
         jTextField14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField14.setToolTipText("");
@@ -172,16 +172,16 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
         jTextField15.setToolTipText("");
 
         jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel24.setText("4. Finally, India became an independent country on 15th of August in 1947 under his great leadership.");
+        jLabel24.setText("d. Finally, India became an independent country on 15th of August in 1947 under his great leadership.");
 
         jTextField16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField16.setToolTipText("");
 
         jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel25.setText("5. Thereafter, he decided to champion the cause of liberating Indians, who were then facing humiliation and exploitation by the British rulers.");
+        jLabel25.setText("e. Thereafter, he decided to champion the cause of liberating Indians, who were then facing humiliation and exploitation by the British rulers.");
 
         jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel26.setText("6. The father of our nation, Mohandas Karamchand Gandhi, was born in 1869 on 2nd of October at Porbander in Gujarat, India");
+        jLabel26.setText("f. The father of our nation, Mohandas Karamchand Gandhi, was born in 1869 on 2nd of October at Porbander in Gujarat, India");
 
         jTextField17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField17.setToolTipText("");
@@ -245,7 +245,7 @@ public class PostTest_Writing1 extends javax.swing.JFrame {
                                             .addGap(19, 19, 19))
                                         .addComponent(jLabel28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(0, 33, Short.MAX_VALUE))
+                        .addGap(0, 34, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton1)
