@@ -71,35 +71,35 @@ public class PreTest_Writing1 extends javax.swing.JFrame {
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("2."+correctAnswer+"a"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("2."+correctAnswer+"a"+System.getProperty("line.separator")+wrongAnswer+jTextField13.getText().trim()+System.getProperty("line.separator"));
                 if("d".equalsIgnoreCase(jTextField14.getText().trim()))
                 {
                 writing1_answer.append("3."+correctAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("3."+correctAnswer+"d"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("3."+correctAnswer+"d"+System.getProperty("line.separator")+wrongAnswer+jTextField14.getText().trim()+System.getProperty("line.separator"));
                 if("f".equalsIgnoreCase(jTextField15.getText().trim()))
                 {
                 writing1_answer.append("4."+correctAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("4."+correctAnswer+"f"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("4."+correctAnswer+"f"+System.getProperty("line.separator")+wrongAnswer+jTextField15.getText().trim()+System.getProperty("line.separator"));
                 if("c".equalsIgnoreCase(jTextField16.getText().trim()))
                 {
                 writing1_answer.append("5."+correctAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("5."+correctAnswer+"c"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("5."+correctAnswer+"c"+System.getProperty("line.separator")+wrongAnswer+jTextField16.getText().trim()+System.getProperty("line.separator"));
                 if("e".equalsIgnoreCase(jTextField18.getText().trim()))
                 {
                 writing1_answer.append("6."+correctAnswer+jTextField18.getText().trim()+System.getProperty("line.separator"));
                  marks_obtained++;
                 }
                 else
-                writing1_answer.append("6."+correctAnswer+"e"+System.getProperty("line.separator")+wrongAnswer+jTextField12.getText().trim()+System.getProperty("line.separator"));
+                writing1_answer.append("6."+correctAnswer+"e"+System.getProperty("line.separator")+wrongAnswer+jTextField18.getText().trim()+System.getProperty("line.separator"));
                 writing1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
                 WritingTestParameters.marks_obtained_writing+=marks_obtained;
                 bw.write(writing1_answer.toString());
