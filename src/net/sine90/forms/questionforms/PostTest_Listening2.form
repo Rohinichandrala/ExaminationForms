@@ -305,7 +305,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="1. When somebody tells us to follow your dreams, what does it mean?"/>
+            <Property name="text" type="java.lang.String" value="3.1. When somebody tells us to follow your dreams, what does it mean?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton1">
@@ -345,7 +345,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="4. By comparing the &#x201c;journey of life&#x201d; with &#x201c;steps&#x201d;, the author decodes life as something"/>
+            <Property name="text" type="java.lang.String" value="3.4. By comparing the &#x201c;journey of life&#x201d; with &#x201c;steps&#x201d;, the author decodes life as something"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton5">
@@ -385,7 +385,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="3. The five ways given by the speaker for achieving one&#x2019;s dreams will help"/>
+            <Property name="text" type="java.lang.String" value="3.3. The five ways given by the speaker for achieving one&#x2019;s dreams will help"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton9">
@@ -425,7 +425,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="2. According to the speaker, no one else has the _______answer for your life except you"/>
+            <Property name="text" type="java.lang.String" value="3.2. According to the speaker, no one else has the _______answer for your life except you"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton13">
@@ -468,7 +468,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="5. The speaker provides all of the following &#x201c;tips to kill their dreams&#x201d; except"/>
+            <Property name="text" type="java.lang.String" value="3.5. The speaker provides all of the following &#x201c;tips to kill their dreams&#x201d; except"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton17">
@@ -508,7 +508,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="6. What is the synonym of the word &quot;humble&quot; in &#x201c;I come from a humble family&#x201d;? "/>
+            <Property name="text" type="java.lang.String" value="3.6. What is the synonym of the word &quot;humble&quot; in &#x201c;I come from a humble family&#x201d;? "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton21">
@@ -548,7 +548,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="7. From the sentence &#x201c;There&#x2019;s no time to settle down&#x201d;, what does one infer from this line?"/>
+            <Property name="text" type="java.lang.String" value="3.7. From the sentence &#x201c;There&#x2019;s no time to settle down&#x201d;, what does one infer from this line?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton25">
@@ -588,7 +588,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="8. Be RESPONSIBLE for your dreams. The word in CAPITAL letters belongs to which part of speech?"/>
+            <Property name="text" type="java.lang.String" value="3.8. Be RESPONSIBLE for your dreams. The word in CAPITAL letters belongs to which part of speech?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton29">

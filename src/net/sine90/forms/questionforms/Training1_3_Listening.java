@@ -61,39 +61,39 @@ public class Training1_3_Listening extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         if(jRadioButton34.isSelected())
         {
-            pretest_answer.append("1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
+            pretest_answer.append("4.1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
         if(jRadioButton35.isSelected())
         {
-            pretest_answer.append("2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("4.2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
         if(jRadioButton38.isSelected())
         {
-            pretest_answer.append("3."+correctAnswer+jRadioButton38.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.3."+correctAnswer+jRadioButton38.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("3."+correctAnswer+jRadioButton38.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
+            pretest_answer.append("4.3."+correctAnswer+jRadioButton38.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
         if(jRadioButton40.isSelected())
         {
-            pretest_answer.append("4."+correctAnswer+jRadioButton40.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.4."+correctAnswer+jRadioButton40.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("4."+correctAnswer+jRadioButton40.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
+            pretest_answer.append("4.4."+correctAnswer+jRadioButton40.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
         if(jRadioButton41.isSelected())
         {
-            pretest_answer.append("5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("4.5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
         pretest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(pretest_answer.toString());
@@ -144,7 +144,7 @@ public class Training1_3_Listening extends javax.swing.JFrame {
         jLabel1.setText("Select True or False");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("A revision timetable could be from one to six weeks.");
+        jLabel2.setText("4.1. A revision timetable could be from one to six weeks.");
 
         jRadioButton33.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton33.setText("True");
@@ -158,7 +158,7 @@ public class Training1_3_Listening extends javax.swing.JFrame {
         });
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel3.setText("You should try to forget about the internet, text messages, Twitter, Face book, etc. while you're studying.");
+        jLabel3.setText("4.2. You should try to forget about the internet, text messages, Twitter, Face book, etc. while you're studying.");
 
         jRadioButton37.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton37.setText("True");
@@ -172,10 +172,10 @@ public class Training1_3_Listening extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel4.setText("You should try not to have a break until you really need one.");
+        jLabel4.setText("4.3. You should try not to have a break until you really need one.");
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel15.setText("Underlining or highlighting your notes is better than writing more notes.");
+        jLabel15.setText("4.4. Underlining or highlighting your notes is better than writing more notes.");
 
         jRadioButton39.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton39.setText("True");
@@ -200,7 +200,7 @@ public class Training1_3_Listening extends javax.swing.JFrame {
         jRadioButton41.setText("True");
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel16.setText("Mind maps are good because they mirror the way the brain works.");
+        jLabel16.setText("4.5. Mind maps are good because they mirror the way the brain works.");
 
         jRadioButton35.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton35.setText("True");

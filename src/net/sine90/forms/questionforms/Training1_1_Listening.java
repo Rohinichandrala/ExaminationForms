@@ -150,10 +150,10 @@ public class Training1_1_Listening extends javax.swing.JFrame {
         jLabel10.setText("Note: Enter the option number in box");
 
         jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel21.setText("1. Furthermore, it is important to make sure the place is comfortable and noise-free.");
+        jLabel21.setText("a. Furthermore, it is important to make sure the place is comfortable and noise-free.");
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel22.setText("2. Lastly, writing notes helps the mind process information.");
+        jLabel22.setText("b. Lastly, writing notes helps the mind process information.");
 
         jTextField12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField12.setToolTipText("");
@@ -162,7 +162,7 @@ public class Training1_1_Listening extends javax.swing.JFrame {
         jTextField13.setToolTipText("");
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel23.setText("3. To begin with, I recommend you have a plan or a timetable. ");
+        jLabel23.setText("c. To begin with, I recommend you have a plan or a timetable. ");
 
         jTextField14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField14.setToolTipText("");
@@ -171,16 +171,16 @@ public class Training1_1_Listening extends javax.swing.JFrame {
         jTextField15.setToolTipText("");
 
         jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel24.setText("4. Good Morning! Today I’m going to talk about how to study.");
+        jLabel24.setText("d. Good Morning! Today I’m going to talk about how to study.");
 
         jTextField16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField16.setToolTipText("");
 
         jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel25.setText("5.Thirdly, it is advisable to take regular breaks.");
+        jLabel25.setText("e.Thirdly, it is advisable to take regular breaks.");
 
         jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel26.setText("6. Secondly, finalize the ideal place to study.");
+        jLabel26.setText("f. Secondly, finalize the ideal place to study.");
 
         jTextField17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField17.setToolTipText("");

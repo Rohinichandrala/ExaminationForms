@@ -201,7 +201,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jLabel5.setText("Choose the right answer :");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("1. What does this narrative say about friendship? ");
+        jLabel6.setText("3.1. What does this narrative say about friendship? ");
 
         jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton1.setText("Friends will never abandon you in times of need");
@@ -216,7 +216,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton4.setText("Friends are needed to fight common enemies\t");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("4. What would have happened if the animals weren’t friends ");
+        jLabel7.setText("3.4. What would have happened if the animals weren’t friends ");
 
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton5.setText("The hunter would not have escaped");
@@ -231,7 +231,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton8.setText("It wouldn’t have mattered");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("3. The deer is found in a clearing. What could clearing mean ");
+        jLabel8.setText("3.3. The deer is found in a clearing. What could clearing mean ");
 
         jRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton9.setText("Process of becoming clear");
@@ -246,7 +246,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton12.setText("Total claims settled");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("2. According to the narrative, when would the four friends usually meet? ");
+        jLabel10.setText("3.2. According to the narrative, when would the four friends usually meet? ");
 
         jRadioButton13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton13.setText("During the evenings");
@@ -261,7 +261,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton16.setText("Midnight");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. The story had all the given characters except");
+        jLabel11.setText("3.5. The story had all the given characters except");
 
         jRadioButton17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton17.setText("Mouse");
@@ -276,7 +276,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton20.setText("Deer");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6.What is the antonym of the word grateful in “The doves were grateful to the mouse”? ");
+        jLabel12.setText("3.6.What is the antonym of the word grateful in “The doves were grateful to the mouse”? ");
 
         jRadioButton21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton21.setText("Indebted");
@@ -291,7 +291,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton24.setText("Thankless");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel13.setText("7.From the sentence “The hunter trembled with fear and fled”, what does one infer about handling an enemy? ");
+        jLabel13.setText("3.7.From the sentence “The hunter trembled with fear and fled”, what does one infer about handling an enemy? ");
 
         jRadioButton25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton25.setText("United we can conquer the enemy");
@@ -306,7 +306,7 @@ public class PreTest_Listening2 extends javax.swing.JFrame {
         jRadioButton28.setText("A strong enemy cannot be defeated");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("8. What is the simple past tense of the word goes in “The deer goes in search of water and does not return”? ");
+        jLabel14.setText("3.8. What is the simple past tense of the word goes in “The deer goes in search of water and does not return”? ");
 
         jRadioButton29.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton29.setText("gone");

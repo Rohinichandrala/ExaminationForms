@@ -72,60 +72,60 @@ public class Training1_Listening extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         if("concentrating".equalsIgnoreCase(jTextField2.getText().trim()))
         {
-            training1_answer.append("1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("1."+correctAnswer+"concentrating"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.1."+correctAnswer+"concentrating"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
         if("cong term".equalsIgnoreCase(jTextField3.getText().trim()))
         {
-            training1_answer.append("2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("2."+correctAnswer+"cong term"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.2."+correctAnswer+"cong term"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
         if(jTextField4.getText().trim().equalsIgnoreCase("comfortable")&&jTextField18.getText().trim().equalsIgnoreCase("noises"))
         {
-            training1_answer.append("3."+correctAnswer+"comfortable /noises"+System.getProperty("line.separator"));
+            training1_answer.append("1.3."+correctAnswer+"comfortable /noises"+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("3."+correctAnswer+"comfortable /noises"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+" /"+jTextField18.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.3."+correctAnswer+"comfortable /noises"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+" /"+jTextField18.getText().trim()+System.getProperty("line.separator"));
         if("headphones".equalsIgnoreCase(jTextField5.getText().trim()))
         {
-            training1_answer.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("4."+correctAnswer+"headphones"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.4."+correctAnswer+"headphones"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
         if("ignore".equalsIgnoreCase(jTextField6.getText().trim()))
         {
-            training1_answer.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("5."+correctAnswer+"ignore"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.5."+correctAnswer+"ignore"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
        if("mind".equalsIgnoreCase(jTextField7.getText().trim()))
         {
-            training1_answer.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("6."+correctAnswer+"mind"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.6."+correctAnswer+"mind"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
         if("an".equalsIgnoreCase(jTextField9.getText().trim()))
         {
-            training1_answer.append("7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("7."+correctAnswer+"an"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.7."+correctAnswer+"an"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
         if("are".equalsIgnoreCase(jTextField10.getText().trim()))
         {
-            training1_answer.append("8."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.8."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            training1_answer.append("8."+correctAnswer+"are"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+            training1_answer.append("1.8."+correctAnswer+"are"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         training1_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(training1_answer.toString());
@@ -221,22 +221,22 @@ public class Training1_Listening extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel5.setText("1. Some of you are probably fantastic at studying, really organized and good at");
+        jLabel5.setText("1.1. Some of you are probably fantastic at studying, really organized and good at");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("2. If you’re studying for an important exam, it’s important to think");
+        jLabel6.setText("1.2. If you’re studying for an important exam, it’s important to think");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("3. Make sure the place where you’re going to study is");
+        jLabel7.setText("1.3. Make sure the place where you’re going to study is");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("4.If you have to work near a TV, you might have to use");
+        jLabel8.setText("1.4.If you have to work near a TV, you might have to use");
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel9.setText("the internet, text message, Face book, etc");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. While you’re studying, you should ");
+        jLabel11.setText("1.5. While you’re studying, you should ");
 
         jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField2.setToolTipText("");
@@ -254,7 +254,7 @@ public class Training1_Listening extends javax.swing.JFrame {
         jTextField6.setToolTipText("");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. Mind maps seem to work in the same way the ");
+        jLabel12.setText("1.6. Mind maps seem to work in the same way the ");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("works.");
@@ -263,7 +263,7 @@ public class Training1_Listening extends javax.swing.JFrame {
         jTextField7.setToolTipText("");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("7. Many people recommend half ");
+        jLabel14.setText("1.7. Many people recommend half ");
 
         jTextField9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField9.setToolTipText("");
@@ -272,7 +272,7 @@ public class Training1_Listening extends javax.swing.JFrame {
         jLabel15.setText("hour of concentrated study");
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel16.setText("8. Mind maps ");
+        jLabel16.setText("1.8. Mind maps ");
 
         jTextField10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField10.setToolTipText("");

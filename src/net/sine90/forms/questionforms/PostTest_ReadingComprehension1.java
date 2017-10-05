@@ -57,53 +57,53 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         if(jRadioButton3.isSelected())
         {
-            reading_com_answer.append("1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
         if(jRadioButton13.isSelected())
         {
-            reading_com_answer.append("2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
         if(jRadioButton5.isSelected())
         {
-            reading_com_answer.append("3."+correctAnswer+jRadioButton5.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.3."+correctAnswer+jRadioButton5.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("3."+correctAnswer+jRadioButton5.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.3."+correctAnswer+jRadioButton5.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
         if(jRadioButton9.isSelected())
         {
-            reading_com_answer.append("4."+correctAnswer+jRadioButton9.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.4."+correctAnswer+jRadioButton9.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("4."+correctAnswer+jRadioButton9.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.4."+correctAnswer+jRadioButton9.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
         if(jRadioButton20.isSelected())
         {
-            reading_com_answer.append("5."+correctAnswer+jRadioButton20.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.5."+correctAnswer+jRadioButton20.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("5."+correctAnswer+jRadioButton20.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.5."+correctAnswer+jRadioButton20.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
         if(jRadioButton23.isSelected())
         {
-            reading_com_answer.append("6."+correctAnswer+jRadioButton23.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.6."+correctAnswer+jRadioButton23.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("6."+correctAnswer+jRadioButton23.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.6."+correctAnswer+jRadioButton23.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
         if(jRadioButton28.isSelected())
         {
-            reading_com_answer.append("7."+correctAnswer+jRadioButton28.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.7."+correctAnswer+jRadioButton28.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("7."+correctAnswer+jRadioButton28.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.7."+correctAnswer+jRadioButton28.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
         
         reading_com_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ReadingTestParameters.marks_obtained_reading+=marks_obtained;
@@ -172,7 +172,7 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jLabel5.setText("Choose the right answer :");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("1. According to the passage, how do plants protect their leaves? ");
+        jLabel6.setText("2.1. According to the passage, how do plants protect their leaves? ");
 
         jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton1.setText("By reaching the sunlight");
@@ -187,7 +187,7 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton4.setText("By growing shorter");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("3. What are Biomes?");
+        jLabel7.setText("2.3. What are Biomes?");
 
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton5.setText("Ecological areas");
@@ -202,7 +202,7 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton8.setText("Adaptations");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("4. It can be inferred from paragraph 2 that “Smell of the skunk”");
+        jLabel8.setText("2.4. It can be inferred from paragraph 2 that “Smell of the skunk”");
 
         jRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton9.setText("Is horrible");
@@ -222,7 +222,7 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton12.setText("Is misleading");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("2. The writer feels “adaptation” means all of the following except:");
+        jLabel10.setText("2.2. The writer feels “adaptation” means all of the following except:");
 
         jRadioButton13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton13.setText("Developing a behavior that makes it likely to survive");
@@ -237,7 +237,7 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton16.setText("Changing the environment ");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. The term “Skunks” refers to :");
+        jLabel11.setText("2.5. The term “Skunks” refers to :");
 
         jRadioButton17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton17.setText("A reptile");
@@ -252,7 +252,7 @@ public class PostTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton20.setText("A small animal");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. There are many variety adaptations the author mentions. Which one is that?");
+        jLabel12.setText("2.6. There are many variety adaptations the author mentions. Which one is that?");
 
         jRadioButton21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton21.setText("Tree growing fruits");

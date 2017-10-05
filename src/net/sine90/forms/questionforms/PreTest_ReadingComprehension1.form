@@ -259,7 +259,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="1. According to the passage, how is self-reflection done?"/>
+            <Property name="text" type="java.lang.String" value="2.1. According to the passage, how is self-reflection done?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton1">
@@ -299,7 +299,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="3. What is the meaning of the word &#x201c;ponder&#x201d;?"/>
+            <Property name="text" type="java.lang.String" value="2.3. What is the meaning of the word &#x201c;ponder&#x201d;?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton5">
@@ -339,7 +339,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="4. It can be inferred from paragraph 3 that &#x201c;natural breaks&#x201d;"/>
+            <Property name="text" type="java.lang.String" value="2.4. It can be inferred from paragraph 3 that &#x201c;natural breaks&#x201d;"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton9">
@@ -379,7 +379,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="2. The author states Self-reflection means all of the following except "/>
+            <Property name="text" type="java.lang.String" value="2.2. The author states Self-reflection means all of the following except "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton13">
@@ -419,7 +419,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="5. Why does the author mention the division of school textbooks into chapters and units?"/>
+            <Property name="text" type="java.lang.String" value="2.5. Why does the author mention the division of school textbooks into chapters and units?"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton17">
@@ -459,7 +459,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="6. Which sentence below best expresses the essential information in the sentence -"/>
+            <Property name="text" type="java.lang.String" value="2.6. Which sentence below best expresses the essential information in the sentence -"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton21">
@@ -499,7 +499,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="7. Self-reflection is a key to one&#x2019;s "/>
+            <Property name="text" type="java.lang.String" value="2.7. Self-reflection is a key to one&#x2019;s "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton25">

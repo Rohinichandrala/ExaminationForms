@@ -153,10 +153,10 @@ public class Training2_1_Listening extends javax.swing.JFrame {
         jTextField12.setToolTipText("");
 
         jLabel21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel21.setText("1. But, it wasn’t until I entered MIT that I saw my goal of designing an aircraft so close");
+        jLabel21.setText("a. But, it wasn’t until I entered MIT that I saw my goal of designing an aircraft so close");
 
         jLabel22.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel22.setText("2. As a young boy I often walked back home from school with my friends and rested on the banks of our village pond.");
+        jLabel22.setText("b. As a young boy I often walked back home from school with my friends and rested on the banks of our village pond.");
 
         jTextField13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField13.setToolTipText("");
@@ -173,16 +173,16 @@ public class Training2_1_Listening extends javax.swing.JFrame {
         jTextField14.setToolTipText("");
 
         jLabel23.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel23.setText("3. Finally, I did accomplish my goal of designing a fighter jet successfully within the deadline.");
+        jLabel23.setText("c. Finally, I did accomplish my goal of designing a fighter jet successfully within the deadline.");
 
         jLabel24.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel24.setText("4. While my friends skimmed pebbles in the pond, I would watch cranes and seagulls soar");
+        jLabel24.setText("d. While my friends skimmed pebbles in the pond, I would watch cranes and seagulls soar");
 
         jTextField15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField15.setToolTipText("");
 
         jLabel25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel25.setText("5. However, she seemed disappointed and refused to listen to my excuses.");
+        jLabel25.setText("e. However, she seemed disappointed and refused to listen to my excuses.");
 
         jTextField16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField16.setToolTipText("");
@@ -191,7 +191,7 @@ public class Training2_1_Listening extends javax.swing.JFrame {
         jTextField17.setToolTipText("");
 
         jLabel26.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel26.setText("6. One day, my teacher at MIT was reviewing my project progress expectantly.");
+        jLabel26.setText("f. One day, my teacher at MIT was reviewing my project progress expectantly.");
 
         jLabel27.setFont(new java.awt.Font("Times", 0, 18)); // NOI18N
         jLabel27.setText("03 : 00");

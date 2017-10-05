@@ -61,18 +61,18 @@ public class PreTest_Listening3 extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         if(jRadioButton34.isSelected())
         {
-            pretest_answer.append("1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
+            pretest_answer.append("4.1."+correctAnswer+jRadioButton34.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
         if(jRadioButton35.isSelected())
         {
-            pretest_answer.append("2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("4.2."+correctAnswer+jRadioButton35.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
 //        if(jRadioButton36.isSelected())
 //        {
 //            pretest_answer.append("2."+correctAnswer+jRadioButton36.getText().trim()+System.getProperty("line.separator"));
@@ -82,25 +82,25 @@ public class PreTest_Listening3 extends javax.swing.JFrame {
 //            pretest_answer.append("2."+correctAnswer+jRadioButton36.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"True"+System.getProperty("line.separator"));
         if(jRadioButton37.isSelected())
         {
-            pretest_answer.append("3."+correctAnswer+jRadioButton37.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.3."+correctAnswer+jRadioButton37.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("3."+correctAnswer+jRadioButton37.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("4.3."+correctAnswer+jRadioButton37.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
         if(jRadioButton39.isSelected())
         {
-            pretest_answer.append("4."+correctAnswer+jRadioButton39.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.4."+correctAnswer+jRadioButton39.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("4."+correctAnswer+jRadioButton39.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("4.4."+correctAnswer+jRadioButton39.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
         if(jRadioButton41.isSelected())
         {
-            pretest_answer.append("5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("4.5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            pretest_answer.append("5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
+            pretest_answer.append("4.5."+correctAnswer+jRadioButton41.getText().trim()+System.getProperty("line.separator")+wrongAnswer+"False"+System.getProperty("line.separator"));
         pretest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
         bw.write(pretest_answer.toString());
@@ -170,10 +170,10 @@ public class PreTest_Listening3 extends javax.swing.JFrame {
         jRadioButton35.setText("True");
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel3.setText("The deer goes in search of water and does not return.");
+        jLabel3.setText("4.2. The deer goes in search of water and does not return.");
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel4.setText("The Mouse hop on to the crow’s back.");
+        jLabel4.setText("4.3. The Mouse hop on to the crow’s back.");
 
         jRadioButton38.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton38.setText("False");
@@ -187,7 +187,7 @@ public class PreTest_Listening3 extends javax.swing.JFrame {
         jRadioButton37.setText("True");
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel15.setText("The Crow tells them the story of how the mouse had freed the doves.");
+        jLabel15.setText("4.4. The Crow tells them the story of how the mouse had freed the doves.");
 
         jRadioButton39.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton39.setText("True");
@@ -209,7 +209,7 @@ public class PreTest_Listening3 extends javax.swing.JFrame {
         });
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel16.setText("The crow finds the deer in a clearing with its foot caught in the net.");
+        jLabel16.setText("4.5. The crow finds the deer in a clearing with its foot caught in the net.");
 
         jRadioButton41.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton41.setText("True");
@@ -264,7 +264,7 @@ public class PreTest_Listening3 extends javax.swing.JFrame {
                                 .addGap(66, 66, 66)
                                 .addComponent(jRadioButton36))
                             .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
                         .addComponent(jButton1)
                         .addGap(42, 42, 42))))
         );
@@ -311,7 +311,7 @@ public class PreTest_Listening3 extends javax.swing.JFrame {
         jLabel1.setText("Select True or False");
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel2.setText("There were five friends living in a Forest.");
+        jLabel2.setText("4.1. There were five friends living in a Forest.");
 
         jLabel28.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel28.setText("03 : 00");

@@ -72,60 +72,60 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         if(jRadioButton3.isSelected())
         {
-            posttest_answer.append("1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
+            posttest_answer.append("3.1."+correctAnswer+jRadioButton3.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
         if(jRadioButton13.isSelected())
         {
-            posttest_answer.append("2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
+            posttest_answer.append("3.2."+correctAnswer+jRadioButton13.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
         if(jRadioButton11.isSelected())
         {
-            posttest_answer.append("3."+correctAnswer+jRadioButton11.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.3."+correctAnswer+jRadioButton11.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("3."+correctAnswer+jRadioButton11.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
+            posttest_answer.append("3.3."+correctAnswer+jRadioButton11.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
         if(jRadioButton7.isSelected())
         {
-            posttest_answer.append("4."+correctAnswer+jRadioButton7.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.4."+correctAnswer+jRadioButton7.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("4."+correctAnswer+jRadioButton7.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
+            posttest_answer.append("3.4."+correctAnswer+jRadioButton7.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
         if(jRadioButton19.isSelected())
         {
-            posttest_answer.append("5."+correctAnswer+jRadioButton19.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.5."+correctAnswer+jRadioButton19.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("5."+correctAnswer+jRadioButton19.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
+            posttest_answer.append("3.5."+correctAnswer+jRadioButton19.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
         if(jRadioButton24.isSelected())
         {
-            posttest_answer.append("6."+correctAnswer+jRadioButton24.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.6."+correctAnswer+jRadioButton24.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("6."+correctAnswer+jRadioButton24.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
+            posttest_answer.append("3.6."+correctAnswer+jRadioButton24.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
         if(jRadioButton25.isSelected())
         {
-            posttest_answer.append("7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
+            posttest_answer.append("3.7."+correctAnswer+jRadioButton25.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
         if(jRadioButton30.isSelected())
         {
-            posttest_answer.append("8."+correctAnswer+jRadioButton30.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("3.8."+correctAnswer+jRadioButton30.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("8."+correctAnswer+jRadioButton30.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group8)+System.getProperty("line.separator"));
+            posttest_answer.append("3.8."+correctAnswer+jRadioButton30.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group8)+System.getProperty("line.separator"));
         
         posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
@@ -202,7 +202,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jLabel5.setText("Choose the right answer :");
 
         jLabel6.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel6.setText("1. When somebody tells us to follow your dreams, what does it mean?");
+        jLabel6.setText("3.1. When somebody tells us to follow your dreams, what does it mean?");
 
         jRadioButton1.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton1.setText("Follow nightmares and hallucinations");
@@ -217,7 +217,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton4.setText("Follow fancy imaginations ");
 
         jLabel7.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel7.setText("4. By comparing the “journey of life” with “steps”, the author decodes life as something");
+        jLabel7.setText("3.4. By comparing the “journey of life” with “steps”, the author decodes life as something");
 
         jRadioButton5.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton5.setText("Filled with only impossible steps");
@@ -232,7 +232,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton8.setText("None of the above  ");
 
         jLabel8.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel8.setText("3. The five ways given by the speaker for achieving one’s dreams will help");
+        jLabel8.setText("3.3. The five ways given by the speaker for achieving one’s dreams will help");
 
         jRadioButton9.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton9.setText("Only students");
@@ -247,7 +247,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton12.setText("No body ");
 
         jLabel10.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel10.setText("2. According to the speaker, no one else has the _______answer for your life except you");
+        jLabel10.setText("3.2. According to the speaker, no one else has the _______answer for your life except you");
 
         jRadioButton13.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton13.setText("Perfect");
@@ -267,7 +267,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton16.setText("Right");
 
         jLabel11.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel11.setText("5. The speaker provides all of the following “tips to kill their dreams” except");
+        jLabel11.setText("3.5. The speaker provides all of the following “tips to kill their dreams” except");
 
         jRadioButton17.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton17.setText("Believe someone else has the answer for you");
@@ -282,7 +282,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton20.setText("Believe in settling down on attaining growth");
 
         jLabel12.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel12.setText("6. What is the synonym of the word \"humble\" in “I come from a humble family”? ");
+        jLabel12.setText("3.6. What is the synonym of the word \"humble\" in “I come from a humble family”? ");
 
         jRadioButton21.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton21.setText("Grand");
@@ -297,7 +297,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton24.setText("Modest");
 
         jLabel13.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel13.setText("7. From the sentence “There’s no time to settle down”, what does one infer from this line?");
+        jLabel13.setText("3.7. From the sentence “There’s no time to settle down”, what does one infer from this line?");
 
         jRadioButton25.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton25.setText("That there is so much to accomplish");
@@ -312,7 +312,7 @@ public class PostTest_Listening2 extends javax.swing.JFrame {
         jRadioButton28.setText("Could not settle down due to paucity of time");
 
         jLabel14.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
-        jLabel14.setText("8. Be RESPONSIBLE for your dreams. The word in CAPITAL letters belongs to which part of speech?");
+        jLabel14.setText("3.8. Be RESPONSIBLE for your dreams. The word in CAPITAL letters belongs to which part of speech?");
 
         jRadioButton29.setFont(new java.awt.Font("Times", 0, 16)); // NOI18N
         jRadioButton29.setText("Noun");

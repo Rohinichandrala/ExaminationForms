@@ -56,53 +56,53 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);         
         if(jRadioButton2.isSelected())
         {
-            reading_com_answer.append("1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.1."+correctAnswer+jRadioButton2.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group1)+System.getProperty("line.separator"));
         if(jRadioButton15.isSelected())
         {
-            reading_com_answer.append("2."+correctAnswer+jRadioButton15.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.2."+correctAnswer+jRadioButton15.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("2."+correctAnswer+jRadioButton15.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.2."+correctAnswer+jRadioButton15.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group2)+System.getProperty("line.separator"));
         if(jRadioButton8.isSelected())
         {
-            reading_com_answer.append("3."+correctAnswer+jRadioButton8.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.3."+correctAnswer+jRadioButton8.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("3."+correctAnswer+jRadioButton8.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.3."+correctAnswer+jRadioButton8.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group3)+System.getProperty("line.separator"));
         if(jRadioButton10.isSelected())
         {
-            reading_com_answer.append("4."+correctAnswer+jRadioButton10.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.4."+correctAnswer+jRadioButton10.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("4."+correctAnswer+jRadioButton10.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.4."+correctAnswer+jRadioButton10.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group4)+System.getProperty("line.separator"));
         if(jRadioButton18.isSelected())
         {
-            reading_com_answer.append("5."+correctAnswer+jRadioButton18.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.5."+correctAnswer+jRadioButton18.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("5."+correctAnswer+jRadioButton18.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.5."+correctAnswer+jRadioButton18.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group5)+System.getProperty("line.separator"));
         if(jRadioButton21.isSelected())
         {
-            reading_com_answer.append("6."+correctAnswer+jRadioButton21.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.6."+correctAnswer+jRadioButton21.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("6."+correctAnswer+jRadioButton21.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.6."+correctAnswer+jRadioButton21.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group6)+System.getProperty("line.separator"));
         if(jRadioButton26.isSelected())
         {
-            reading_com_answer.append("7."+correctAnswer+jRadioButton26.getText().trim()+System.getProperty("line.separator"));
+            reading_com_answer.append("2.7."+correctAnswer+jRadioButton26.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            reading_com_answer.append("7."+correctAnswer+jRadioButton26.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
+            reading_com_answer.append("2.7."+correctAnswer+jRadioButton26.getText().trim()+System.getProperty("line.separator")+wrongAnswer+Utilities.getSelectedObject(group7)+System.getProperty("line.separator"));
         
         reading_com_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         ReadingTestParameters.marks_obtained_reading+=marks_obtained;
@@ -171,7 +171,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         jLabel5.setText("Choose the right answer :");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("1. According to the passage, how is self-reflection done?");
+        jLabel6.setText("2.1. According to the passage, how is self-reflection done?");
 
         jRadioButton1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton1.setText("By not thinking about anything");
@@ -186,7 +186,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton4.setText("While playing sports");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("3. What is the meaning of the word “ponder”?");
+        jLabel7.setText("2.3. What is the meaning of the word “ponder”?");
 
         jRadioButton5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton5.setText("Consider");
@@ -201,7 +201,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton8.setText("Assess");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("4. It can be inferred from paragraph 3 that “natural breaks”");
+        jLabel8.setText("2.4. It can be inferred from paragraph 3 that “natural breaks”");
 
         jRadioButton9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton9.setText("Means breaks that happen naturally");
@@ -216,7 +216,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton12.setText("Is something unnatural");
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel10.setText("2. The author states Self-reflection means all of the following except ");
+        jLabel10.setText("2.2. The author states Self-reflection means all of the following except ");
 
         jRadioButton13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton13.setText("Calming oneself");
@@ -231,7 +231,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton16.setText("Helping the brain evaluate the inputs received");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. Why does the author mention the division of school textbooks into chapters and units?");
+        jLabel11.setText("2.5. Why does the author mention the division of school textbooks into chapters and units?");
 
         jRadioButton17.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton17.setText("To remind the readers of the inclusion of tests and quiz");
@@ -246,7 +246,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton20.setText("As there are many subjects like maths, social, science, art etc.");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. Which sentence below best expresses the essential information in the sentence -");
+        jLabel12.setText("2.6. Which sentence below best expresses the essential information in the sentence -");
 
         jRadioButton21.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton21.setText("Accessing information become easy if one takes time to self-reflect ");
@@ -261,7 +261,7 @@ public class PreTest_ReadingComprehension1 extends javax.swing.JFrame {
         jRadioButton24.setText("Only the brainy people can usually retrieve information");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel13.setText("7. Self-reflection is a key to one’s ");
+        jLabel13.setText("2.7. Self-reflection is a key to one’s ");
 
         jRadioButton25.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jRadioButton25.setText("Joy");

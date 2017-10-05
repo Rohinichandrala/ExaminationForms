@@ -196,7 +196,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="A revision timetable could be from one to six weeks."/>
+            <Property name="text" type="java.lang.String" value="4.1. A revision timetable could be from one to six weeks."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton33">
@@ -223,7 +223,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="You should try to forget about the internet, text messages, Twitter, Face book, etc. while you&apos;re studying."/>
+            <Property name="text" type="java.lang.String" value="4.2. You should try to forget about the internet, text messages, Twitter, Face book, etc. while you&apos;re studying."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton37">
@@ -250,7 +250,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="You should try not to have a break until you really need one."/>
+            <Property name="text" type="java.lang.String" value="4.3. You should try not to have a break until you really need one."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel15">
@@ -258,7 +258,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Underlining or highlighting your notes is better than writing more notes."/>
+            <Property name="text" type="java.lang.String" value="4.4. Underlining or highlighting your notes is better than writing more notes."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton39">
@@ -304,7 +304,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="16" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Mind maps are good because they mirror the way the brain works."/>
+            <Property name="text" type="java.lang.String" value="4.5. Mind maps are good because they mirror the way the brain works."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jRadioButton35">

@@ -72,60 +72,60 @@ public class PostTest_Listening extends javax.swing.JFrame {
                 bw = new BufferedWriter(fw);
         if("Goals".equalsIgnoreCase(jTextField2.getText().trim()))
         {
-            posttest_answer.append("1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.1."+correctAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("1."+correctAnswer+"Goals"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.1."+correctAnswer+"Goals"+System.getProperty("line.separator")+wrongAnswer+jTextField2.getText().trim()+System.getProperty("line.separator"));
         if("Success".equalsIgnoreCase(jTextField3.getText().trim()))
         {
-            posttest_answer.append("2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.2."+correctAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("2."+correctAnswer+"Success"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.2."+correctAnswer+"Success"+System.getProperty("line.separator")+wrongAnswer+jTextField3.getText().trim()+System.getProperty("line.separator"));
         if("Answers".equalsIgnoreCase(jTextField4.getText().trim()))
         {
-            posttest_answer.append("3."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.3."+correctAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("3."+correctAnswer+"Answers"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.3."+correctAnswer+"Answers"+System.getProperty("line.separator")+wrongAnswer+jTextField4.getText().trim()+System.getProperty("line.separator"));
         if("Dreams".equalsIgnoreCase(jTextField5.getText().trim()))
         {
-            posttest_answer.append("4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.4."+correctAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("4."+correctAnswer+"Dreams"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.4."+correctAnswer+"Dreams"+System.getProperty("line.separator")+wrongAnswer+jTextField5.getText().trim()+System.getProperty("line.separator"));
         if("Journey".equalsIgnoreCase(jTextField6.getText().trim()))
         {
-            posttest_answer.append("5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.5."+correctAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("5."+correctAnswer+"Journey"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.5."+correctAnswer+"Journey"+System.getProperty("line.separator")+wrongAnswer+jTextField6.getText().trim()+System.getProperty("line.separator"));
        if("Dedication".equalsIgnoreCase(jTextField7.getText().trim()))
         {
-            posttest_answer.append("6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.6."+correctAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("6."+correctAnswer+"Dedication"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.6."+correctAnswer+"Dedication"+System.getProperty("line.separator")+wrongAnswer+jTextField7.getText().trim()+System.getProperty("line.separator"));
         if("To".equalsIgnoreCase(jTextField9.getText().trim()))
         {
-            posttest_answer.append("7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.7."+correctAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("7."+correctAnswer+"To"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.7."+correctAnswer+"To"+System.getProperty("line.separator")+wrongAnswer+jTextField9.getText().trim()+System.getProperty("line.separator"));
         if("A".equalsIgnoreCase(jTextField10.getText().trim()))
         {
-            posttest_answer.append("8."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.8."+correctAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
              marks_obtained++;
         }
         else
-            posttest_answer.append("8."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
+            posttest_answer.append("1.8."+correctAnswer+"A"+System.getProperty("line.separator")+wrongAnswer+jTextField10.getText().trim()+System.getProperty("line.separator"));
         posttest_answer.append("Score for this Test : "+marks_obtained+" / "+total);
         bw.write(posttest_answer.toString());
         ListeningTestParameters.marks_obtained_listening+=marks_obtained;
@@ -212,22 +212,22 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel5.setText("1. The Speaker talks about how people could achieve their");
+        jLabel5.setText("1.1. The Speaker talks about how people could achieve their");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel6.setText("2. The accomplishment of an aim or purpose is called ");
+        jLabel6.setText("1.2. The accomplishment of an aim or purpose is called ");
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel7.setText("3. Never believe that someone else has the");
+        jLabel7.setText("1.3. Never believe that someone else has the");
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel8.setText("4. Do not settle down soon after having achieved your ");
+        jLabel8.setText("1.4. Do not settle down soon after having achieved your ");
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel9.setText("to the dream matters too");
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel11.setText("5. Not only the dream but the");
+        jLabel11.setText("1.5. Not only the dream but the");
 
         jTextField2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField2.setToolTipText("");
@@ -245,7 +245,7 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jTextField6.setToolTipText("");
 
         jLabel12.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel12.setText("6. It is my");
+        jLabel12.setText("1.6. It is my");
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jLabel13.setText("to work that has helped me reach the pinnacle of success.");
@@ -254,7 +254,7 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jTextField7.setToolTipText("");
 
         jLabel14.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel14.setText("7. If you have dreams, it’s your responsibility");
+        jLabel14.setText("1.7. If you have dreams, it’s your responsibility");
 
         jTextField9.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField9.setToolTipText("");
@@ -263,7 +263,7 @@ public class PostTest_Listening extends javax.swing.JFrame {
         jLabel15.setText("make them happen.");
 
         jLabel16.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        jLabel16.setText("8. Although achieving");
+        jLabel16.setText("1.8. Although achieving");
 
         jTextField10.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
         jTextField10.setToolTipText("");

@@ -60,50 +60,50 @@ public class PreTest_Writing extends javax.swing.JFrame {
                              
         if("I haven’t completed my Social Studies Project.".equalsIgnoreCase(answer4.getText().trim()))
         {
-                    pretest_answer.append("1."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+                    pretest_answer.append("1.1."+correctAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            pretest_answer.append("1."+correctAnswer+"I haven’t completed my Social Studies Project."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("1.1."+correctAnswer+"I haven’t completed my Social Studies Project."+System.getProperty("line.separator")+wrongAnswer+answer4.getText().trim()+System.getProperty("line.separator"));
         
         if("Children are fascinated by advancements in technology.".equalsIgnoreCase(answer6.getText().trim()))
         {
-                    pretest_answer.append("2."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+                    pretest_answer.append("1.2."+correctAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            pretest_answer.append("2."+correctAnswer+"Children are fascinated by advancements in technology."+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("1.2."+correctAnswer+"Children are fascinated by advancements in technology."+System.getProperty("line.separator")+wrongAnswer+answer6.getText().trim()+System.getProperty("line.separator"));
         
         if("The old woman despite her age walked very quickly.".equalsIgnoreCase(answer3.getText().trim()))
         {
-                    pretest_answer.append("3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+                    pretest_answer.append("1.3."+correctAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            pretest_answer.append("3."+correctAnswer+"The old woman despite her age walked very quickly."+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("1.3."+correctAnswer+"The old woman despite her age walked very quickly."+System.getProperty("line.separator")+wrongAnswer+answer3.getText().trim()+System.getProperty("line.separator"));
         
         if("The bag, which was stolen is mine.".equalsIgnoreCase(answer1.getText().trim()) || "The bag,which was stolen is mine.".equalsIgnoreCase(answer1.getText().trim()))
         {
-                    pretest_answer.append("4."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+                    pretest_answer.append("1.4."+correctAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            pretest_answer.append("4."+correctAnswer+"The bag, which was stolen is mine."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("1.4."+correctAnswer+"The bag, which was stolen is mine."+System.getProperty("line.separator")+wrongAnswer+answer1.getText().trim()+System.getProperty("line.separator"));
         if("When do you go to school?".equalsIgnoreCase(answer2.getText().trim()))
         {
-                    pretest_answer.append("5."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+                    pretest_answer.append("1.5."+correctAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            pretest_answer.append("5."+correctAnswer+"When do you go to school?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("1.5."+correctAnswer+"When do you go to school?."+System.getProperty("line.separator")+wrongAnswer+answer2.getText().trim()+System.getProperty("line.separator"));
         
         if("Dad didn’t pack the lunch box, did he?".equalsIgnoreCase(answer5.getText().trim()) || "Dad didn’t pack the lunch box,did he?".equalsIgnoreCase(answer5.getText().trim()))
         {
-                    pretest_answer.append("6."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+                    pretest_answer.append("1.6."+correctAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
                      marks_obtained++;
         }
         else
-            pretest_answer.append("6."+correctAnswer+"Dad didn’t pack the lunch box, did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
+            pretest_answer.append("1.6."+correctAnswer+"Dad didn’t pack the lunch box, did he?"+System.getProperty("line.separator")+wrongAnswer+answer5.getText().trim()+System.getProperty("line.separator"));
         
          pretest_answer.append("Score for this test : "+marks_obtained+" / "+total);
          WritingTestParameters.marks_obtained_writing+=marks_obtained;
@@ -167,31 +167,31 @@ public class PreTest_Writing extends javax.swing.JFrame {
         jLabel3.setText("Put the words in order to make a meaningful sentence.");
 
         quest1.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest1.setText("which / stolen / is  /was/ The / mine. / bag,/");
+        quest1.setText("1.4. which / stolen / is  /was/ The / mine. / bag,/");
 
         org.jdesktop.beansbinding.Binding binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest1, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest1, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest2.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest2.setText("go / do / to / you / school? / When /");
+        quest2.setText("1.5. go / do / to / you / school? / When /");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest2, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest2, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest3.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest3.setText("despite /walked / old woman / very / The / her / age / quickly.");
+        quest3.setText("1.3. despite /walked / old woman / very / The / her / age / quickly.");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest3, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest3, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest4.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest4.setText("completed / Social / Studies / I / Project. / haven’t / my/");
+        quest4.setText("1.1. completed / Social / Studies / I / Project. / haven’t / my/");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest4, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest4, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
 
         quest5.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest5.setText("lunch / pack / box, / the / Dad /he? / didn’t / did/");
+        quest5.setText("1.6. lunch / pack / box, / the / Dad /he? / didn’t / did/");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest5, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest5, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
@@ -240,7 +240,7 @@ public class PreTest_Writing extends javax.swing.JFrame {
         });
 
         quest6.setFont(new java.awt.Font("Times New Roman", 0, 16)); // NOI18N
-        quest6.setText("advancements/ fascinated / Children/ by/ are / technology. / in");
+        quest6.setText("1.2. advancements/ fascinated / Children/ by/ are / technology. / in");
 
         binding = org.jdesktop.beansbinding.Bindings.createAutoBinding(org.jdesktop.beansbinding.AutoBinding.UpdateStrategy.READ_WRITE, quest6, org.jdesktop.beansbinding.ELProperty.create("${name}"), quest6, org.jdesktop.beansbinding.BeanProperty.create("name"));
         bindingGroup.addBinding(binding);
