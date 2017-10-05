@@ -1,7 +1,7 @@
 # ExaminationForms
-It has a set of forms that helps in finding the students ** Reading/Writing skills **. 
+It has a set of forms that helps in finding the students  **Reading/Writing skills**.
 
-Every test has a count down timer. Once the timer ends the results are automatically submitted and the student will be taken to next test. 
+Every test has a count down timer. Once the timer ends the results are automatically submitted and the student will be taken to next test.
 
 At the end of the tests, a detailed report will be generated and it gets saved on the hard disk. 
 
